@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F36750CC-450F-4847-85DB-8DB75F272514}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VeterinariaApp.My.MyApplication</StartupObject>
+    <RootNamespace>VeterinariaApp</RootNamespace>
+    <AssemblyName>VeterinariaApp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VeterinariaApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VeterinariaApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.vb">
+      <DependentUpon>FormPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Alta\AltaClientes.Designer.vb">
+      <DependentUpon>AltaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Alta\AltaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Alta\AltaEspecies.Designer.vb">
+      <DependentUpon>AltaEspecies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Alta\AltaEspecies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Alta\AltaMascotas.Designer.vb">
+      <DependentUpon>AltaMascotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Alta\AltaMascotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Alta\AltaUsuarios.Designer.vb">
+      <DependentUpon>AltaUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Alta\AltaUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Baja\BajaClientes.Designer.vb">
+      <DependentUpon>BajaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Baja\BajaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Baja\BajaMascotas.Designer.vb">
+      <DependentUpon>BajaMascotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Baja\BajaMascotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Baja\BajaUsuarios.Designer.vb">
+      <DependentUpon>BajaUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Baja\BajaUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\EditarClientes.Designer.vb">
+      <DependentUpon>EditarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\EditarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\EditarEspecie.Designer.vb">
+      <DependentUpon>EditarEspecie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\EditarEspecie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\EditarMascotas.Designer.vb">
+      <DependentUpon>EditarMascotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\EditarMascotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\EditarUsuarios.Designer.vb">
+      <DependentUpon>EditarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\EditarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Listados\FormListadoClientes.Designer.vb">
+      <DependentUpon>FormListadoClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Listados\FormListadoClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Listados\FormListadoEspecies.Designer.vb">
+      <DependentUpon>FormListadoEspecies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Listados\FormListadoEspecies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Listados\FormListadoMascotas.Designer.vb">
+      <DependentUpon>FormListadoMascotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Listados\FormListadoMascotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Listados\FormListadoUsuarios.Designer.vb">
+      <DependentUpon>FormListadoUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Listados\FormListadoUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Registro\Registro.Designer.vb">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registro\Registro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Alta\AltaClientes.resx">
+      <DependentUpon>AltaClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listados\FormListadoClientes.resx">
+      <DependentUpon>FormListadoClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listados\FormListadoMascotas.resx">
+      <DependentUpon>FormListadoMascotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listados\FormListadoUsuarios.resx">
+      <DependentUpon>FormListadoUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Registro\Registro.resx">
+      <DependentUpon>Registro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Buscador\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VeterinariaServices\VeterinariaServices.csproj">
+      <Project>{aebc6ed0-92f3-4a41-8c97-493a95f0bc2d}</Project>
+      <Name>VeterinariaServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
