@@ -14,9 +14,8 @@ namespace VeterinariaServices.Models
         public decimal PesoPromedio { get; set; }
 
         //Constructores
-        public Especie(long id, string nombre, int edadMadurez, decimal pesoPromedio)
+        public Especie(string nombre, int edadMadurez, decimal pesoPromedio)
         {
-            Id = id;
             Nombre = nombre;
             EdadMadurez = edadMadurez;
             PesoPromedio = pesoPromedio;

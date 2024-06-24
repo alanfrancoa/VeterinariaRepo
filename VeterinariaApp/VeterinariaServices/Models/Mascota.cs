@@ -18,14 +18,13 @@ namespace VeterinariaServices.Models
         public string Estado { get; set; }
 
         //Constructores
-        public Mascota(string nombre, decimal peso, DateTime fechaNacimiento, long idCliente, long idEspecie, string estado)
+        public Mascota(string nombre, decimal peso, DateTime fechaNacimiento, long idCliente, long idEspecie)
         {
             Nombre = nombre;
             Peso = peso;
             FechaNacimiento = fechaNacimiento;
             IdCliente = idCliente;
             IdEspecie = idEspecie;
-            Estado = estado;
         }
 
         public Mascota()

@@ -81,4 +81,14 @@ Public Class FormPrincipal
     End Sub
 
 
+    Private Sub EspeciesToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles EspeciesToolStripMenuItem2.Click
+        Dim formEspecies As New AltaEspecies()
+        formEspecies.Show()
+    End Sub
+
+    Private Sub MascotasToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles MascotasToolStripMenuItem2.Click
+        Dim formMascotas As New AltaMascotas()
+        formMascotas.Show()
+    End Sub
+
 End Class

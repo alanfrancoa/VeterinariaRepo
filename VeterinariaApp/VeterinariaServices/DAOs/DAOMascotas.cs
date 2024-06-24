@@ -18,7 +18,7 @@ namespace VeterinariaServices.DAOs
         ///<returns>Retorna la conexion a DB</returns>
         private IDbConnection PrepararConexion()
         {
-            string ConnectionString = "Server=PCGAMINGALAN\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
+            string ConnectionString = "Server=DESKTOP-9ADK1UP\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
 
             SqlConnection conexion = new SqlConnection(ConnectionString);
 
@@ -59,6 +59,22 @@ namespace VeterinariaServices.DAOs
             conexion.Close();
             return ListaMascotas;
         }
+
+        public bool Insert(Mascota mascota)
+        {
+            string Query = $"INSERT INTO MASCOTAS(NOMBRE,PESO,FECHA_NACIMIENTO,ID_CLIENTE,ID_ESPECIE) VALUES ('{mascota.Nombre}',{mascota.Peso},'{mascota.FechaNacimiento}',{mascota.IdCliente},{mascota.IdEspecie} )";
+
+            var conexion = this.PrepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = Query;
+            int RowsAffected = comando.ExecuteNonQuery();
+
+            conexion.Close();
+
+            return RowsAffected > 0;
+
+        }
+
         public DataTable GetAllListasdo()
         {
             IDbConnection conexion = this.PrepararConexion();
