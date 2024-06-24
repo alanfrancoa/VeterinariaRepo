@@ -48,14 +48,17 @@ Partial Class FormPrincipal
         Me.EspeciesToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CambioContraseñaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LabelBienvenido = New System.Windows.Forms.Label()
+        Me.RegistroDePesosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CantidadDeAnimalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStripFormPrincipal.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStripFormPrincipal
         '
-        Me.MenuStripFormPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadosToolStripMenuItem, Me.BusquedasToolStripMenuItem, Me.AltasToolStripMenuItem, Me.BajasToolStripMenuItem, Me.EditarToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStripFormPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadosToolStripMenuItem, Me.BusquedasToolStripMenuItem, Me.AltasToolStripMenuItem, Me.BajasToolStripMenuItem, Me.EditarToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStripFormPrincipal.Location = New System.Drawing.Point(0, 0)
         Me.MenuStripFormPrincipal.Name = "MenuStripFormPrincipal"
         Me.MenuStripFormPrincipal.Size = New System.Drawing.Size(1139, 24)
@@ -73,25 +76,25 @@ Partial Class FormPrincipal
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'MascotasToolStripMenuItem
         '
         Me.MascotasToolStripMenuItem.Name = "MascotasToolStripMenuItem"
-        Me.MascotasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MascotasToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.MascotasToolStripMenuItem.Text = "Mascotas"
         '
         'EspeciesToolStripMenuItem
         '
         Me.EspeciesToolStripMenuItem.Name = "EspeciesToolStripMenuItem"
-        Me.EspeciesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EspeciesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.EspeciesToolStripMenuItem.Text = "Especies"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'BusquedasToolStripMenuItem
@@ -218,6 +221,13 @@ Partial Class FormPrincipal
         Me.CambioContraseñaToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.CambioContraseñaToolStripMenuItem.Text = "Cambio contraseña"
         '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistroDePesosToolStripMenuItem, Me.CantidadDeAnimalesToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
+        '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
@@ -235,6 +245,18 @@ Partial Class FormPrincipal
         Me.LabelBienvenido.TabIndex = 2
         Me.LabelBienvenido.Text = "Bienvenido: "
         Me.LabelBienvenido.Visible = False
+        '
+        'RegistroDePesosToolStripMenuItem
+        '
+        Me.RegistroDePesosToolStripMenuItem.Name = "RegistroDePesosToolStripMenuItem"
+        Me.RegistroDePesosToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.RegistroDePesosToolStripMenuItem.Text = "Calculo de pesos"
+        '
+        'CantidadDeAnimalesToolStripMenuItem
+        '
+        Me.CantidadDeAnimalesToolStripMenuItem.Name = "CantidadDeAnimalesToolStripMenuItem"
+        Me.CantidadDeAnimalesToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.CantidadDeAnimalesToolStripMenuItem.Text = "Cantidad de animales"
         '
         'FormPrincipal
         '
@@ -282,4 +304,7 @@ Partial Class FormPrincipal
     Friend WithEvents CambioContraseñaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LabelBienvenido As Label
+    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RegistroDePesosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CantidadDeAnimalesToolStripMenuItem As ToolStripMenuItem
 End Class
