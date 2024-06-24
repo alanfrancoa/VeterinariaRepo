@@ -73,25 +73,25 @@ Partial Class FormPrincipal
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'MascotasToolStripMenuItem
         '
         Me.MascotasToolStripMenuItem.Name = "MascotasToolStripMenuItem"
-        Me.MascotasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MascotasToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.MascotasToolStripMenuItem.Text = "Mascotas"
         '
         'EspeciesToolStripMenuItem
         '
         Me.EspeciesToolStripMenuItem.Name = "EspeciesToolStripMenuItem"
-        Me.EspeciesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EspeciesToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.EspeciesToolStripMenuItem.Text = "Especies"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'BusquedasToolStripMenuItem
@@ -135,25 +135,25 @@ Partial Class FormPrincipal
         'ClientesToolStripMenuItem2
         '
         Me.ClientesToolStripMenuItem2.Name = "ClientesToolStripMenuItem2"
-        Me.ClientesToolStripMenuItem2.Size = New System.Drawing.Size(124, 22)
+        Me.ClientesToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.ClientesToolStripMenuItem2.Text = "Clientes"
         '
         'MascotasToolStripMenuItem2
         '
         Me.MascotasToolStripMenuItem2.Name = "MascotasToolStripMenuItem2"
-        Me.MascotasToolStripMenuItem2.Size = New System.Drawing.Size(124, 22)
+        Me.MascotasToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.MascotasToolStripMenuItem2.Text = "Mascotas"
         '
         'EspeciesToolStripMenuItem2
         '
         Me.EspeciesToolStripMenuItem2.Name = "EspeciesToolStripMenuItem2"
-        Me.EspeciesToolStripMenuItem2.Size = New System.Drawing.Size(124, 22)
+        Me.EspeciesToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.EspeciesToolStripMenuItem2.Text = "Especies"
         '
         'UsuariosToolStripMenuItem2
         '
         Me.UsuariosToolStripMenuItem2.Name = "UsuariosToolStripMenuItem2"
-        Me.UsuariosToolStripMenuItem2.Size = New System.Drawing.Size(124, 22)
+        Me.UsuariosToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.UsuariosToolStripMenuItem2.Text = "Usuarios"
         '
         'BajasToolStripMenuItem
