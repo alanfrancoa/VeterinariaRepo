@@ -146,6 +146,54 @@
     <Compile Include="Forms\ABM\Modificacion\EditarUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\BarraDeProgreso\BarraDeProgreso.Designer.vb">
+      <DependentUpon>BarraDeProgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BarraDeProgreso\BarraDeProgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\Clientes\BusquedaCliente.Designer.vb">
+      <DependentUpon>BusquedaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\Clientes\BusquedaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\Clientes\BusquedaClientesListado.Designer.vb">
+      <DependentUpon>BusquedaClientesListado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\Clientes\BusquedaClientesListado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\Especies\BusquedaEspecie.Designer.vb">
+      <DependentUpon>BusquedaEspecie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\Especies\BusquedaEspecie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\Especies\BusquedaMascotaPorEspecie.Designer.vb">
+      <DependentUpon>BusquedaMascotaPorEspecie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\Especies\BusquedaMascotaPorEspecie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\Mascotas\BusquedaMascota.Designer.vb">
+      <DependentUpon>BusquedaMascota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\Mascotas\BusquedaMascota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\Mascotas\BusquedaMascotaListado.Designer.vb">
+      <DependentUpon>BusquedaMascotaListado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\Mascotas\BusquedaMascotaListado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\Usuarios\BusquedaUsuario.Designer.vb">
+      <DependentUpon>BusquedaUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\Usuarios\BusquedaUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Listados\FormListadoClientes.Designer.vb">
       <DependentUpon>FormListadoClientes.vb</DependentUpon>
     </Compile>
@@ -176,12 +224,6 @@
     <Compile Include="Forms\Login\FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Registro\Registro.Designer.vb">
-      <DependentUpon>Registro.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Registro\Registro.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -205,6 +247,12 @@
     <EmbeddedResource Include="Forms\ABM\Alta\AltaClientes.resx">
       <DependentUpon>AltaClientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Alta\AltaMascotas.resx">
+      <DependentUpon>AltaMascotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Alta\AltaUsuarios.resx">
+      <DependentUpon>AltaUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Listados\FormListadoClientes.resx">
       <DependentUpon>FormListadoClientes.vb</DependentUpon>
     </EmbeddedResource>
@@ -219,9 +267,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Registro\Registro.resx">
-      <DependentUpon>Registro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -242,9 +287,7 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\Buscador\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\VeterinariaServices\VeterinariaServices.csproj">
       <Project>{aebc6ed0-92f3-4a41-8c97-493a95f0bc2d}</Project>

@@ -15,14 +15,12 @@ namespace VeterinariaServices.Models
         public string Estado { get; set; }
         public string TipoUsuario { get; set; }
         //Constructores
-        public Usuario(long id, string username, string nombre, string password, string estado, string tipoUsuario)
+        public Usuario(string username, string nombre, string password)
         {
-            Id = id;
+
             Username = username;
             Nombre = nombre;
             Password = password;
-            Estado = estado;
-            TipoUsuario = tipoUsuario;
         }
 
         public Usuario()

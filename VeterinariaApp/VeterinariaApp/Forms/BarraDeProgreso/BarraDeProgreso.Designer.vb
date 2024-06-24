@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AltaMascotas
+Partial Class BarraDeProgreso
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -14,24 +14,17 @@ Partial Class AltaMascotas
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
+    'Requerido por el Diseñador de Windows Forms
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
+    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
+    'Se puede modificar usando el Diseñador de Windows Forms.  
+    'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.SuspendLayout()
-        '
-        'AltaMascotas
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        components = New System.ComponentModel.Container
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(669, 375)
-        Me.Name = "AltaMascotas"
-        Me.Text = "AltaMascotas"
-        Me.ResumeLayout(False)
-
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Text = "BarraDeProgreso"
     End Sub
 End Class

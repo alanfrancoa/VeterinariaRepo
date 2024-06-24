@@ -114,6 +114,20 @@ namespace VeterinariaServices.Containers
                 return ListaActivos;
             }
 
+            public bool ExisteUsername(string username)
+            {
+                var listaUsuarios = _daoUsuarios.GetAll();
+
+            foreach (Usuario usuario in listaUsuarios)
+            {
+                if (usuario.Username == username)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         }
 
 
