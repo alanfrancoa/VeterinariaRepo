@@ -84,5 +84,20 @@ namespace VeterinariaServices.Containers
             return false;
         }
 
+        public Cliente buscarPorDni(int Dni)
+        {
+            var ListaClientes = _daoClientes.GetAll();
+            Cliente clienteBuscado = null;
+
+            foreach (Cliente cliente in ListaClientes)
+            {
+                if (cliente.Dni == Dni)
+                {
+                    clienteBuscado = cliente;
+                }
+            }
+            return clienteBuscado;
+        }
+
     }
 }

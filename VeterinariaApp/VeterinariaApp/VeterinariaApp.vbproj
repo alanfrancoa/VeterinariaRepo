@@ -247,6 +247,9 @@
     <EmbeddedResource Include="Forms\ABM\Alta\AltaClientes.resx">
       <DependentUpon>AltaClientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Alta\AltaEspecies.resx">
+      <DependentUpon>AltaEspecies.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ABM\Alta\AltaMascotas.resx">
       <DependentUpon>AltaMascotas.vb</DependentUpon>
     </EmbeddedResource>
