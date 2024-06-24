@@ -256,6 +256,9 @@
     <EmbeddedResource Include="Forms\Listados\FormListadoClientes.resx">
       <DependentUpon>FormListadoClientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listados\FormListadoEspecies.resx">
+      <DependentUpon>FormListadoEspecies.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Listados\FormListadoMascotas.resx">
       <DependentUpon>FormListadoMascotas.vb</DependentUpon>
     </EmbeddedResource>

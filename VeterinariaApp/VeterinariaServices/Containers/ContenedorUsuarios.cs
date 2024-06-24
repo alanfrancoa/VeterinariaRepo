@@ -54,7 +54,7 @@ namespace VeterinariaServices.Containers
             /// Este método retorna la lista de usuarios sin las contrasenas.
             /// </summary>
             /// <returns>Retorna la lista de usuarios con nombre y username.</returns>
-            public List<Usuario> GetUsuariosListado()
+            public List<Usuario> GetUsuariosListadoCompleto()
             {
                 return _daoUsuarios.GetAllSinPass();
             }
@@ -62,7 +62,44 @@ namespace VeterinariaServices.Containers
             /// Este método retorna la lista de usuarios que el estado sea Activo
             /// </summary>
             /// <returns>Retorna la lista de usuarios Activos.</returns>
-            public List<Usuario> GetAllActivos()
+            public List<Usuario> GetUsuariosListadoActivos()
+                {
+                    var ListaUsuarioSinPas = _daoUsuarios.GetAllSinPass();
+                    var listadoActivos = new List<Usuario>();
+
+                    foreach (Usuario Usuario in ListaUsuarioSinPas)
+                    {
+                        if (Usuario.Estado == "ACTIVO")
+                        {
+                            listadoActivos.Add(Usuario);
+                        }
+                    }
+                    return listadoActivos;
+            }
+            /// <summary>
+            /// Este método retorna la lista de usuarios que el estado sea Inactivo
+            /// </summary>
+            /// <returns>Retorna la lista de usuarios Inactivos.</returns>
+        public List<Usuario> GetUsuariosListadoInactivos()
+        {
+            var ListaUsuarioSinPas = _daoUsuarios.GetAllSinPass();
+            var listadoInactivos = new List<Usuario>();
+
+            foreach (Usuario Usuario in ListaUsuarioSinPas)
+            {
+                if (Usuario.Estado == "INACTIVO")
+                {
+                    listadoInactivos.Add(Usuario);
+                }
+            }
+            return listadoInactivos;
+        }
+
+        /// <summary>
+        /// Este método retorna la lista de usuarios que el estado sea Activo
+        /// </summary>
+        /// <returns>Retorna la lista de usuarios Activos.</returns>
+        public List<Usuario> GetAllActivos()
             {
                 var ListaUsurios = _daoUsuarios.GetAll();
                 var ListaActivos = new List<Usuario>();
