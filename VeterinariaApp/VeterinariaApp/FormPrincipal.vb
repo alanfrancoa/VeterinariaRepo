@@ -65,4 +65,9 @@ Public Class FormPrincipal
         Dim formClientes As New AltaClientes()
         AltaClientes.Show()
     End Sub
+
+    Private Sub UsuariosToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem2.Click
+        Dim formUsuarios As New AltaUsuarios()
+        formUsuarios.Show()
+    End Sub
 End Class
