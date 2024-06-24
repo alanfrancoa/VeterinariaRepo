@@ -146,10 +146,40 @@
     <Compile Include="Forms\ABM\Modificacion\EditarUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Administrador\DialogoAdministrador.Designer.vb">
+      <DependentUpon>DialogoAdministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrador\DialogoAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\BarraDeProgreso\BarraDeProgreso.Designer.vb">
       <DependentUpon>BarraDeProgreso.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\BarraDeProgreso\BarraDeProgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\BuscadorClientes.Designer.vb">
+      <DependentUpon>BuscadorClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\BuscadorClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\BuscadorEspecies.Designer.vb">
+      <DependentUpon>BuscadorEspecies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\BuscadorEspecies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\BuscadorMascotas.Designer.vb">
+      <DependentUpon>BuscadorMascotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\BuscadorMascotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buscador\BuscadorUsuarios.Designer.vb">
+      <DependentUpon>BuscadorUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buscador\BuscadorUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Buscador\Clientes\BusquedaCliente.Designer.vb">
@@ -224,6 +254,18 @@
     <Compile Include="Forms\Login\FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Reportes\CalculoDePesos.Designer.vb">
+      <DependentUpon>CalculoDePesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\CalculoDePesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reportes\CantidadDeAnimales.Designer.vb">
+      <DependentUpon>CantidadDeAnimales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reportes\CantidadDeAnimales.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -256,6 +298,45 @@
     <EmbeddedResource Include="Forms\ABM\Alta\AltaUsuarios.resx">
       <DependentUpon>AltaUsuarios.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrador\DialogoAdministrador.resx">
+      <DependentUpon>DialogoAdministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BarraDeProgreso\BarraDeProgreso.resx">
+      <DependentUpon>BarraDeProgreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\BuscadorClientes.resx">
+      <DependentUpon>BuscadorClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\BuscadorEspecies.resx">
+      <DependentUpon>BuscadorEspecies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\BuscadorMascotas.resx">
+      <DependentUpon>BuscadorMascotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\BuscadorUsuarios.resx">
+      <DependentUpon>BuscadorUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\Clientes\BusquedaCliente.resx">
+      <DependentUpon>BusquedaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\Clientes\BusquedaClientesListado.resx">
+      <DependentUpon>BusquedaClientesListado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\Especies\BusquedaEspecie.resx">
+      <DependentUpon>BusquedaEspecie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\Especies\BusquedaMascotaPorEspecie.resx">
+      <DependentUpon>BusquedaMascotaPorEspecie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\Mascotas\BusquedaMascota.resx">
+      <DependentUpon>BusquedaMascota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\Mascotas\BusquedaMascotaListado.resx">
+      <DependentUpon>BusquedaMascotaListado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buscador\Usuarios\BusquedaUsuario.resx">
+      <DependentUpon>BusquedaUsuario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Listados\FormListadoClientes.resx">
       <DependentUpon>FormListadoClientes.vb</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +351,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\CalculoDePesos.resx">
+      <DependentUpon>CalculoDePesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reportes\CantidadDeAnimales.resx">
+      <DependentUpon>CantidadDeAnimales.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

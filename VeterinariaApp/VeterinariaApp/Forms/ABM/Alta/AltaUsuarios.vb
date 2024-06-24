@@ -26,19 +26,33 @@ Public Class AltaUsuarios
                 MessageBox.Show("LA CONTRASEÑAS NO COINCIDEN.")
                 Return
             End If
+            Dim loginAdminForm As New DialogoAdministrador
+            Dim isAdmin As Boolean = loginAdminForm.ShowAndVerifyCredentials()
 
-            Dim nuevoUsuario As New Usuario(Username, Nombre, Clave)
-            Dim Insert = _daoUsuarios.Insert(nuevoUsuario)
+            If isAdmin Then
+                ' Lógica para cuando el usuario es un administrador válido
+                Console.WriteLine("Acceso concedido: El usuario es Administrador.")
+                Dim nuevoUsuario As New Usuario(Username, Nombre, Clave)
+                Dim Insert = _daoUsuarios.Insert(nuevoUsuario)
+                Me.Close()
+                Dim BarraDeProgreso As New BarraDeProgreso
+                BarraDeProgreso.Show()
 
-            If Insert Then
-                MessageBox.Show("USUARIO AGREGADO.")
+                If Insert Then
+                    MessageBox.Show("USUARIO AGREGADO.")
+                Else
+                    MessageBox.Show("NO SE HA PODIDO AGREGAR EL USUARIO.")
+                End If
             Else
-                MessageBox.Show("NO SE HA PODIDO AGREGAR EL USUARIO.")
+                Dim BarraDeProgreso As New BarraDeProgreso
+                BarraDeProgreso.Show()
+                ' Lógica para cuando las credenciales son inválidas o el usuario no es administrador
+                Console.WriteLine("Acceso denegado: Credenciales inválidas o el usuario no es Administrador.")
             End If
-
 
         Catch ex As Exception
             MessageBox.Show($"ERROR {ex}")
         End Try
     End Sub
+
 End Class
