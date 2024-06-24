@@ -35,7 +35,7 @@ Public Class FormPrincipal
 
     Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
         Dim usuariosContainer As New ContenedorUsuarios()
-        Dim listaUsuarios = usuariosContainer.GetUsuariosListado()
+        Dim listaUsuarios = usuariosContainer.GetUsuariosListadoCompleto()
         ' Reutilizar la instancia de UsuariosContainer
         Dim formUsuarios As New FormListadoUsuarios(listaUsuarios)
         formUsuarios.Show()
@@ -65,4 +65,13 @@ Public Class FormPrincipal
         Dim formClientes As New AltaClientes()
         AltaClientes.Show()
     End Sub
+
+    Private Sub EspeciesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EspeciesToolStripMenuItem.Click
+        Dim especiesContainer As New ContenedorEspecies()
+        Dim listaEspecies = especiesContainer.GetAllEspecies()
+
+        Dim formEspecies As New FormListadoEspecies(listaEspecies)
+        formEspecies.Show()
+    End Sub
+
 End Class
