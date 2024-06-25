@@ -1,4 +1,5 @@
-﻿Imports VeterinariaServices.Containers
+﻿Imports System.Globalization
+Imports VeterinariaServices.Containers
 Imports VeterinariaServices.DAOs
 Imports VeterinariaServices.Models
 
@@ -23,8 +24,9 @@ Public Class AltaMascotas
             End If
 
             If Not DateTime.TryParse(DateTimePicker1.Value, FechaNacimiento) Then
-                MessageBox.Show("LOLETE")
-            End If '
+                MessageBox.Show("LA FECHA INGRESADA NO ES VALIDA")
+                Return
+            End If
 
             If Not Decimal.TryParse(TextBoxPeso.Text, Peso) Or Not Integer.TryParse(TextBoxDni.Text, DniCliente) Then
                 MessageBox.Show("LOS VALORES NUMERICOS NO SON VALIDOS.")
@@ -38,10 +40,18 @@ Public Class AltaMascotas
 
             Dim fechaActual As DateTime = DateTime.Today
 
-            If FechaNacimiento > fechaActual OrElse FechaNacimiento = DateTime.MinValue Then
+
+            If fechaActual.Year < FechaNacimiento.Year Then
                 MessageBox.Show("LA FECHA INGRESADA NO ES VALIDA")
                 Return
+            ElseIf fechaActual.Year = FechaNacimiento.Year Then
+                If fechaActual.DayOfYear < FechaNacimiento.DayOfYear Then
+                    MessageBox.Show("LA FECHA INGRESADA NO ES VALIDA")
+                    Return
+                End If
             End If
+
+            'Arregla esto
 
             clienteBuscado = ContainerClientes.buscarPorDni(DniCliente)
             Dim IdCliente = clienteBuscado.Id

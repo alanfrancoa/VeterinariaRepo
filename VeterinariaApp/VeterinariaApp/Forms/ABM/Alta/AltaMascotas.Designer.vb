@@ -131,6 +131,7 @@ Partial Class AltaMascotas
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.CustomFormat = "MM dd yyyy"
         Me.DateTimePicker1.Location = New System.Drawing.Point(215, 175)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(242, 20)
