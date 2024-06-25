@@ -166,7 +166,7 @@ Partial Class EditarClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(577, 391)
+        Me.ClientSize = New System.Drawing.Size(584, 386)
         Me.Controls.Add(Me.ButtonEditMail)
         Me.Controls.Add(Me.ButtonEditTelefono)
         Me.Controls.Add(Me.ButtonEditDNI)

@@ -31,7 +31,7 @@ Partial Class SelectorClientes
         'ButtonBuscar
         '
         Me.ButtonBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonBuscar.Location = New System.Drawing.Point(374, 109)
+        Me.ButtonBuscar.Location = New System.Drawing.Point(380, 109)
         Me.ButtonBuscar.Name = "ButtonBuscar"
         Me.ButtonBuscar.Size = New System.Drawing.Size(35, 40)
         Me.ButtonBuscar.TabIndex = 23
@@ -42,7 +42,7 @@ Partial Class SelectorClientes
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(63, 113)
+        Me.Label2.Location = New System.Drawing.Point(69, 113)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(53, 15)
         Me.Label2.TabIndex = 22
@@ -52,7 +52,7 @@ Partial Class SelectorClientes
         '
         Me.LabelBuscadorClientes.AutoSize = True
         Me.LabelBuscadorClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(169, 43)
+        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(175, 43)
         Me.LabelBuscadorClientes.Name = "LabelBuscadorClientes"
         Me.LabelBuscadorClientes.Size = New System.Drawing.Size(135, 16)
         Me.LabelBuscadorClientes.TabIndex = 21
@@ -60,7 +60,7 @@ Partial Class SelectorClientes
         '
         'TextBoxDNI
         '
-        Me.TextBoxDNI.Location = New System.Drawing.Point(63, 129)
+        Me.TextBoxDNI.Location = New System.Drawing.Point(69, 129)
         Me.TextBoxDNI.Name = "TextBoxDNI"
         Me.TextBoxDNI.Size = New System.Drawing.Size(305, 20)
         Me.TextBoxDNI.TabIndex = 20
@@ -69,7 +69,7 @@ Partial Class SelectorClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(472, 197)
+        Me.ClientSize = New System.Drawing.Size(484, 211)
         Me.Controls.Add(Me.ButtonBuscar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LabelBuscadorClientes)
