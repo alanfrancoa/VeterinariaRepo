@@ -100,4 +100,14 @@ Public Class FormPrincipal
         Dim FormEditarMascota As New SelectorMascota()
         FormEditarMascota.Show()
     End Sub
+
+    Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
+        Dim FormBajaCliente As New SelectorBajaCliente()
+        FormBajaCliente.Show()
+    End Sub
+
+    Private Sub MToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MToolStripMenuItem.Click
+        Dim FormBajaMascota As New SelectorBajaMascotas()
+        FormBajaMascota.Show()
+    End Sub
 End Class
