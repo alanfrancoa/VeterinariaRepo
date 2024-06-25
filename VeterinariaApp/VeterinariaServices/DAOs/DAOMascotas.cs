@@ -195,5 +195,69 @@ namespace VeterinariaServices.DAOs
             return RowsAffected > 0;
         }
 
+        /// <summary>
+        /// Este Metodo realiza una query para modificar el estado las mascotas de 'Activo' a 'Inactivo' y verifica que se haya modificado la DB
+        /// </summary>
+        /// <param name="idCliente">Recibe el Id del cliente buscado</param>
+        ///<returns>Retorna un valor true en caso de que se haya insertado correctamente.</returns>
+        public bool BajaPorIDCliente(int idCliente) 
+        {
+            string Query = $"UPDATE MASCOTAS SET ESTADO = 'INACTIVO' WHERE ID_CLIENTE = {idCliente}";
+            var conexion = this.PrepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = Query;
+            int RowsAffected = comando.ExecuteNonQuery();
+
+            return RowsAffected > 0;
+        }
+
+        /// <summary>
+        /// Este Metodo realiza una query para modificar el estado las mascotas de 'Inactivo' a 'Activo' y verifica que se haya modificado la DB
+        /// </summary>
+        /// <param name="idCliente">Recibe el Id del cliente buscado</param>
+        ///<returns>Retorna un valor true en caso de que se haya insertado correctamente.</returns>
+        public bool ActivarPorIDCliente(int idCliente)
+        {
+            string Query = $"UPDATE MASCOTAS SET ESTADO = 'ACTIVO' WHERE ID_CLIENTE = {idCliente}";
+            var conexion = this.PrepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = Query;
+            int RowsAffected = comando.ExecuteNonQuery();
+
+            return RowsAffected > 0;
+        }
+
+        /// <summary>
+        /// Este Metodo realiza una query para modificar el estado de la mascota de 'Activo' a 'Inactivo' y verifica que se haya modificado la DB
+        /// </summary>
+        /// <param name="Id">Recibe el Id del cliente buscado</param>
+        ///<returns>Retorna un valor true en caso de que se haya insertado correctamente.</returns>
+        public bool Delete(long Id)
+        {
+            string Query = $"UPDATE MASCOTAS SET ESTADO = 'INACTIVO' WHERE ID = {Id}";
+            var conexion = this.PrepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = Query;
+            int RowsAffected = comando.ExecuteNonQuery();
+
+            return RowsAffected > 0;
+        }
+
+        /// <summary>
+        /// Este Metodo realiza una query para modificar el estado de Mascota de 'Inactivo' a 'Activo' y verifica que se haya modificado la DB
+        /// </summary>
+        /// <param name="Id">Recibe el Id del cliente buscado</param>
+        ///<returns>Retorna un valor true en caso de que se haya insertado correctamente.</returns>
+        public bool Activar(long Id)
+        {
+            string Query = $"UPDATE MASCOTAS SET ESTADO = 'ACTIVO' WHERE ID = {Id}";
+
+            var conexion = this.PrepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = Query;
+            int RowsAffected = comando.ExecuteNonQuery();
+
+            return RowsAffected > 0;
+        }
     }
 }

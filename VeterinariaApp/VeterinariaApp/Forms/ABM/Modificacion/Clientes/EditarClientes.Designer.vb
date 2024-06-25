@@ -182,7 +182,7 @@ Partial Class EditarClientes
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "EditarClientes"
-        Me.Text = "Editar Cliente"
+        Me.Text = " "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

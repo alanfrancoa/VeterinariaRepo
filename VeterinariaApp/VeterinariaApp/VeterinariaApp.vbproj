@@ -104,22 +104,22 @@
     <Compile Include="Forms\ABM\Alta\AltaUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ABM\Baja\BajaClientes.Designer.vb">
-      <DependentUpon>BajaClientes.vb</DependentUpon>
+    <Compile Include="Forms\ABM\Baja\Clientes\MuestraClienteBaja.Designer.vb">
+      <DependentUpon>MuestraClienteBaja.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ABM\Baja\BajaClientes.vb">
+    <Compile Include="Forms\ABM\Baja\Clientes\MuestraClienteBaja.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ABM\Baja\BajaMascotas.Designer.vb">
-      <DependentUpon>BajaMascotas.vb</DependentUpon>
+    <Compile Include="Forms\ABM\Baja\Mascotas\MuestraMascotaBaja.Designer.vb">
+      <DependentUpon>MuestraMascotaBaja.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ABM\Baja\BajaMascotas.vb">
+    <Compile Include="Forms\ABM\Baja\Mascotas\MuestraMascotaBaja.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ABM\Baja\BajaUsuarios.Designer.vb">
+    <Compile Include="Forms\ABM\Baja\Usuarios\BajaUsuarios.Designer.vb">
       <DependentUpon>BajaUsuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ABM\Baja\BajaUsuarios.vb">
+    <Compile Include="Forms\ABM\Baja\Usuarios\BajaUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ABM\Modificacion\Clientes\EditarClientes.Designer.vb">
@@ -158,28 +158,40 @@
     <Compile Include="Forms\ABM\Modificacion\Usuarios\EditarUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ABM\Selector\SelectorClientes.Designer.vb">
+    <Compile Include="Forms\ABM\SelectorBaja\SelectorBajaCliente.Designer.vb">
+      <DependentUpon>SelectorBajaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\SelectorBaja\SelectorBajaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\SelectorBaja\SelectorBajaMascotas.Designer.vb">
+      <DependentUpon>SelectorBajaMascotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\SelectorBaja\SelectorBajaMascotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ABM\SelectorModificacion\SelectorClientes.Designer.vb">
       <DependentUpon>SelectorClientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ABM\Selector\SelectorClientes.vb">
+    <Compile Include="Forms\ABM\SelectorModificacion\SelectorClientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ABM\Selector\SelectorEspecie.Designer.vb">
+    <Compile Include="Forms\ABM\SelectorModificacion\SelectorEspecie.Designer.vb">
       <DependentUpon>SelectorEspecie.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ABM\Selector\SelectorEspecie.vb">
+    <Compile Include="Forms\ABM\SelectorModificacion\SelectorEspecie.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ABM\Selector\SelectorMascota.Designer.vb">
+    <Compile Include="Forms\ABM\SelectorModificacion\SelectorMascota.Designer.vb">
       <DependentUpon>SelectorMascota.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ABM\Selector\SelectorMascota.vb">
+    <Compile Include="Forms\ABM\SelectorModificacion\SelectorMascota.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ABM\Selector\SelectorUsuario.Designer.vb">
+    <Compile Include="Forms\ABM\SelectorModificacion\SelectorUsuario.Designer.vb">
       <DependentUpon>SelectorUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ABM\Selector\SelectorUsuario.vb">
+    <Compile Include="Forms\ABM\SelectorModificacion\SelectorUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Administrador\DialogoAdministrador.Designer.vb">
@@ -334,6 +346,12 @@
     <EmbeddedResource Include="Forms\ABM\Alta\AltaUsuarios.resx">
       <DependentUpon>AltaUsuarios.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Baja\Clientes\MuestraClienteBaja.resx">
+      <DependentUpon>MuestraClienteBaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Baja\Mascotas\MuestraMascotaBaja.resx">
+      <DependentUpon>MuestraMascotaBaja.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ABM\Modificacion\Clientes\EditarClientes.resx">
       <DependentUpon>EditarClientes.vb</DependentUpon>
     </EmbeddedResource>
@@ -346,13 +364,19 @@
     <EmbeddedResource Include="Forms\ABM\Modificacion\Mascotas\MuestraMascota.resx">
       <DependentUpon>MuestraMascota.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ABM\Selector\SelectorClientes.resx">
+    <EmbeddedResource Include="Forms\ABM\SelectorBaja\SelectorBajaCliente.resx">
+      <DependentUpon>SelectorBajaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\SelectorBaja\SelectorBajaMascotas.resx">
+      <DependentUpon>SelectorBajaMascotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\SelectorModificacion\SelectorClientes.resx">
       <DependentUpon>SelectorClientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ABM\Selector\SelectorEspecie.resx">
+    <EmbeddedResource Include="Forms\ABM\SelectorModificacion\SelectorEspecie.resx">
       <DependentUpon>SelectorEspecie.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ABM\Selector\SelectorMascota.resx">
+    <EmbeddedResource Include="Forms\ABM\SelectorModificacion\SelectorMascota.resx">
       <DependentUpon>SelectorMascota.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrador\DialogoAdministrador.resx">
