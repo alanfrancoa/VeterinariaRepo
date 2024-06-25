@@ -17,7 +17,7 @@ namespace VeterinariaServices.DAOs
         ///<returns>Retorna la conexion a DB</returns>
         private IDbConnection prepararConexion()
         {
-            string connectionString = "Server=DESKTOP-9ADK1UP\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
+            string connectionString = "Server=PCGAMINGALAN\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
 
             SqlConnection conexion = new SqlConnection(connectionString);
 
@@ -104,6 +104,20 @@ namespace VeterinariaServices.DAOs
             comando.CommandText = Query;
             int RowsAffected = comando.ExecuteNonQuery();
 
+            return RowsAffected > 0;
+        }
+        /// <summary>
+        /// Este Metodo realiza una query para editar los detalles de un cliente existente en la DB y verifica que se haya modificado correctamente.
+        /// </summary>
+        /// <param name="query">Recibe un string con la query de actualización para ejecutar en la DB</param>
+        ///<returns>Retorna un valor true en caso de que se haya actualizado correctamente.</returns>
+        public bool Edit(string query)
+        {
+            var conexion = this.prepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = query;
+            int RowsAffected = comando.ExecuteNonQuery();
+            conexion.Close();
             return RowsAffected > 0;
         }
     }

@@ -91,4 +91,8 @@ Public Class FormPrincipal
         formMascotas.Show()
     End Sub
 
+    Private Sub ClientesToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem3.Click
+        Dim FormEditarCliente As New SelectorClientes()
+        FormEditarCliente.Show()
+    End Sub
 End Class
