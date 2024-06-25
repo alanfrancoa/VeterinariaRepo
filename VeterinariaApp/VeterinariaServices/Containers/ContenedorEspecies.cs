@@ -48,9 +48,29 @@ namespace VeterinariaServices.Containers
                 if (especie.Nombre == nombre)
                 {
                     especieBuscada = especie;
+                    break;
                 }
             }
             return especieBuscada;
+        }
+        public String NombrePorID(int id) 
+        {
+            Especie especieBuscada = null;
+            var ListaEspecies = (_daoEspecies.GetAll());
+
+            foreach (Especie especie in ListaEspecies)
+            {
+                if (especie.Id == id) 
+                { 
+                    especieBuscada =especie;
+                    break;
+                }
+            }
+            if (especieBuscada != null) 
+            { 
+                return especieBuscada.Nombre;
+            }
+            return null;
         }
     }
 

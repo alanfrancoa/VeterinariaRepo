@@ -94,9 +94,51 @@ namespace VeterinariaServices.Containers
                 if (cliente.Dni == Dni)
                 {
                     clienteBuscado = cliente;
+                    break;
                 }
             }
             return clienteBuscado;
+        }
+
+        public Cliente BuscarClientePorID(int id)
+        {
+            Cliente clienteBuscado = null;
+            var ListaDeClientes = _daoClientes.GetAll();
+
+            foreach (Cliente cliente in ListaDeClientes)
+            {
+                if (cliente.Id == id)
+                {
+                    clienteBuscado = cliente;
+                    break;
+                }
+            }
+            return clienteBuscado;
+        }
+
+        public String datosDeClientePorID(int id) 
+        { 
+            Cliente clienteBuscado=null;
+            var ListaDeClientes = _daoClientes.GetAll();
+
+            foreach (Cliente cliente in ListaDeClientes)
+            {
+                if (cliente.Id == id) 
+                { 
+                    clienteBuscado = cliente;
+                    break;
+                }
+            }
+            if (clienteBuscado != null) 
+            { 
+                String nombreCliente = clienteBuscado.Nombre;
+                String telefonoCliente = clienteBuscado.Telefono.ToString();
+
+                String infoCliente = $"{nombreCliente} [{telefonoCliente}]";
+                return infoCliente;
+                           
+            }
+            return null;
         }
 
     }

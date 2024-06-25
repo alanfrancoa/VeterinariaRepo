@@ -36,7 +36,7 @@ namespace VeterinariaServices.DAOs
             IDbConnection conexion = this.PrepararConexion();
             IDbCommand Comando = conexion.CreateCommand();
 
-            Comando.CommandText = "SELECT ID,NOMBRE,PESO,ID_CLIENTE,ID_ESPECIE,ESTADO FROM MASCOTAS";
+            Comando.CommandText = "SELECT ID,NOMBRE,PESO,FECHA_NACIMIENTO,ID_CLIENTE,ID_ESPECIE,ESTADO FROM MASCOTAS";
 
             IDataReader lector = Comando.ExecuteReader();
 
@@ -49,10 +49,10 @@ namespace VeterinariaServices.DAOs
                     Id = lector.GetInt32(0),
                     Nombre = lector.GetString(1),
                     Peso = lector.GetDecimal(2),
-                    IdCliente = lector.GetInt32(3),
-                    IdEspecie = lector.GetInt32(4),
-                    Estado = lector.GetString(5),
-
+                    FechaNacimiento = lector.GetDateTime(3),
+                    IdCliente = lector.GetInt32(4),
+                    IdEspecie = lector.GetInt32(5),
+                    Estado = lector.GetString(6),
                 };
                 ListaMascotas.Add(mascota);
             }
@@ -178,6 +178,20 @@ namespace VeterinariaServices.DAOs
 
             return dt;
 
+        }
+        /// <summary>
+        /// Este Metodo realiza una query para editar los detalles de una mascota existente en la DB y verifica que se haya modificado correctamente.
+        /// </summary>
+        /// <param name="query">Recibe un string con la query de actualización para ejecutar en la DB</param>
+        ///<returns>Retorna un valor true en caso de que se haya actualizado correctamente.</returns>
+        public bool Edit(string query)
+        {
+            var conexion = this.PrepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = query;
+            int RowsAffected = comando.ExecuteNonQuery();
+            conexion.Close();
+            return RowsAffected > 0;
         }
 
     }

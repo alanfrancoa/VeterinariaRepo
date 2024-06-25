@@ -68,6 +68,26 @@ namespace VeterinariaServices.Containers
             }
             return listaInactivos;
         }
+        /// <summary>
+        /// Busca una mascota en la lista de todas las mascotas por su ID.
+        /// </summary>
+        /// <param name="id">El ID de la mascota a buscar.</param>
+        /// <returns>Retorna la mascota con el ID especificado, o null si no se encuentra.</returns>
+        public Mascota buscarPorID(int id)
+        { 
+            var ListaMascotas = _daoMascota.GetAll();
+            Mascota mascotaBuscada = null;
+
+            foreach (Mascota mascota in ListaMascotas)
+            {
+                if (mascota.Id == id) 
+                { 
+                    mascotaBuscada = mascota;
+                    break;
+                }
+            }
+            return mascotaBuscada;  
+        }
 
     }
 }

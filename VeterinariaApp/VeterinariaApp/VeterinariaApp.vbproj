@@ -146,6 +146,12 @@
     <Compile Include="Forms\ABM\Modificacion\Mascotas\EditarMascotas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\ABM\Modificacion\Mascotas\MuestraMascota.Designer.vb">
+      <DependentUpon>MuestraMascota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABM\Modificacion\Mascotas\MuestraMascota.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\ABM\Modificacion\Usuarios\EditarUsuarios.Designer.vb">
       <DependentUpon>EditarUsuarios.vb</DependentUpon>
     </Compile>
@@ -334,8 +340,20 @@
     <EmbeddedResource Include="Forms\ABM\Modificacion\Clientes\MuestraCliente.resx">
       <DependentUpon>MuestraCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Modificacion\Mascotas\EditarMascotas.resx">
+      <DependentUpon>EditarMascotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Modificacion\Mascotas\MuestraMascota.resx">
+      <DependentUpon>MuestraMascota.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ABM\Selector\SelectorClientes.resx">
       <DependentUpon>SelectorClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Selector\SelectorEspecie.resx">
+      <DependentUpon>SelectorEspecie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABM\Selector\SelectorMascota.resx">
+      <DependentUpon>SelectorMascota.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrador\DialogoAdministrador.resx">
       <DependentUpon>DialogoAdministrador.vb</DependentUpon>
