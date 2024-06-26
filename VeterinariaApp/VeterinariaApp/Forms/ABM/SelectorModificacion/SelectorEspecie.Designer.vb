@@ -25,7 +25,7 @@ Partial Class SelectorEspecie
         Me.ButtonBuscar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LabelBuscadorClientes = New System.Windows.Forms.Label()
-        Me.TextBoxDNI = New System.Windows.Forms.TextBox()
+        Me.TextBoxNombre = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ButtonBuscar
@@ -58,12 +58,12 @@ Partial Class SelectorEspecie
         Me.LabelBuscadorClientes.TabIndex = 25
         Me.LabelBuscadorClientes.Text = "Buscador de Especie"
         '
-        'TextBoxDNI
+        'TextBoxNombre
         '
-        Me.TextBoxDNI.Location = New System.Drawing.Point(69, 138)
-        Me.TextBoxDNI.Name = "TextBoxDNI"
-        Me.TextBoxDNI.Size = New System.Drawing.Size(305, 20)
-        Me.TextBoxDNI.TabIndex = 24
+        Me.TextBoxNombre.Location = New System.Drawing.Point(69, 138)
+        Me.TextBoxNombre.Name = "TextBoxNombre"
+        Me.TextBoxNombre.Size = New System.Drawing.Size(305, 20)
+        Me.TextBoxNombre.TabIndex = 24
         '
         'SelectorEspecie
         '
@@ -73,7 +73,7 @@ Partial Class SelectorEspecie
         Me.Controls.Add(Me.ButtonBuscar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LabelBuscadorClientes)
-        Me.Controls.Add(Me.TextBoxDNI)
+        Me.Controls.Add(Me.TextBoxNombre)
         Me.Name = "SelectorEspecie"
         Me.Text = "Edicion de Especie"
         Me.ResumeLayout(False)
@@ -84,5 +84,5 @@ Partial Class SelectorEspecie
     Friend WithEvents ButtonBuscar As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents LabelBuscadorClientes As Label
-    Friend WithEvents TextBoxDNI As TextBox
+    Friend WithEvents TextBoxNombre As TextBox
 End Class

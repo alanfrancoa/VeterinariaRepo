@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class SelectorUsuario
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class SelectorBajaUsername
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -14,13 +14,13 @@ Partial Class SelectorUsuario
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
+    'Requerido por el Diseñador de Windows Forms
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
+    'Se puede modificar usando el Diseñador de Windows Forms.  
+    'No lo modifique con el editor de código.
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ButtonBuscar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,7 +34,7 @@ Partial Class SelectorUsuario
         Me.ButtonBuscar.Location = New System.Drawing.Point(380, 118)
         Me.ButtonBuscar.Name = "ButtonBuscar"
         Me.ButtonBuscar.Size = New System.Drawing.Size(35, 40)
-        Me.ButtonBuscar.TabIndex = 35
+        Me.ButtonBuscar.TabIndex = 31
         Me.ButtonBuscar.Text = "🔍"
         Me.ButtonBuscar.UseVisualStyleBackColor = True
         '
@@ -44,9 +44,9 @@ Partial Class SelectorUsuario
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(69, 122)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(118, 15)
-        Me.Label2.TabIndex = 34
-        Me.Label2.Text = "Nombre de Usuario:"
+        Me.Label2.Size = New System.Drawing.Size(90, 15)
+        Me.Label2.TabIndex = 30
+        Me.Label2.Text = "Por Username:"
         '
         'LabelBuscadorClientes
         '
@@ -55,7 +55,7 @@ Partial Class SelectorUsuario
         Me.LabelBuscadorClientes.Location = New System.Drawing.Point(175, 52)
         Me.LabelBuscadorClientes.Name = "LabelBuscadorClientes"
         Me.LabelBuscadorClientes.Size = New System.Drawing.Size(141, 16)
-        Me.LabelBuscadorClientes.TabIndex = 33
+        Me.LabelBuscadorClientes.TabIndex = 29
         Me.LabelBuscadorClientes.Text = "Buscador de Usuarios"
         '
         'TextBoxUsername
@@ -63,9 +63,9 @@ Partial Class SelectorUsuario
         Me.TextBoxUsername.Location = New System.Drawing.Point(69, 138)
         Me.TextBoxUsername.Name = "TextBoxUsername"
         Me.TextBoxUsername.Size = New System.Drawing.Size(305, 20)
-        Me.TextBoxUsername.TabIndex = 32
+        Me.TextBoxUsername.TabIndex = 28
         '
-        'SelectorUsuario
+        'SelectorBajaUsername
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -74,8 +74,9 @@ Partial Class SelectorUsuario
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LabelBuscadorClientes)
         Me.Controls.Add(Me.TextBoxUsername)
-        Me.Name = "SelectorUsuario"
-        Me.Text = "SelectorUsuario"
+        Me.Name = "SelectorBajaUsername"
+        Me.Text = "Baja de Usuarios"
+        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

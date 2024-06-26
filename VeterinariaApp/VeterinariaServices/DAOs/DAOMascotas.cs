@@ -19,7 +19,7 @@ namespace VeterinariaServices.DAOs
         ///<returns>Retorna la conexion a DB</returns>
         private IDbConnection PrepararConexion()
         {
-            string ConnectionString = "Server=PCGAMINGALAN\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
+            string ConnectionString = "Server=DESKTOP-9ADK1UP\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
 
             SqlConnection conexion = new SqlConnection(ConnectionString);
 
@@ -41,6 +41,46 @@ namespace VeterinariaServices.DAOs
 
             IDataReader lector = Comando.ExecuteReader();
 
+            var ListaMascotas = new List<Mascota>();
+
+            while (lector.Read())
+            {
+                Mascota mascota = new Mascota()
+                {
+                    Id = lector.GetInt32(0),
+                    Nombre = lector.GetString(1),
+                    Peso = lector.GetDecimal(2),
+                    FechaNacimiento = lector.GetDateTime(3),
+                    IdCliente = lector.GetInt32(4),
+                    IdEspecie = lector.GetInt32(5),
+                    Estado = lector.GetString(6),
+                };
+                ListaMascotas.Add(mascota);
+            }
+            conexion.Close();
+            return ListaMascotas;
+        }
+
+        public List<Mascota> GetPorRango(int Edad1, int Edad2)
+        {
+            IDbConnection conexion = this.PrepararConexion();
+            IDbCommand Comando = conexion.CreateCommand();
+            Comando.CommandText  = @"
+            SELECT 
+                ESPECIES.NOMBRE AS NOMBRE_ESPECIE,
+                MAX(MASCOTAS.PESO) AS PESO_MAXIMO,
+                MIN(MASCOTAS.PESO) AS PESO_MINIMO,
+                AVG(MASCOTAS.PESO) AS PESO_PROMEDIO
+            FROM 
+                MASCOTAS
+            JOIN 
+                ESPECIES ON MASCOTAS.ID_ESPECIE = ESPECIES.ID
+            WHERE 
+                DATEDIFF(YEAR, MASCOTAS.FECHA_NACIMIENTO, GETDATE()) BETWEEN " + Edad1 + @" AND " + Edad2 + @"
+            GROUP BY 
+                ESPECIES.NOMBRE;";
+
+            IDataReader lector = Comando.ExecuteReader();
             var ListaMascotas = new List<Mascota>();
 
             while (lector.Read())

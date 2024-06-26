@@ -19,7 +19,7 @@ namespace VeterinariaServices.DAOs
         ///<returns>Retorna la conexion a DB</returns>
         private IDbConnection prepararConexion()
         {
-            string connectionString = "Server=PCGAMINGALAN\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
+            string connectionString = "Server=DESKTOP-9ADK1UP\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
 
             SqlConnection conexion = new SqlConnection(connectionString);
 
@@ -166,6 +166,15 @@ namespace VeterinariaServices.DAOs
 
             conexion.Close();
 
+            return RowsAffected > 0;
+        }
+        public bool Edit(string query)
+        {
+            var conexion = this.prepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = query;
+            int RowsAffected = comando.ExecuteNonQuery();
+            conexion.Close();
             return RowsAffected > 0;
         }
     }

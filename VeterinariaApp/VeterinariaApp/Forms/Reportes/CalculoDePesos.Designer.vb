@@ -25,14 +25,15 @@ Partial Class CalculoDePesos
         Me.DataGridViewCalculoPesos = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.NumericUpDownDesde = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDownHasta = New System.Windows.Forms.NumericUpDown()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.NumericUpDownHasta = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDownDesde = New System.Windows.Forms.NumericUpDown()
+        Me.ButtonBusqueda = New System.Windows.Forms.Button()
         CType(Me.DataGridViewCalculoPesos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.NumericUpDownDesde, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownHasta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDownDesde, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridViewCalculoPesos
@@ -58,6 +59,7 @@ Partial Class CalculoDePesos
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ButtonBusqueda)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.NumericUpDownHasta)
@@ -69,19 +71,14 @@ Partial Class CalculoDePesos
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filtrado de Edad"
         '
-        'NumericUpDownDesde
+        'Label3
         '
-        Me.NumericUpDownDesde.Location = New System.Drawing.Point(31, 51)
-        Me.NumericUpDownDesde.Name = "NumericUpDownDesde"
-        Me.NumericUpDownDesde.Size = New System.Drawing.Size(76, 20)
-        Me.NumericUpDownDesde.TabIndex = 0
-        '
-        'NumericUpDownHasta
-        '
-        Me.NumericUpDownHasta.Location = New System.Drawing.Point(170, 51)
-        Me.NumericUpDownHasta.Name = "NumericUpDownHasta"
-        Me.NumericUpDownHasta.Size = New System.Drawing.Size(76, 20)
-        Me.NumericUpDownHasta.TabIndex = 1
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(127, 34)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Hasta:"
         '
         'Label2
         '
@@ -92,14 +89,29 @@ Partial Class CalculoDePesos
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Desde:"
         '
-        'Label3
+        'NumericUpDownHasta
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(167, 34)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Hasta:"
+        Me.NumericUpDownHasta.Location = New System.Drawing.Point(130, 51)
+        Me.NumericUpDownHasta.Name = "NumericUpDownHasta"
+        Me.NumericUpDownHasta.Size = New System.Drawing.Size(76, 20)
+        Me.NumericUpDownHasta.TabIndex = 1
+        '
+        'NumericUpDownDesde
+        '
+        Me.NumericUpDownDesde.Location = New System.Drawing.Point(31, 51)
+        Me.NumericUpDownDesde.Name = "NumericUpDownDesde"
+        Me.NumericUpDownDesde.Size = New System.Drawing.Size(76, 20)
+        Me.NumericUpDownDesde.TabIndex = 0
+        '
+        'ButtonBusqueda
+        '
+        Me.ButtonBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBusqueda.Location = New System.Drawing.Point(227, 34)
+        Me.ButtonBusqueda.Name = "ButtonBusqueda"
+        Me.ButtonBusqueda.Size = New System.Drawing.Size(35, 40)
+        Me.ButtonBusqueda.TabIndex = 18
+        Me.ButtonBusqueda.Text = "🔍"
+        Me.ButtonBusqueda.UseVisualStyleBackColor = True
         '
         'CalculoDePesos
         '
@@ -114,8 +126,8 @@ Partial Class CalculoDePesos
         CType(Me.DataGridViewCalculoPesos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.NumericUpDownDesde, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDownHasta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDownDesde, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -128,4 +140,5 @@ Partial Class CalculoDePesos
     Friend WithEvents Label2 As Label
     Friend WithEvents NumericUpDownHasta As NumericUpDown
     Friend WithEvents NumericUpDownDesde As NumericUpDown
+    Friend WithEvents ButtonBusqueda As Button
 End Class
