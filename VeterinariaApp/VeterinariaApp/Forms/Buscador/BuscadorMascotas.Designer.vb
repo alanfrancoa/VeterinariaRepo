@@ -129,7 +129,7 @@ Partial Class BuscadorMascotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(599, 450)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.ButtonBusquedaMascotaNombre)
         Me.Controls.Add(Me.ButtonBusquedaDNIClienteMasota)
         Me.Controls.Add(Me.ButtonBusquedaIDMascota)

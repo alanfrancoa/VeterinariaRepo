@@ -94,14 +94,12 @@ namespace VeterinariaServices.DAOs
             return RowsAffected > 0;
         }
         /// <summary>
-        /// Este Metodo realiza una query para modificar el estado de cliente de 'Inactivo' a 'Activo' y verifica que se haya modificado la DB
+        /// Este Metodo realiza una query para modificar el estado de cliente de 'Activo' a 'Inactivo' y verifica que se haya modificado la DB
         /// </summary>
         /// <param name="Id">Recibe el Id del cliente buscado</param>
-        ///<returns>Retorna un valor true en caso de que se haya insertado correctamente.</returns>
         public bool Activar(long Id)
         {
             string Query = $"UPDATE USUARIOS SET ESTADO = 'ACTIVO' WHERE ID = {Id}";
-
             var conexion = this.prepararConexion();
             var comando = conexion.CreateCommand();
             comando.CommandText = Query;
@@ -109,6 +107,9 @@ namespace VeterinariaServices.DAOs
 
             return RowsAffected > 0;
         }
+
+        
+        ///<returns>Retorna un valor true en caso de que se haya insertado correctamente.</returns>
         /// <summary>
         /// Este Metodo Trae de la DB la tabla de todos los Usuarios pero no retorna la Password
         /// </summary>
@@ -139,6 +140,33 @@ namespace VeterinariaServices.DAOs
             conexion.Close();
 
             return ListaUsuarios;
+        }
+
+        /// <summary>
+        /// Este Metodo realiza una query para resetear la contrasena de un usuario a su nombre de usuario
+        /// </summary>
+        /// <param name="id">Recibe el Id del usuario cuyo contraseña será reseteada</param>
+        ///<returns>Retorna un valor true en caso de que se haya reseteado correctamente.</returns>
+        public bool ResetPassword(long id)
+        {
+            // Obtener el usuario con el ID especificado para obtener su nombre de usuario
+            Usuario usuario = GetAll().FirstOrDefault(u => u.Id == id);
+
+            if (usuario == null)
+            {
+                return false; // Usuario no encontrado
+            }
+
+            string query = $"UPDATE USUARIOS SET CLAVE = '{usuario.Username}' WHERE ID = {id}";
+
+            var conexion = this.prepararConexion();
+            var comando = conexion.CreateCommand();
+            comando.CommandText = query;
+            int RowsAffected = comando.ExecuteNonQuery();
+
+            conexion.Close();
+
+            return RowsAffected > 0;
         }
     }
 }

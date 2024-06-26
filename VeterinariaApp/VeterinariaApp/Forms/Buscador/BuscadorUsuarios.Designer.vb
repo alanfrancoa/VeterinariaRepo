@@ -22,58 +22,58 @@ Partial Class BuscadorUsuarios
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ButtonBusquedaID = New System.Windows.Forms.Button()
+        Me.ButtonBusquedaUsername = New System.Windows.Forms.Button()
         Me.LabelBusquedaID = New System.Windows.Forms.Label()
-        Me.LabelBuscadorClientes = New System.Windows.Forms.Label()
-        Me.TextBoxIDBusquedaCliente = New System.Windows.Forms.TextBox()
+        Me.LabelBuscadorUsuario = New System.Windows.Forms.Label()
+        Me.TextBoxBusquedaUsuario = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'ButtonBusquedaID
+        'ButtonBusquedaUsername
         '
-        Me.ButtonBusquedaID.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonBusquedaID.Location = New System.Drawing.Point(413, 175)
-        Me.ButtonBusquedaID.Name = "ButtonBusquedaID"
-        Me.ButtonBusquedaID.Size = New System.Drawing.Size(35, 40)
-        Me.ButtonBusquedaID.TabIndex = 15
-        Me.ButtonBusquedaID.Text = "🔍"
-        Me.ButtonBusquedaID.UseVisualStyleBackColor = True
+        Me.ButtonBusquedaUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBusquedaUsername.Location = New System.Drawing.Point(380, 101)
+        Me.ButtonBusquedaUsername.Name = "ButtonBusquedaUsername"
+        Me.ButtonBusquedaUsername.Size = New System.Drawing.Size(35, 40)
+        Me.ButtonBusquedaUsername.TabIndex = 15
+        Me.ButtonBusquedaUsername.Text = "🔍"
+        Me.ButtonBusquedaUsername.UseVisualStyleBackColor = True
         '
         'LabelBusquedaID
         '
         Me.LabelBusquedaID.AutoSize = True
         Me.LabelBusquedaID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBusquedaID.Location = New System.Drawing.Point(102, 175)
+        Me.LabelBusquedaID.Location = New System.Drawing.Point(69, 101)
         Me.LabelBusquedaID.Name = "LabelBusquedaID"
         Me.LabelBusquedaID.Size = New System.Drawing.Size(116, 15)
         Me.LabelBusquedaID.TabIndex = 14
         Me.LabelBusquedaID.Text = "Nombre de usuario:"
         '
-        'LabelBuscadorClientes
+        'LabelBuscadorUsuario
         '
-        Me.LabelBuscadorClientes.AutoSize = True
-        Me.LabelBuscadorClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(208, 73)
-        Me.LabelBuscadorClientes.Name = "LabelBuscadorClientes"
-        Me.LabelBuscadorClientes.Size = New System.Drawing.Size(141, 16)
-        Me.LabelBuscadorClientes.TabIndex = 13
-        Me.LabelBuscadorClientes.Text = "Buscador de Usuarios"
+        Me.LabelBuscadorUsuario.AutoSize = True
+        Me.LabelBuscadorUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelBuscadorUsuario.Location = New System.Drawing.Point(175, 34)
+        Me.LabelBuscadorUsuario.Name = "LabelBuscadorUsuario"
+        Me.LabelBuscadorUsuario.Size = New System.Drawing.Size(141, 16)
+        Me.LabelBuscadorUsuario.TabIndex = 13
+        Me.LabelBuscadorUsuario.Text = "Buscador de Usuarios"
         '
-        'TextBoxIDBusquedaCliente
+        'TextBoxBusquedaUsuario
         '
-        Me.TextBoxIDBusquedaCliente.Location = New System.Drawing.Point(102, 191)
-        Me.TextBoxIDBusquedaCliente.Name = "TextBoxIDBusquedaCliente"
-        Me.TextBoxIDBusquedaCliente.Size = New System.Drawing.Size(305, 20)
-        Me.TextBoxIDBusquedaCliente.TabIndex = 12
+        Me.TextBoxBusquedaUsuario.Location = New System.Drawing.Point(69, 117)
+        Me.TextBoxBusquedaUsuario.Name = "TextBoxBusquedaUsuario"
+        Me.TextBoxBusquedaUsuario.Size = New System.Drawing.Size(305, 20)
+        Me.TextBoxBusquedaUsuario.TabIndex = 12
         '
         'BuscadorUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(551, 390)
-        Me.Controls.Add(Me.ButtonBusquedaID)
+        Me.ClientSize = New System.Drawing.Size(484, 211)
+        Me.Controls.Add(Me.ButtonBusquedaUsername)
         Me.Controls.Add(Me.LabelBusquedaID)
-        Me.Controls.Add(Me.LabelBuscadorClientes)
-        Me.Controls.Add(Me.TextBoxIDBusquedaCliente)
+        Me.Controls.Add(Me.LabelBuscadorUsuario)
+        Me.Controls.Add(Me.TextBoxBusquedaUsuario)
         Me.Name = "BuscadorUsuarios"
         Me.Text = "Buscador de Usuarios"
         Me.ResumeLayout(False)
@@ -81,8 +81,8 @@ Partial Class BuscadorUsuarios
 
     End Sub
 
-    Friend WithEvents ButtonBusquedaID As Button
+    Friend WithEvents ButtonBusquedaUsername As Button
     Friend WithEvents LabelBusquedaID As Label
-    Friend WithEvents LabelBuscadorClientes As Label
-    Friend WithEvents TextBoxIDBusquedaCliente As TextBox
+    Friend WithEvents LabelBuscadorUsuario As Label
+    Friend WithEvents TextBoxBusquedaUsuario As TextBox
 End Class
