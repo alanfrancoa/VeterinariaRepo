@@ -28,6 +28,10 @@ Partial Class BusquedaEspecie
         Me.LabelMadurezEspecie = New System.Windows.Forms.Label()
         Me.LabelNombreEspecie = New System.Windows.Forms.Label()
         Me.LabelIDEspecie = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ButtonEditarEspecie
@@ -53,47 +57,87 @@ Partial Class BusquedaEspecie
         '
         Me.LabelPesoPromedioEspecie.AutoSize = True
         Me.LabelPesoPromedioEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPesoPromedioEspecie.Location = New System.Drawing.Point(121, 291)
+        Me.LabelPesoPromedioEspecie.Location = New System.Drawing.Point(411, 291)
         Me.LabelPesoPromedioEspecie.Name = "LabelPesoPromedioEspecie"
-        Me.LabelPesoPromedioEspecie.Size = New System.Drawing.Size(116, 18)
+        Me.LabelPesoPromedioEspecie.Size = New System.Drawing.Size(0, 18)
         Me.LabelPesoPromedioEspecie.TabIndex = 21
-        Me.LabelPesoPromedioEspecie.Text = "Peso Promedio:"
         '
         'LabelMadurezEspecie
         '
         Me.LabelMadurezEspecie.AutoSize = True
         Me.LabelMadurezEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelMadurezEspecie.Location = New System.Drawing.Point(121, 234)
+        Me.LabelMadurezEspecie.Location = New System.Drawing.Point(411, 234)
         Me.LabelMadurezEspecie.Name = "LabelMadurezEspecie"
-        Me.LabelMadurezEspecie.Size = New System.Drawing.Size(128, 18)
+        Me.LabelMadurezEspecie.Size = New System.Drawing.Size(0, 18)
         Me.LabelMadurezEspecie.TabIndex = 20
-        Me.LabelMadurezEspecie.Text = "Edad de Madurez:"
         '
         'LabelNombreEspecie
         '
         Me.LabelNombreEspecie.AutoSize = True
         Me.LabelNombreEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombreEspecie.Location = New System.Drawing.Point(121, 177)
+        Me.LabelNombreEspecie.Location = New System.Drawing.Point(411, 177)
         Me.LabelNombreEspecie.Name = "LabelNombreEspecie"
-        Me.LabelNombreEspecie.Size = New System.Drawing.Size(66, 18)
+        Me.LabelNombreEspecie.Size = New System.Drawing.Size(0, 18)
         Me.LabelNombreEspecie.TabIndex = 19
-        Me.LabelNombreEspecie.Text = "Nombre:"
         '
         'LabelIDEspecie
         '
         Me.LabelIDEspecie.AutoSize = True
         Me.LabelIDEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelIDEspecie.Location = New System.Drawing.Point(121, 120)
+        Me.LabelIDEspecie.Location = New System.Drawing.Point(411, 120)
         Me.LabelIDEspecie.Name = "LabelIDEspecie"
-        Me.LabelIDEspecie.Size = New System.Drawing.Size(26, 18)
+        Me.LabelIDEspecie.Size = New System.Drawing.Size(0, 18)
         Me.LabelIDEspecie.TabIndex = 18
-        Me.LabelIDEspecie.Text = "ID:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(137, 291)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(116, 18)
+        Me.Label1.TabIndex = 27
+        Me.Label1.Text = "Peso Promedio:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(137, 234)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(128, 18)
+        Me.Label2.TabIndex = 26
+        Me.Label2.Text = "Edad de Madurez:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(137, 177)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(66, 18)
+        Me.Label3.TabIndex = 25
+        Me.Label3.Text = "Nombre:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(137, 120)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(26, 18)
+        Me.Label4.TabIndex = 24
+        Me.Label4.Text = "ID:"
         '
         'BusquedaEspecie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(556, 450)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ButtonEditarEspecie)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.LabelPesoPromedioEspecie)
@@ -113,4 +157,8 @@ Partial Class BusquedaEspecie
     Friend WithEvents LabelMadurezEspecie As Label
     Friend WithEvents LabelNombreEspecie As Label
     Friend WithEvents LabelIDEspecie As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class

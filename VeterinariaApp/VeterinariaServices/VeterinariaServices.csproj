@@ -48,6 +48,7 @@
     <Compile Include="DAOs\DAOClientes.cs" />
     <Compile Include="DAOs\DAOEspecies.cs" />
     <Compile Include="DAOs\DAOMascotas.cs" />
+    <Compile Include="DAOs\DAOReportes.cs" />
     <Compile Include="DAOs\DAOUsuarios.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Especie.cs" />

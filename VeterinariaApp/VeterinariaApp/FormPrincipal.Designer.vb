@@ -107,25 +107,25 @@ Partial Class FormPrincipal
         'ClientesToolStripMenuItem1
         '
         Me.ClientesToolStripMenuItem1.Name = "ClientesToolStripMenuItem1"
-        Me.ClientesToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ClientesToolStripMenuItem1.Size = New System.Drawing.Size(124, 22)
         Me.ClientesToolStripMenuItem1.Text = "Clientes"
         '
         'MascotasToolStripMenuItem1
         '
         Me.MascotasToolStripMenuItem1.Name = "MascotasToolStripMenuItem1"
-        Me.MascotasToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.MascotasToolStripMenuItem1.Size = New System.Drawing.Size(124, 22)
         Me.MascotasToolStripMenuItem1.Text = "Mascotas"
         '
         'EspeciesToolStripMenuItem1
         '
         Me.EspeciesToolStripMenuItem1.Name = "EspeciesToolStripMenuItem1"
-        Me.EspeciesToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.EspeciesToolStripMenuItem1.Size = New System.Drawing.Size(124, 22)
         Me.EspeciesToolStripMenuItem1.Text = "Especies"
         '
         'UsuariosToolStripMenuItem1
         '
         Me.UsuariosToolStripMenuItem1.Name = "UsuariosToolStripMenuItem1"
-        Me.UsuariosToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UsuariosToolStripMenuItem1.Size = New System.Drawing.Size(124, 22)
         Me.UsuariosToolStripMenuItem1.Text = "Usuarios"
         '
         'AltasToolStripMenuItem
