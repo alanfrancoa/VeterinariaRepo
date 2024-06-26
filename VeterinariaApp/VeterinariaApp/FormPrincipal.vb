@@ -18,6 +18,8 @@ Public Class FormPrincipal
         _loginForm.MdiParent = Me
         _loginForm.StartPosition = FormStartPosition.CenterScreen
         _loginForm.Show() ' Mostrar el formulario de login
+
+
     End Sub
 
     ' Manejar el evento de login exitoso
@@ -31,6 +33,11 @@ Public Class FormPrincipal
 
         ' Mostrar un mensaje de login exitoso
         MessageBox.Show($"Login exitoso para usuario: {_usuarioLogueado.Username}")
+
+        If _usuarioLogueado.TipoUsuario = "ADMINISTRADOR" Then
+            UsuariosToolStripMenuItem3.Visible = True
+            UsuariosToolStripMenuItem4.Visible = True
+        End If
     End Sub
 
     Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
@@ -126,6 +133,32 @@ Public Class FormPrincipal
         FormBuscadorUsuarios.Show()
     End Sub
 
+
+    Private Sub UsuariosToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem3.Click
+        'Selector baja Usuarios
+        Dim FormBajaUsuarios As New SelectorBajaUsername()
+        FormBajaUsuarios.Show()
+    End Sub
+
+    Private Sub EspeciesToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles EspeciesToolStripMenuItem3.Click
+        Dim formEdicionEspecie As New SelectorEspecie()
+        formEdicionEspecie.Show()
+    End Sub
+
+    Private Sub UsuariosToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem4.Click
+        Dim formEdicionUsuarios As New SelectorUsuario()
+        formEdicionUsuarios.Show()
+    End Sub
+
+    Private Sub CambioContraseñaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CambioContraseñaToolStripMenuItem.Click
+        Dim FormCambiarClave As New CambiarClave(_usuarioLogueado)
+        FormCambiarClave.Show()
+    End Sub
+
+    Private Sub RegistroDePesosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroDePesosToolStripMenuItem.Click
+        Dim FormCalculoPesos As New CalculoDePesos()
+        FormCalculoPesos.Show()
+
     Private Sub EspeciesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EspeciesToolStripMenuItem1.Click
         Dim FormBuscadorEspecies As New BuscadorEspecies()
         FormBuscadorEspecies.Show()
@@ -134,5 +167,6 @@ Public Class FormPrincipal
     Private Sub CantidadDeAnimalesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CantidadDeAnimalesToolStripMenuItem.Click
         Dim formCantidadAnimales As New CantidadDeAnimales()
         formCantidadAnimales.Show()
+
     End Sub
 End Class

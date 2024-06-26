@@ -183,6 +183,7 @@ Partial Class FormPrincipal
         Me.UsuariosToolStripMenuItem3.Name = "UsuariosToolStripMenuItem3"
         Me.UsuariosToolStripMenuItem3.Size = New System.Drawing.Size(124, 22)
         Me.UsuariosToolStripMenuItem3.Text = "Usuarios"
+        Me.UsuariosToolStripMenuItem3.Visible = False
         '
         'EditarToolStripMenuItem
         '
@@ -214,6 +215,7 @@ Partial Class FormPrincipal
         Me.UsuariosToolStripMenuItem4.Name = "UsuariosToolStripMenuItem4"
         Me.UsuariosToolStripMenuItem4.Size = New System.Drawing.Size(177, 22)
         Me.UsuariosToolStripMenuItem4.Text = "Usuarios"
+        Me.UsuariosToolStripMenuItem4.Visible = False
         '
         'CambioContraseñaToolStripMenuItem
         '

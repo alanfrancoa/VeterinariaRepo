@@ -1,7 +1,7 @@
 ﻿Imports VeterinariaServices.Containers
 Imports VeterinariaServices.Models
 
-Public Class SelectorUsuario
+Public Class SelectorBajaUsername
     Private _contenedorUsuarios As ContenedorUsuarios
     Private _usuarioSeleccionado As Usuario
 
@@ -19,8 +19,8 @@ Public Class SelectorUsuario
                 Me.Close()
                 MessageBox.Show($"Usuario encontrado: {_usuarioSeleccionado.Nombre}")
 
-                Dim formMuestraUsuario As New MuestraUsuarios(_usuarioSeleccionado)
-                formMuestraUsuario.Show()
+                Dim formMuestraBajaUsuario As New BajaUsuarios(_usuarioSeleccionado)
+                formMuestraBajaUsuario.Show()
             Else
                 MessageBox.Show("Usuario no encontrado.")
             End If
