@@ -24,7 +24,7 @@ Public Class MuestraMascotaBaja
         _daoMascotas = New DAOMascotas()
         contenedorEspecie = New ContenedorEspecies()
         contenedorCliente = New ContenedorClientes()
-        ' Add any initialization after the InitializeComponent() call.
+
 
     End Sub
 

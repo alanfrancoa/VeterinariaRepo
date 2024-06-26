@@ -35,7 +35,8 @@ Public Class BuscadorClientes
     End Sub
 
     ''' <summary>
-    ''' Método para buscar cliente por ID
+    ''' Método para buscar cliente por DNI
+    ''' 
     ''' </summary>
     Private Sub ButtonBusquedaDNICliente_Click(sender As Object, e As EventArgs) Handles ButtonBusquedaDNICliente.Click
         Dim dni As Integer

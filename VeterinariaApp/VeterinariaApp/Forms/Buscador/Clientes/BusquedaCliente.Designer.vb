@@ -36,6 +36,8 @@ Partial Class BusquedaCliente
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ButtonEditar = New System.Windows.Forms.Button()
+        Me.ButtonBajaCliente = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ButtonVerMascotasCliente
@@ -171,11 +173,31 @@ Partial Class BusquedaCliente
         Me.Label6.TabIndex = 20
         Me.Label6.Text = "ID:"
         '
+        'ButtonEditar
+        '
+        Me.ButtonEditar.Location = New System.Drawing.Point(67, 461)
+        Me.ButtonEditar.Name = "ButtonEditar"
+        Me.ButtonEditar.Size = New System.Drawing.Size(121, 44)
+        Me.ButtonEditar.TabIndex = 26
+        Me.ButtonEditar.Text = "Editar Cliente"
+        Me.ButtonEditar.UseVisualStyleBackColor = True
+        '
+        'ButtonBajaCliente
+        '
+        Me.ButtonBajaCliente.Location = New System.Drawing.Point(397, 461)
+        Me.ButtonBajaCliente.Name = "ButtonBajaCliente"
+        Me.ButtonBajaCliente.Size = New System.Drawing.Size(121, 44)
+        Me.ButtonBajaCliente.TabIndex = 27
+        Me.ButtonBajaCliente.Text = "Dar de Baja"
+        Me.ButtonBajaCliente.UseVisualStyleBackColor = True
+        '
         'BusquedaCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(584, 536)
+        Me.Controls.Add(Me.ButtonBajaCliente)
+        Me.Controls.Add(Me.ButtonEditar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
@@ -211,4 +233,6 @@ Partial Class BusquedaCliente
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents ButtonEditar As Button
+    Friend WithEvents ButtonBajaCliente As Button
 End Class

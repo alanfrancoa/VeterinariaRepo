@@ -129,7 +129,7 @@ Partial Class BuscadorClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(589, 439)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.ButtonBusquedaDNICliente)
         Me.Controls.Add(Me.ButtonBusquedaNombreCliente)
         Me.Controls.Add(Me.ButtonBusquedaID)

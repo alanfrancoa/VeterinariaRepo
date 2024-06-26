@@ -115,4 +115,9 @@ Public Class FormPrincipal
         Dim FormBuscadorClientes As New BuscadorClientes()
         FormBuscadorClientes.Show()
     End Sub
+
+    Private Sub MascotasToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MascotasToolStripMenuItem1.Click
+        Dim FormBuscadorMascotas As New BuscadorMascotas()
+        FormBuscadorMascotas.Show()
+    End Sub
 End Class
