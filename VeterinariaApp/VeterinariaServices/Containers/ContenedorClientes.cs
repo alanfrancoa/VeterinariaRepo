@@ -140,6 +140,26 @@ namespace VeterinariaServices.Containers
             }
             return null;
         }
+        /// <summary>
+        /// Este método busca clientes cuyo nombre contenga el parámetro proporcionado.
+        /// </summary>
+        /// <param name="nombre">El nombre o parte del nombre a buscar.</param>
+        /// <returns>Retorna una lista de clientes cuyos nombres contienen el parámetro proporcionado.</returns>
+        public List<Cliente> BuscarClientesPorNombre(string nombre)
+        {
+            var listaClientes = _daoClientes.GetAll();
+            var listaClientesFiltrados = new List<Cliente>();
+
+            foreach (Cliente cliente in listaClientes)
+            {
+                if (cliente.Nombre.IndexOf(nombre, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    listaClientesFiltrados.Add(cliente);
+                }
+            }
+
+            return listaClientesFiltrados;
+        }
 
     }
 }

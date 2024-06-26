@@ -23,8 +23,6 @@ Partial Class BusquedaCliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ButtonVerMascotasCliente = New System.Windows.Forms.Button()
-        Me.ButtonEliminarCliente = New System.Windows.Forms.Button()
-        Me.ButtonEditarCliente = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.LabelEstadoCliente = New System.Windows.Forms.Label()
         Me.LabelEMailCliente = New System.Windows.Forms.Label()
@@ -32,34 +30,22 @@ Partial Class BusquedaCliente
         Me.LabelDNICliente = New System.Windows.Forms.Label()
         Me.LabelNombreCliente = New System.Windows.Forms.Label()
         Me.LabelIDCliente = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ButtonVerMascotasCliente
         '
-        Me.ButtonVerMascotasCliente.Location = New System.Drawing.Point(399, 461)
+        Me.ButtonVerMascotasCliente.Location = New System.Drawing.Point(232, 461)
         Me.ButtonVerMascotasCliente.Name = "ButtonVerMascotasCliente"
         Me.ButtonVerMascotasCliente.Size = New System.Drawing.Size(121, 44)
         Me.ButtonVerMascotasCliente.TabIndex = 19
         Me.ButtonVerMascotasCliente.Text = "Ver Mascotas"
         Me.ButtonVerMascotasCliente.UseVisualStyleBackColor = True
-        '
-        'ButtonEliminarCliente
-        '
-        Me.ButtonEliminarCliente.Location = New System.Drawing.Point(233, 461)
-        Me.ButtonEliminarCliente.Name = "ButtonEliminarCliente"
-        Me.ButtonEliminarCliente.Size = New System.Drawing.Size(121, 44)
-        Me.ButtonEliminarCliente.TabIndex = 18
-        Me.ButtonEliminarCliente.Text = "Eliminar"
-        Me.ButtonEliminarCliente.UseVisualStyleBackColor = True
-        '
-        'ButtonEditarCliente
-        '
-        Me.ButtonEditarCliente.Location = New System.Drawing.Point(67, 461)
-        Me.ButtonEditarCliente.Name = "ButtonEditarCliente"
-        Me.ButtonEditarCliente.Size = New System.Drawing.Size(121, 44)
-        Me.ButtonEditarCliente.TabIndex = 17
-        Me.ButtonEditarCliente.Text = "Editar"
-        Me.ButtonEditarCliente.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -75,70 +61,128 @@ Partial Class BusquedaCliente
         '
         Me.LabelEstadoCliente.AutoSize = True
         Me.LabelEstadoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEstadoCliente.Location = New System.Drawing.Point(126, 402)
+        Me.LabelEstadoCliente.Location = New System.Drawing.Point(394, 402)
         Me.LabelEstadoCliente.Name = "LabelEstadoCliente"
-        Me.LabelEstadoCliente.Size = New System.Drawing.Size(59, 18)
+        Me.LabelEstadoCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelEstadoCliente.TabIndex = 15
-        Me.LabelEstadoCliente.Text = "Estado:"
         '
         'LabelEMailCliente
         '
         Me.LabelEMailCliente.AutoSize = True
         Me.LabelEMailCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEMailCliente.Location = New System.Drawing.Point(126, 345)
+        Me.LabelEMailCliente.Location = New System.Drawing.Point(394, 345)
         Me.LabelEMailCliente.Name = "LabelEMailCliente"
-        Me.LabelEMailCliente.Size = New System.Drawing.Size(54, 18)
+        Me.LabelEMailCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelEMailCliente.TabIndex = 14
-        Me.LabelEMailCliente.Text = "E-mail:"
         '
         'LabelTelefonoCliente
         '
         Me.LabelTelefonoCliente.AutoSize = True
         Me.LabelTelefonoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTelefonoCliente.Location = New System.Drawing.Point(126, 288)
+        Me.LabelTelefonoCliente.Location = New System.Drawing.Point(394, 288)
         Me.LabelTelefonoCliente.Name = "LabelTelefonoCliente"
-        Me.LabelTelefonoCliente.Size = New System.Drawing.Size(70, 18)
+        Me.LabelTelefonoCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelTelefonoCliente.TabIndex = 13
-        Me.LabelTelefonoCliente.Text = "Telefono:"
         '
         'LabelDNICliente
         '
         Me.LabelDNICliente.AutoSize = True
         Me.LabelDNICliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelDNICliente.Location = New System.Drawing.Point(126, 231)
+        Me.LabelDNICliente.Location = New System.Drawing.Point(394, 231)
         Me.LabelDNICliente.Name = "LabelDNICliente"
-        Me.LabelDNICliente.Size = New System.Drawing.Size(37, 18)
+        Me.LabelDNICliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelDNICliente.TabIndex = 12
-        Me.LabelDNICliente.Text = "DNI:"
         '
         'LabelNombreCliente
         '
         Me.LabelNombreCliente.AutoSize = True
         Me.LabelNombreCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombreCliente.Location = New System.Drawing.Point(126, 174)
+        Me.LabelNombreCliente.Location = New System.Drawing.Point(394, 174)
         Me.LabelNombreCliente.Name = "LabelNombreCliente"
-        Me.LabelNombreCliente.Size = New System.Drawing.Size(66, 18)
+        Me.LabelNombreCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelNombreCliente.TabIndex = 11
-        Me.LabelNombreCliente.Text = "Nombre:"
         '
         'LabelIDCliente
         '
         Me.LabelIDCliente.AutoSize = True
         Me.LabelIDCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelIDCliente.Location = New System.Drawing.Point(126, 117)
+        Me.LabelIDCliente.Location = New System.Drawing.Point(394, 117)
         Me.LabelIDCliente.Name = "LabelIDCliente"
-        Me.LabelIDCliente.Size = New System.Drawing.Size(26, 18)
+        Me.LabelIDCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelIDCliente.TabIndex = 10
-        Me.LabelIDCliente.Text = "ID:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(118, 402)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(59, 18)
+        Me.Label1.TabIndex = 25
+        Me.Label1.Text = "Estado:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(118, 345)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(54, 18)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "E-mail:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(118, 288)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(70, 18)
+        Me.Label3.TabIndex = 23
+        Me.Label3.Text = "Telefono:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(118, 231)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(37, 18)
+        Me.Label4.TabIndex = 22
+        Me.Label4.Text = "DNI:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(118, 174)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(66, 18)
+        Me.Label5.TabIndex = 21
+        Me.Label5.Text = "Nombre:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(118, 117)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(26, 18)
+        Me.Label6.TabIndex = 20
+        Me.Label6.Text = "ID:"
         '
         'BusquedaCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(587, 537)
+        Me.ClientSize = New System.Drawing.Size(584, 536)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.ButtonVerMascotasCliente)
-        Me.Controls.Add(Me.ButtonEliminarCliente)
-        Me.Controls.Add(Me.ButtonEditarCliente)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.LabelEstadoCliente)
         Me.Controls.Add(Me.LabelEMailCliente)
@@ -154,8 +198,6 @@ Partial Class BusquedaCliente
     End Sub
 
     Friend WithEvents ButtonVerMascotasCliente As Button
-    Friend WithEvents ButtonEliminarCliente As Button
-    Friend WithEvents ButtonEditarCliente As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents LabelEstadoCliente As Label
     Friend WithEvents LabelEMailCliente As Label
@@ -163,4 +205,10 @@ Partial Class BusquedaCliente
     Friend WithEvents LabelDNICliente As Label
     Friend WithEvents LabelNombreCliente As Label
     Friend WithEvents LabelIDCliente As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class

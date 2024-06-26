@@ -110,4 +110,9 @@ Public Class FormPrincipal
         Dim FormBajaMascota As New SelectorBajaMascotas()
         FormBajaMascota.Show()
     End Sub
+
+    Private Sub ClientesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem1.Click
+        Dim FormBuscadorClientes As New BuscadorClientes()
+        FormBuscadorClientes.Show()
+    End Sub
 End Class

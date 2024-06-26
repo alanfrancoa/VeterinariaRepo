@@ -89,5 +89,25 @@ namespace VeterinariaServices.Containers
             return mascotaBuscada;  
         }
 
+        /// <summary>
+        /// Retorna una lista de mascotas asociadas a un cliente específico por su ID.
+        /// </summary>
+        /// <param name="idCliente">El ID del cliente.</param>
+        /// <returns>Retorna una lista de mascotas que pertenecen al cliente especificado.</returns>
+        public List<Mascota> BuscarMascotasPorIdCliente(int idCliente)
+        {
+            var listaMascotas = _daoMascota.GetAll();
+            var mascotasCliente = new List<Mascota>();
+
+            foreach (Mascota mascota in listaMascotas)
+            {
+                if (mascota.IdCliente == idCliente)
+                {
+                    mascotasCliente.Add(mascota);
+                }
+            }
+            return mascotasCliente;
+        }
+
     }
 }
