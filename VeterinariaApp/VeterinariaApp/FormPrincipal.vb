@@ -153,4 +153,9 @@ Public Class FormPrincipal
         Dim FormCambiarClave As New CambiarClave(_usuarioLogueado)
         FormCambiarClave.Show()
     End Sub
+
+    Private Sub RegistroDePesosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroDePesosToolStripMenuItem.Click
+        Dim FormCalculoPesos As New CalculoDePesos()
+        FormCalculoPesos.Show()
+    End Sub
 End Class

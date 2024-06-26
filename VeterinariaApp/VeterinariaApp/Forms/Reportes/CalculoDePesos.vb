@@ -12,9 +12,9 @@ Public Class CalculoDePesos
     Private Sub ButtonBusqueda_Click(sender As Object, e As EventArgs) Handles ButtonBusqueda.Click
         Dim edad1 As Integer = NumericUpDownDesde.Value
         Dim edad2 As Integer = NumericUpDownHasta.Value
-        Dim listaAMostrar As New List(Of Mascota)
-        listaAMostrar = _daoMascotas.GetPorRango(edad1, edad2)
+        Dim dt As New DataTable
+        dt = _daoMascotas.GetPorRango(edad1, edad2)
 
-        DataGridViewCalculoPesos.DataSource = listaAMostrar
+        DataGridViewCalculoPesos.DataSource = dt
     End Sub
 End Class
