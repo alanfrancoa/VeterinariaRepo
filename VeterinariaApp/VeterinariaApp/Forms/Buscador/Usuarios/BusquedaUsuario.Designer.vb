@@ -23,36 +23,32 @@ Partial Class BusquedaUsuario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.LabelEstadoCliente = New System.Windows.Forms.Label()
-        Me.ButtonEliminarUsuario = New System.Windows.Forms.Button()
         Me.ButtonEditarUsuario = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.LabelUserNameBusqueda = New System.Windows.Forms.Label()
         Me.LabelNombreUsuarioBusqueda = New System.Windows.Forms.Label()
         Me.LabelIDUsuarioBusqueda = New System.Windows.Forms.Label()
+        Me.LabelEstadoUsuario = New System.Windows.Forms.Label()
+        Me.LabelUsername = New System.Windows.Forms.Label()
+        Me.LabelNombreUsuario = New System.Windows.Forms.Label()
+        Me.LabelIDUsuario = New System.Windows.Forms.Label()
+        Me.ButtonResetPass = New System.Windows.Forms.Button()
+        Me.ButtonDeshabilitar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LabelEstadoCliente
         '
         Me.LabelEstadoCliente.AutoSize = True
         Me.LabelEstadoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEstadoCliente.Location = New System.Drawing.Point(191, 302)
+        Me.LabelEstadoCliente.Location = New System.Drawing.Point(140, 299)
         Me.LabelEstadoCliente.Name = "LabelEstadoCliente"
         Me.LabelEstadoCliente.Size = New System.Drawing.Size(59, 18)
         Me.LabelEstadoCliente.TabIndex = 26
         Me.LabelEstadoCliente.Text = "Estado:"
         '
-        'ButtonEliminarUsuario
-        '
-        Me.ButtonEliminarUsuario.Location = New System.Drawing.Point(303, 375)
-        Me.ButtonEliminarUsuario.Name = "ButtonEliminarUsuario"
-        Me.ButtonEliminarUsuario.Size = New System.Drawing.Size(121, 44)
-        Me.ButtonEliminarUsuario.TabIndex = 25
-        Me.ButtonEliminarUsuario.Text = "Eliminar"
-        Me.ButtonEliminarUsuario.UseVisualStyleBackColor = True
-        '
         'ButtonEditarUsuario
         '
-        Me.ButtonEditarUsuario.Location = New System.Drawing.Point(137, 375)
+        Me.ButtonEditarUsuario.Location = New System.Drawing.Point(49, 373)
         Me.ButtonEditarUsuario.Name = "ButtonEditarUsuario"
         Me.ButtonEditarUsuario.Size = New System.Drawing.Size(121, 44)
         Me.ButtonEditarUsuario.TabIndex = 24
@@ -73,7 +69,7 @@ Partial Class BusquedaUsuario
         '
         Me.LabelUserNameBusqueda.AutoSize = True
         Me.LabelUserNameBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUserNameBusqueda.Location = New System.Drawing.Point(191, 246)
+        Me.LabelUserNameBusqueda.Location = New System.Drawing.Point(140, 243)
         Me.LabelUserNameBusqueda.Name = "LabelUserNameBusqueda"
         Me.LabelUserNameBusqueda.Size = New System.Drawing.Size(139, 18)
         Me.LabelUserNameBusqueda.TabIndex = 22
@@ -83,7 +79,7 @@ Partial Class BusquedaUsuario
         '
         Me.LabelNombreUsuarioBusqueda.AutoSize = True
         Me.LabelNombreUsuarioBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombreUsuarioBusqueda.Location = New System.Drawing.Point(191, 190)
+        Me.LabelNombreUsuarioBusqueda.Location = New System.Drawing.Point(140, 187)
         Me.LabelNombreUsuarioBusqueda.Name = "LabelNombreUsuarioBusqueda"
         Me.LabelNombreUsuarioBusqueda.Size = New System.Drawing.Size(66, 18)
         Me.LabelNombreUsuarioBusqueda.TabIndex = 21
@@ -93,36 +89,99 @@ Partial Class BusquedaUsuario
         '
         Me.LabelIDUsuarioBusqueda.AutoSize = True
         Me.LabelIDUsuarioBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelIDUsuarioBusqueda.Location = New System.Drawing.Point(191, 134)
+        Me.LabelIDUsuarioBusqueda.Location = New System.Drawing.Point(140, 131)
         Me.LabelIDUsuarioBusqueda.Name = "LabelIDUsuarioBusqueda"
         Me.LabelIDUsuarioBusqueda.Size = New System.Drawing.Size(26, 18)
         Me.LabelIDUsuarioBusqueda.TabIndex = 20
         Me.LabelIDUsuarioBusqueda.Text = "ID:"
+        '
+        'LabelEstadoUsuario
+        '
+        Me.LabelEstadoUsuario.AutoSize = True
+        Me.LabelEstadoUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelEstadoUsuario.Location = New System.Drawing.Point(365, 299)
+        Me.LabelEstadoUsuario.Name = "LabelEstadoUsuario"
+        Me.LabelEstadoUsuario.Size = New System.Drawing.Size(0, 18)
+        Me.LabelEstadoUsuario.TabIndex = 30
+        '
+        'LabelUsername
+        '
+        Me.LabelUsername.AutoSize = True
+        Me.LabelUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelUsername.Location = New System.Drawing.Point(365, 243)
+        Me.LabelUsername.Name = "LabelUsername"
+        Me.LabelUsername.Size = New System.Drawing.Size(0, 18)
+        Me.LabelUsername.TabIndex = 29
+        '
+        'LabelNombreUsuario
+        '
+        Me.LabelNombreUsuario.AutoSize = True
+        Me.LabelNombreUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNombreUsuario.Location = New System.Drawing.Point(365, 187)
+        Me.LabelNombreUsuario.Name = "LabelNombreUsuario"
+        Me.LabelNombreUsuario.Size = New System.Drawing.Size(0, 18)
+        Me.LabelNombreUsuario.TabIndex = 28
+        '
+        'LabelIDUsuario
+        '
+        Me.LabelIDUsuario.AutoSize = True
+        Me.LabelIDUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelIDUsuario.Location = New System.Drawing.Point(365, 131)
+        Me.LabelIDUsuario.Name = "LabelIDUsuario"
+        Me.LabelIDUsuario.Size = New System.Drawing.Size(0, 18)
+        Me.LabelIDUsuario.TabIndex = 27
+        '
+        'ButtonResetPass
+        '
+        Me.ButtonResetPass.Location = New System.Drawing.Point(225, 373)
+        Me.ButtonResetPass.Name = "ButtonResetPass"
+        Me.ButtonResetPass.Size = New System.Drawing.Size(121, 44)
+        Me.ButtonResetPass.TabIndex = 31
+        Me.ButtonResetPass.Text = "Resetear Contraseña"
+        Me.ButtonResetPass.UseVisualStyleBackColor = True
+        '
+        'ButtonDeshabilitar
+        '
+        Me.ButtonDeshabilitar.Location = New System.Drawing.Point(390, 373)
+        Me.ButtonDeshabilitar.Name = "ButtonDeshabilitar"
+        Me.ButtonDeshabilitar.Size = New System.Drawing.Size(121, 44)
+        Me.ButtonDeshabilitar.TabIndex = 32
+        Me.ButtonDeshabilitar.Text = "Bajar"
+        Me.ButtonDeshabilitar.UseVisualStyleBackColor = True
         '
         'BusquedaUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(561, 450)
+        Me.Controls.Add(Me.ButtonDeshabilitar)
+        Me.Controls.Add(Me.ButtonResetPass)
+        Me.Controls.Add(Me.LabelEstadoUsuario)
+        Me.Controls.Add(Me.LabelUsername)
+        Me.Controls.Add(Me.LabelNombreUsuario)
+        Me.Controls.Add(Me.LabelIDUsuario)
         Me.Controls.Add(Me.LabelEstadoCliente)
-        Me.Controls.Add(Me.ButtonEliminarUsuario)
         Me.Controls.Add(Me.ButtonEditarUsuario)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.LabelUserNameBusqueda)
         Me.Controls.Add(Me.LabelNombreUsuarioBusqueda)
         Me.Controls.Add(Me.LabelIDUsuarioBusqueda)
         Me.Name = "BusquedaUsuario"
-        Me.Text = "Busqueda de Usuario"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents LabelEstadoCliente As Label
-    Friend WithEvents ButtonEliminarUsuario As Button
     Friend WithEvents ButtonEditarUsuario As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents LabelUserNameBusqueda As Label
     Friend WithEvents LabelNombreUsuarioBusqueda As Label
     Friend WithEvents LabelIDUsuarioBusqueda As Label
+    Friend WithEvents LabelEstadoUsuario As Label
+    Friend WithEvents LabelUsername As Label
+    Friend WithEvents LabelNombreUsuario As Label
+    Friend WithEvents LabelIDUsuario As Label
+    Friend WithEvents ButtonResetPass As Button
+    Friend WithEvents ButtonDeshabilitar As Button
 End Class

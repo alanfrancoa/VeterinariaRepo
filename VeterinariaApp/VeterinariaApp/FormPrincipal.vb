@@ -120,4 +120,9 @@ Public Class FormPrincipal
         Dim FormBuscadorMascotas As New BuscadorMascotas()
         FormBuscadorMascotas.Show()
     End Sub
+
+    Private Sub UsuariosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem1.Click
+        Dim FormBuscadorUsuarios As New BuscadorUsuarios()
+        FormBuscadorUsuarios.Show()
+    End Sub
 End Class
