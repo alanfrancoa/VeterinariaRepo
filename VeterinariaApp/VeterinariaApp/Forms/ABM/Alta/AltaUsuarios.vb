@@ -3,8 +3,13 @@ Imports VeterinariaServices.DAOs
 Imports VeterinariaServices.Models
 
 Public Class AltaUsuarios
-    Private _daoUsuarios As New DAOUsuarios
-    Private ContainerUsuarios As New ContenedorUsuarios
+    Private _contenedorUsuarios As ContenedorUsuarios
+
+    Public Sub New(contenedorUsuarios As ContenedorUsuarios)
+        InitializeComponent()
+        _contenedorUsuarios = contenedorUsuarios
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             Dim Username = TextBoxUser.Text
@@ -17,7 +22,7 @@ Public Class AltaUsuarios
                 Return
             End If
 
-            If ContainerUsuarios.ExisteUsername(Username) Then
+            If _contenedorUsuarios.ExisteUsername(Username) Then
                 MessageBox.Show("EL USERNAME YA EXISTE.")
                 Return
             End If
@@ -26,6 +31,7 @@ Public Class AltaUsuarios
                 MessageBox.Show("LA CONTRASEÑAS NO COINCIDEN.")
                 Return
             End If
+
             Dim loginAdminForm As New DialogoAdministrador
             Dim isAdmin As Boolean = loginAdminForm.ShowAndVerifyCredentials()
 
@@ -33,7 +39,7 @@ Public Class AltaUsuarios
                 ' Lógica para cuando el usuario es un administrador válido
                 Console.WriteLine("Acceso concedido: El usuario es Administrador.")
                 Dim nuevoUsuario As New Usuario(Username, Nombre, Clave)
-                Dim Insert = _daoUsuarios.Insert(nuevoUsuario)
+                Dim Insert = _contenedorUsuarios.AddUsuario(nuevoUsuario)
                 Me.Close()
                 Dim BarraDeProgreso As New BarraDeProgreso
                 BarraDeProgreso.Show()
@@ -54,5 +60,4 @@ Public Class AltaUsuarios
             MessageBox.Show($"ERROR {ex}")
         End Try
     End Sub
-
 End Class

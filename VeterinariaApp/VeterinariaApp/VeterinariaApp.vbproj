@@ -248,12 +248,6 @@
     <Compile Include="Forms\Buscador\Especies\BusquedaEspecie.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Buscador\Especies\BusquedaMascotaPorEspecie.Designer.vb">
-      <DependentUpon>BusquedaMascotaPorEspecie.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Buscador\Especies\BusquedaMascotaPorEspecie.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\Buscador\Mascotas\BusquedaMascota.Designer.vb">
       <DependentUpon>BusquedaMascota.vb</DependentUpon>
     </Compile>
@@ -405,9 +399,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Buscador\Especies\BusquedaEspecie.resx">
       <DependentUpon>BusquedaEspecie.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Buscador\Especies\BusquedaMascotaPorEspecie.resx">
-      <DependentUpon>BusquedaMascotaPorEspecie.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Buscador\Mascotas\BusquedaMascota.resx">
       <DependentUpon>BusquedaMascota.vb</DependentUpon>

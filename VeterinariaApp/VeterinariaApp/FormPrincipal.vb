@@ -10,11 +10,11 @@ Public Class FormPrincipal
 
     Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Crear instancia de UsuariosContainer y obtener la lista de usuarios
-        Dim usuariosContainer As New ContenedorUsuarios()
+        usuariosContainer = New ContenedorUsuarios()
         Dim listaUsuarios = usuariosContainer.GetAllActivos()
 
         ' Crear y configurar el formulario de login
-        _loginForm = New FormLogin(listaUsuarios)
+        _loginForm = New FormLogin(usuariosContainer)
         _loginForm.MdiParent = Me
         _loginForm.StartPosition = FormStartPosition.CenterScreen
         _loginForm.Show() ' Mostrar el formulario de login
@@ -76,7 +76,7 @@ Public Class FormPrincipal
     End Sub
 
     Private Sub UsuariosToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem2.Click
-        Dim formUsuarios As New AltaUsuarios()
+        Dim formUsuarios As New AltaUsuarios(usuariosContainer)
         formUsuarios.Show()
     End Sub
 
@@ -124,5 +124,15 @@ Public Class FormPrincipal
     Private Sub UsuariosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem1.Click
         Dim FormBuscadorUsuarios As New BuscadorUsuarios()
         FormBuscadorUsuarios.Show()
+    End Sub
+
+    Private Sub EspeciesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EspeciesToolStripMenuItem1.Click
+        Dim FormBuscadorEspecies As New BuscadorEspecies()
+        FormBuscadorEspecies.Show()
+    End Sub
+
+    Private Sub CantidadDeAnimalesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CantidadDeAnimalesToolStripMenuItem.Click
+        Dim formCantidadAnimales As New CantidadDeAnimales()
+        formCantidadAnimales.Show()
     End Sub
 End Class

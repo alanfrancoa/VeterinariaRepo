@@ -112,7 +112,7 @@ namespace VeterinariaServices.Containers
                     }
                 }
                 return ListaActivos;
-            }
+        }
 
             public bool ExisteUsername(string username)
             {
@@ -126,12 +126,18 @@ namespace VeterinariaServices.Containers
                 }
             }
             return false;
+            }
+        public bool AddUsuario(Usuario usuario)
+        {
+            bool insertado = _daoUsuarios.Insert(usuario);
+            if (insertado)
+            {
+                RefreshUsuarios();
+            }
+            return insertado;
         }
 
-        }
+    }
 
 
-
-
-   
 }

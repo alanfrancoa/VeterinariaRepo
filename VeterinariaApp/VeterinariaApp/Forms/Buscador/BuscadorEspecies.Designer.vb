@@ -35,7 +35,7 @@ Partial Class BuscadorEspecies
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(95, 189)
+        Me.Label1.Location = New System.Drawing.Point(119, 192)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(179, 15)
         Me.Label1.TabIndex = 26
@@ -44,7 +44,7 @@ Partial Class BuscadorEspecies
         'ButtonBusquedaMascotasEspecie
         '
         Me.ButtonBusquedaMascotasEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonBusquedaMascotasEspecie.Location = New System.Drawing.Point(406, 189)
+        Me.ButtonBusquedaMascotasEspecie.Location = New System.Drawing.Point(430, 192)
         Me.ButtonBusquedaMascotasEspecie.Name = "ButtonBusquedaMascotasEspecie"
         Me.ButtonBusquedaMascotasEspecie.Size = New System.Drawing.Size(35, 40)
         Me.ButtonBusquedaMascotasEspecie.TabIndex = 25
@@ -54,7 +54,7 @@ Partial Class BuscadorEspecies
         'ButtonBusquedaEspecieDetalle
         '
         Me.ButtonBusquedaEspecieDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonBusquedaEspecieDetalle.Location = New System.Drawing.Point(406, 125)
+        Me.ButtonBusquedaEspecieDetalle.Location = New System.Drawing.Point(430, 128)
         Me.ButtonBusquedaEspecieDetalle.Name = "ButtonBusquedaEspecieDetalle"
         Me.ButtonBusquedaEspecieDetalle.Size = New System.Drawing.Size(35, 40)
         Me.ButtonBusquedaEspecieDetalle.TabIndex = 24
@@ -65,7 +65,7 @@ Partial Class BuscadorEspecies
         '
         Me.LabelBusquedaID.AutoSize = True
         Me.LabelBusquedaID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBusquedaID.Location = New System.Drawing.Point(95, 125)
+        Me.LabelBusquedaID.Location = New System.Drawing.Point(119, 128)
         Me.LabelBusquedaID.Name = "LabelBusquedaID"
         Me.LabelBusquedaID.Size = New System.Drawing.Size(169, 15)
         Me.LabelBusquedaID.TabIndex = 23
@@ -75,7 +75,7 @@ Partial Class BuscadorEspecies
         '
         Me.LabelBuscadorEspecies.AutoSize = True
         Me.LabelBuscadorEspecies.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBuscadorEspecies.Location = New System.Drawing.Point(211, 69)
+        Me.LabelBuscadorEspecies.Location = New System.Drawing.Point(235, 72)
         Me.LabelBuscadorEspecies.Name = "LabelBuscadorEspecies"
         Me.LabelBuscadorEspecies.Size = New System.Drawing.Size(144, 16)
         Me.LabelBuscadorEspecies.TabIndex = 22
@@ -83,14 +83,14 @@ Partial Class BuscadorEspecies
         '
         'TextBoxEspecieMascotas
         '
-        Me.TextBoxEspecieMascotas.Location = New System.Drawing.Point(95, 209)
+        Me.TextBoxEspecieMascotas.Location = New System.Drawing.Point(119, 212)
         Me.TextBoxEspecieMascotas.Name = "TextBoxEspecieMascotas"
         Me.TextBoxEspecieMascotas.Size = New System.Drawing.Size(305, 20)
         Me.TextBoxEspecieMascotas.TabIndex = 21
         '
         'TextBoxEspecieDetalle
         '
-        Me.TextBoxEspecieDetalle.Location = New System.Drawing.Point(95, 141)
+        Me.TextBoxEspecieDetalle.Location = New System.Drawing.Point(119, 144)
         Me.TextBoxEspecieDetalle.Name = "TextBoxEspecieDetalle"
         Me.TextBoxEspecieDetalle.Size = New System.Drawing.Size(305, 20)
         Me.TextBoxEspecieDetalle.TabIndex = 20
@@ -99,7 +99,7 @@ Partial Class BuscadorEspecies
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(566, 354)
+        Me.ClientSize = New System.Drawing.Size(584, 336)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonBusquedaMascotasEspecie)
         Me.Controls.Add(Me.ButtonBusquedaEspecieDetalle)

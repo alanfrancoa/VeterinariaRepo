@@ -12,4 +12,5 @@ Public Class BusquedaMascotaListado
         DataGridViewMascotasBusqueda.DataSource = mascotas
         DataGridViewMascotasBusqueda.AutoResizeColumns()
     End Sub
+
 End Class
