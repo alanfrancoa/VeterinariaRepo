@@ -45,7 +45,7 @@ namespace VeterinariaServices.Containers
 
             foreach (Especie especie in ListaEspecies)
             {
-                if (especie.Nombre == nombre)
+                if (especie.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase))
                 {
                     especieBuscada = especie;
                     break;

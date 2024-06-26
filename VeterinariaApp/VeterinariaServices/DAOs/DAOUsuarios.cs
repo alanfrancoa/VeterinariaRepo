@@ -168,6 +168,7 @@ namespace VeterinariaServices.DAOs
 
             return RowsAffected > 0;
         }
+
         public bool Edit(string query)
         {
             var conexion = this.prepararConexion();
@@ -177,5 +178,8 @@ namespace VeterinariaServices.DAOs
             conexion.Close();
             return RowsAffected > 0;
         }
+
+
+
     }
 }

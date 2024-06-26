@@ -1,19 +1,20 @@
 ﻿Imports VeterinariaServices.Models
 Imports System.Threading.Tasks
+Imports VeterinariaServices.Containers
 
 Public Class FormLogin
-    Private _usuarios As List(Of Usuario)
+    Private _usuariosContainer As ContenedorUsuarios
     Private _loginTask As Task(Of Usuario)
     Private _loginSuccessfulUser As Usuario
 
     Public Event LoginSuccessful(ByVal usuarioLogueado As Usuario)
 
-    Public Sub New(usuarios As List(Of Usuario))
+    Public Sub New(usuariosContainer As ContenedorUsuarios)
         InitializeComponent()
-        _usuarios = usuarios
+        _usuariosContainer = usuariosContainer
         Me.StartPosition = FormStartPosition.CenterScreen
         ProgressBarLogin.Visible = False
-        TimerBar.Interval = 100 ' Ajusta el intervalo según sea necesario
+        TimerBar.Interval = 100
     End Sub
 
     Public ReadOnly Property LoggedUser As Usuario
@@ -78,7 +79,14 @@ Public Class FormLogin
     End Sub
 
     Private Function Login(username As String, password As String) As Usuario
-        Return _usuarios.FirstOrDefault(Function(u) u.Username.Equals(username, StringComparison.OrdinalIgnoreCase) AndAlso u.Password = password)
+        ' Usar _usuariosContainer para obtener la lista actualizada de usuarios
+        Return _usuariosContainer.GetAllActivos().FirstOrDefault(Function(u) u.Username.Equals(username, StringComparison.OrdinalIgnoreCase) AndAlso u.Password = password)
     End Function
 
+    Private Sub ButtonRegistro_Click(sender As Object, e As EventArgs) Handles ButtonRegistro.Click
+        Dim formUsuarios As New AltaUsuarios(_usuariosContainer)
+        formUsuarios.ShowDialog()
+        ' Actualizar la lista de usuarios después de registrar un nuevo usuario
+        _usuariosContainer = New ContenedorUsuarios()
+    End Sub
 End Class

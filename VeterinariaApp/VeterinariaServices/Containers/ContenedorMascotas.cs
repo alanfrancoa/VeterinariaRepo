@@ -156,5 +156,24 @@ namespace VeterinariaServices.Containers
             }
             return mascotasFiltradas;
         }
+        /// <summary>
+        /// Retorna una lista de mascotas que tienen el ID de especie especificado.
+        /// </summary>
+        /// <param name="IDEspecie">El ID de la especie a buscar.</param>
+        /// <returns>Retorna una lista de mascotas que tienen el ID de especie especificado.</returns>
+        public List<Mascota> BuscarMascotasPorIdEspecie(int IDEspecie)
+        {
+            var listaMascotas = _daoMascota.GetAll();
+            var mascotasPorEspecie = new List<Mascota>();
+
+            foreach (Mascota mascota in listaMascotas)
+            {
+                if (mascota.IdEspecie == IDEspecie)
+                {
+                    mascotasPorEspecie.Add(mascota);
+                }
+            }
+            return mascotasPorEspecie;
+        }
     }
 }
