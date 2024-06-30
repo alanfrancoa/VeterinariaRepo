@@ -24,12 +24,12 @@ Public Class BuscadorMascotas
             _mascotaSeleccionada = _contenedorMascotas.buscarPorID(id)
             If _mascotaSeleccionada IsNot Nothing Then
                 Me.Close()
-                MessageBox.Show($"Cliente encontrado: {_mascotaSeleccionada.Nombre}", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                MessageBox.Show($"Mascota encontrada: {_mascotaSeleccionada.Nombre}", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 'llamamos al form de muestra de informacion
                 Dim formMuestraMascota As New BusquedaMascota(_mascotaSeleccionada)
                 formMuestraMascota.Show()
             Else
-                MessageBox.Show("Cliente no encontrado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                MessageBox.Show("Mascota no encontrada.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         Else
             MessageBox.Show("Por favor, ingrese un ID válido.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
@@ -81,7 +81,7 @@ Public Class BuscadorMascotas
                 Dim formListadoMascotasNombre As New BusquedaMascotaListado(listadoMascotasNombre)
                 formListadoMascotasNombre.Show()
             Else
-                MessageBox.Show("No hay clientes con el nombre ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                MessageBox.Show("No hay Mascotas con el nombre ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
             End If
         End If

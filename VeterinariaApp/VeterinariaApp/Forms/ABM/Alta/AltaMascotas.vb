@@ -76,7 +76,7 @@ Public Class AltaMascotas
             If Insert Then
                 MessageBox.Show("Mascota agregada.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             Else
-                MessageBox.Show("No se ha podido agregar la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                MessageBox.Show("No se ha podido agregar la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
             End If
             Me.Close()

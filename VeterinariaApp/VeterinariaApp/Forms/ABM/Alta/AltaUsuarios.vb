@@ -48,13 +48,13 @@ Public Class AltaUsuarios
                     MessageBox.Show("Cliente agregado.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                 Else
-                    MessageBox.Show("No se ha podido agregar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                    MessageBox.Show("No se ha podido agregar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 End If
             Else
                 Dim BarraDeProgreso As New BarraDeProgreso
                 BarraDeProgreso.Show()
                 ' Lógica para cuando las credenciales son inválidas o el usuario no es administrador
-                MessageBox.Show("Acceso denegado. Las credenciales no son correctas o el usuario no es administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                MessageBox.Show("Acceso denegado. Las credenciales no son correctas o el usuario no es administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
 
         Catch ex As Exception

@@ -50,13 +50,13 @@ Public Class MuestraClienteBaja
                 If exitoBaja Then
                     MessageBox.Show("Cliente dado de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Else
-                    MessageBox.Show("No se ha podido realizar la baja del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                    MessageBox.Show("No se ha podido realizar la baja del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                 End If
                 If exitoBajaMascotas Then
                     MessageBox.Show("Mascotas dadas de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Else
-                    MessageBox.Show("No se ha podido realizar la baja de las masotas asoiadas al cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                    MessageBox.Show("No se ha podido realizar la baja de las masotas asoiadas al cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                 End If
             Else
@@ -66,13 +66,13 @@ Public Class MuestraClienteBaja
                 If exitoActivar Then
                     MessageBox.Show("Cliente dado de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Else
-                    MessageBox.Show("No se ha podido realizar el alta del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                    MessageBox.Show("No se ha podido realizar el alta del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                 End If
                 If exitoActivarMascotas Then
                     MessageBox.Show("Mascotas del cliente dadas de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Else
-                    MessageBox.Show("No se ha podido realizar el alta de las mascotas asociadas al cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                    MessageBox.Show("No se ha podido realizar el alta de las mascotas asociadas al cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                 End If
             End If

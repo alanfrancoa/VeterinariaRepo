@@ -72,7 +72,7 @@ Public Class BusquedaMascota
                         MessageBox.Show("Mascota dada de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                     Else
-                        MessageBox.Show("No se ha podido realizar la baja de la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                        MessageBox.Show("No se ha podido realizar la baja de la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                     End If
                 Else
@@ -86,7 +86,7 @@ Public Class BusquedaMascota
                         MessageBox.Show("Mascotra dada de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                     Else
-                        MessageBox.Show("No se ha podido realizar el alta de la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                        MessageBox.Show("No se ha podido realizar el alta de la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                     End If
                 Else

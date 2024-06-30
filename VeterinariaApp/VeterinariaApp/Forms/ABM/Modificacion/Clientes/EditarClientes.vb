@@ -111,8 +111,8 @@ Public Class EditarClientes
             MessageBox.Show("Cliente editado correctamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
         Else
-            MessageBox.Show("No se ha podido editar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
-        End If
+                MessageBox.Show("No se ha podido editar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+            End If
         Catch ex As Exception
             MessageBox.Show("ERROR.")
         End Try

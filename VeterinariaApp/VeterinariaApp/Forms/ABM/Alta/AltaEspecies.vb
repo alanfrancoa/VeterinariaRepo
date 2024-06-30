@@ -49,7 +49,7 @@ Public Class AltaEspecies
             If Insert Then
                 MessageBox.Show("Especie agregada exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             Else
-                MessageBox.Show("No se ha podido agregar la especie.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                MessageBox.Show("No se ha podido agregar la especie.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
             Me.Close()
         Catch ex As Exception

@@ -45,7 +45,7 @@ Public Class BajaUsuarios
                     MessageBox.Show("Cliente dado de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                 Else
-                    MessageBox.Show("No se ha podido realizar la baja.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                    MessageBox.Show("No se ha podido realizar la baja.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 End If
             Else
                 Dim exitoActivar = _daoUsuario.Activar(_usuario.Id)
@@ -54,7 +54,7 @@ Public Class BajaUsuarios
                     MessageBox.Show("Cliente dado de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                 Else
-                    MessageBox.Show("No se ha podido realizar el alta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                    MessageBox.Show("No se ha podido realizar el alta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 End If
             End If
         End If

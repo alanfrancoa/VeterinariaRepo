@@ -50,11 +50,12 @@ Public Class EditarUsuarios
 
             query += $" WHERE ID = {_usuario.Id}"
             Dim exito As Boolean = _daoUsuarios.Edit(query)
+            Me.Close()
             If exito Then
 
                 MessageBox.Show($"Cliente editado correctamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             Else
-                MessageBox.Show("No se ha podido editar el cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                MessageBox.Show("No se ha podido editar el cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         Catch ex As Exception
             MessageBox.Show("ERROR.")

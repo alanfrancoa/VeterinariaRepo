@@ -125,7 +125,7 @@ Public Class EditarMascotas
 
     Private Sub ButtonEditar_Click(sender As Object, e As EventArgs) Handles ButtonEditar.Click
         Try
-            Dim query As String = "UPDATE MASCOTAS SET"
+            Dim query As String = "set dateformat dmy;UPDATE MASCOTAS SET"
             Dim primerCampo As Boolean = True
 
             If _isNombreEditable Then
@@ -162,16 +162,14 @@ Public Class EditarMascotas
                 query += $" WHERE ID = {_mascota.Id}"
                 Dim exito As Boolean = _daoMascotas.Edit(query)
 
-            If exito Then
+                If exito Then
 
-                MessageBox.Show($"Mascota editada correctamente", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
-            Else
+                    MessageBox.Show($"Mascota editada correctamente", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                Else
 
-                MessageBox.Show("No se ha podido editar la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                    MessageBox.Show("No se ha podido editar la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                End If
             End If
-
-            MessageBox.Show("No se realizaron cambios.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
-        End If
 
             Me.Close()
         Catch ex As Exception

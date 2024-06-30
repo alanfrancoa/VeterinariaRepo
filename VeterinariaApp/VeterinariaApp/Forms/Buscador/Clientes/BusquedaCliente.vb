@@ -25,6 +25,7 @@ Public Class BusquedaCliente
         LabelDNICliente.Text = clienteSeleccionado.Dni
         LabelEMailCliente.Text = clienteSeleccionado.Email
         LabelEstadoCliente.Text = clienteSeleccionado.Estado
+        LabelTelefonoCliente.Text = clienteSeleccionado.Telefono
 
         If clienteSeleccionado.Estado = "ACTIVO" Then
             ButtonBajaCliente.Text = "Dar de Baja"

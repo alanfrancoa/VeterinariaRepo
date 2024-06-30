@@ -55,7 +55,7 @@ Public Class AltaClientes
                 MessageBox.Show("Cliente agregado.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
             Else
-                MessageBox.Show("No se ha podido agregar el cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                MessageBox.Show("No se ha podido agregar el cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
             End If
             Me.Close()
