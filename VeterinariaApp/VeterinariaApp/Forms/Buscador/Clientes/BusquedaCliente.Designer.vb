@@ -42,7 +42,7 @@ Partial Class BusquedaCliente
         '
         'ButtonVerMascotasCliente
         '
-        Me.ButtonVerMascotasCliente.Location = New System.Drawing.Point(232, 461)
+        Me.ButtonVerMascotasCliente.Location = New System.Drawing.Point(232, 480)
         Me.ButtonVerMascotasCliente.Name = "ButtonVerMascotasCliente"
         Me.ButtonVerMascotasCliente.Size = New System.Drawing.Size(121, 44)
         Me.ButtonVerMascotasCliente.TabIndex = 19
@@ -52,10 +52,10 @@ Partial Class BusquedaCliente
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(203, 44)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(191, 34)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(181, 20)
+        Me.Label7.Size = New System.Drawing.Size(202, 20)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Resultado de Busqueda"
         '
@@ -63,7 +63,7 @@ Partial Class BusquedaCliente
         '
         Me.LabelEstadoCliente.AutoSize = True
         Me.LabelEstadoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEstadoCliente.Location = New System.Drawing.Point(394, 402)
+        Me.LabelEstadoCliente.Location = New System.Drawing.Point(292, 407)
         Me.LabelEstadoCliente.Name = "LabelEstadoCliente"
         Me.LabelEstadoCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelEstadoCliente.TabIndex = 15
@@ -72,7 +72,7 @@ Partial Class BusquedaCliente
         '
         Me.LabelEMailCliente.AutoSize = True
         Me.LabelEMailCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEMailCliente.Location = New System.Drawing.Point(394, 345)
+        Me.LabelEMailCliente.Location = New System.Drawing.Point(292, 350)
         Me.LabelEMailCliente.Name = "LabelEMailCliente"
         Me.LabelEMailCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelEMailCliente.TabIndex = 14
@@ -81,7 +81,7 @@ Partial Class BusquedaCliente
         '
         Me.LabelTelefonoCliente.AutoSize = True
         Me.LabelTelefonoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTelefonoCliente.Location = New System.Drawing.Point(394, 288)
+        Me.LabelTelefonoCliente.Location = New System.Drawing.Point(292, 293)
         Me.LabelTelefonoCliente.Name = "LabelTelefonoCliente"
         Me.LabelTelefonoCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelTelefonoCliente.TabIndex = 13
@@ -90,7 +90,7 @@ Partial Class BusquedaCliente
         '
         Me.LabelDNICliente.AutoSize = True
         Me.LabelDNICliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelDNICliente.Location = New System.Drawing.Point(394, 231)
+        Me.LabelDNICliente.Location = New System.Drawing.Point(292, 236)
         Me.LabelDNICliente.Name = "LabelDNICliente"
         Me.LabelDNICliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelDNICliente.TabIndex = 12
@@ -99,7 +99,7 @@ Partial Class BusquedaCliente
         '
         Me.LabelNombreCliente.AutoSize = True
         Me.LabelNombreCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombreCliente.Location = New System.Drawing.Point(394, 174)
+        Me.LabelNombreCliente.Location = New System.Drawing.Point(292, 179)
         Me.LabelNombreCliente.Name = "LabelNombreCliente"
         Me.LabelNombreCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelNombreCliente.TabIndex = 11
@@ -108,7 +108,7 @@ Partial Class BusquedaCliente
         '
         Me.LabelIDCliente.AutoSize = True
         Me.LabelIDCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelIDCliente.Location = New System.Drawing.Point(394, 117)
+        Me.LabelIDCliente.Location = New System.Drawing.Point(292, 122)
         Me.LabelIDCliente.Name = "LabelIDCliente"
         Me.LabelIDCliente.Size = New System.Drawing.Size(0, 18)
         Me.LabelIDCliente.TabIndex = 10
@@ -175,7 +175,7 @@ Partial Class BusquedaCliente
         '
         'ButtonEditar
         '
-        Me.ButtonEditar.Location = New System.Drawing.Point(67, 461)
+        Me.ButtonEditar.Location = New System.Drawing.Point(67, 480)
         Me.ButtonEditar.Name = "ButtonEditar"
         Me.ButtonEditar.Size = New System.Drawing.Size(121, 44)
         Me.ButtonEditar.TabIndex = 26
@@ -184,7 +184,7 @@ Partial Class BusquedaCliente
         '
         'ButtonBajaCliente
         '
-        Me.ButtonBajaCliente.Location = New System.Drawing.Point(397, 461)
+        Me.ButtonBajaCliente.Location = New System.Drawing.Point(397, 480)
         Me.ButtonBajaCliente.Name = "ButtonBajaCliente"
         Me.ButtonBajaCliente.Size = New System.Drawing.Size(121, 44)
         Me.ButtonBajaCliente.TabIndex = 27
@@ -212,8 +212,13 @@ Partial Class BusquedaCliente
         Me.Controls.Add(Me.LabelDNICliente)
         Me.Controls.Add(Me.LabelNombreCliente)
         Me.Controls.Add(Me.LabelIDCliente)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "BusquedaCliente"
-        Me.Text = "Busqueda de Cliente"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Cliente Encontrado"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

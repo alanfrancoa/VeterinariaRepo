@@ -22,6 +22,7 @@ Partial Class FormPrincipal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Me.MenuStripFormPrincipal = New System.Windows.Forms.MenuStrip()
         Me.ListadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -253,7 +254,7 @@ Partial Class FormPrincipal
         Me.LabelBienvenido.AutoSize = True
         Me.LabelBienvenido.BackColor = System.Drawing.Color.Transparent
         Me.LabelBienvenido.Font = New System.Drawing.Font("Calibri", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBienvenido.Location = New System.Drawing.Point(638, 33)
+        Me.LabelBienvenido.Location = New System.Drawing.Point(724, 42)
         Me.LabelBienvenido.Name = "LabelBienvenido"
         Me.LabelBienvenido.Size = New System.Drawing.Size(182, 39)
         Me.LabelBienvenido.TabIndex = 2
@@ -264,13 +265,17 @@ Partial Class FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1139, 580)
+        Me.ClientSize = New System.Drawing.Size(1134, 586)
         Me.Controls.Add(Me.LabelBienvenido)
         Me.Controls.Add(Me.MenuStripFormPrincipal)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStripFormPrincipal
+        Me.MaximizeBox = False
         Me.Name = "FormPrincipal"
         Me.Text = "Veterinaria App"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStripFormPrincipal.ResumeLayout(False)
         Me.MenuStripFormPrincipal.PerformLayout()
         Me.ResumeLayout(False)

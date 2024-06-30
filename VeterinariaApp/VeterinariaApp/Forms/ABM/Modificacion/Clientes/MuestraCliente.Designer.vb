@@ -40,7 +40,7 @@ Partial Class MuestraCliente
         '
         'ButtonEditarCliente
         '
-        Me.ButtonEditarCliente.Location = New System.Drawing.Point(217, 455)
+        Me.ButtonEditarCliente.Location = New System.Drawing.Point(232, 480)
         Me.ButtonEditarCliente.Name = "ButtonEditarCliente"
         Me.ButtonEditarCliente.Size = New System.Drawing.Size(121, 44)
         Me.ButtonEditarCliente.TabIndex = 27
@@ -50,10 +50,10 @@ Partial Class MuestraCliente
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(189, 38)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(191, 38)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(181, 20)
+        Me.Label7.Size = New System.Drawing.Size(202, 20)
         Me.Label7.TabIndex = 26
         Me.Label7.Text = "Resultado de Busqueda"
         '
@@ -61,7 +61,7 @@ Partial Class MuestraCliente
         '
         Me.LabelEstadoCliente.AutoSize = True
         Me.LabelEstadoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEstadoCliente.Location = New System.Drawing.Point(379, 398)
+        Me.LabelEstadoCliente.Location = New System.Drawing.Point(336, 406)
         Me.LabelEstadoCliente.Name = "LabelEstadoCliente"
         Me.LabelEstadoCliente.Size = New System.Drawing.Size(0, 16)
         Me.LabelEstadoCliente.TabIndex = 25
@@ -70,7 +70,7 @@ Partial Class MuestraCliente
         '
         Me.LabelEMailCliente.AutoSize = True
         Me.LabelEMailCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEMailCliente.Location = New System.Drawing.Point(379, 341)
+        Me.LabelEMailCliente.Location = New System.Drawing.Point(336, 349)
         Me.LabelEMailCliente.Name = "LabelEMailCliente"
         Me.LabelEMailCliente.Size = New System.Drawing.Size(0, 16)
         Me.LabelEMailCliente.TabIndex = 24
@@ -79,7 +79,7 @@ Partial Class MuestraCliente
         '
         Me.LabelTelefonoCliente.AutoSize = True
         Me.LabelTelefonoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTelefonoCliente.Location = New System.Drawing.Point(379, 284)
+        Me.LabelTelefonoCliente.Location = New System.Drawing.Point(336, 292)
         Me.LabelTelefonoCliente.Name = "LabelTelefonoCliente"
         Me.LabelTelefonoCliente.Size = New System.Drawing.Size(0, 16)
         Me.LabelTelefonoCliente.TabIndex = 23
@@ -88,7 +88,7 @@ Partial Class MuestraCliente
         '
         Me.LabelDNICliente.AutoSize = True
         Me.LabelDNICliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelDNICliente.Location = New System.Drawing.Point(379, 227)
+        Me.LabelDNICliente.Location = New System.Drawing.Point(336, 235)
         Me.LabelDNICliente.Name = "LabelDNICliente"
         Me.LabelDNICliente.Size = New System.Drawing.Size(0, 16)
         Me.LabelDNICliente.TabIndex = 22
@@ -97,7 +97,7 @@ Partial Class MuestraCliente
         '
         Me.LabelNombreCliente.AutoSize = True
         Me.LabelNombreCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombreCliente.Location = New System.Drawing.Point(379, 170)
+        Me.LabelNombreCliente.Location = New System.Drawing.Point(336, 178)
         Me.LabelNombreCliente.Name = "LabelNombreCliente"
         Me.LabelNombreCliente.Size = New System.Drawing.Size(0, 16)
         Me.LabelNombreCliente.TabIndex = 21
@@ -106,7 +106,7 @@ Partial Class MuestraCliente
         '
         Me.LabelIDCliente.AutoSize = True
         Me.LabelIDCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelIDCliente.Location = New System.Drawing.Point(379, 113)
+        Me.LabelIDCliente.Location = New System.Drawing.Point(336, 121)
         Me.LabelIDCliente.Name = "LabelIDCliente"
         Me.LabelIDCliente.Size = New System.Drawing.Size(0, 16)
         Me.LabelIDCliente.TabIndex = 20
@@ -175,7 +175,7 @@ Partial Class MuestraCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(559, 536)
+        Me.ClientSize = New System.Drawing.Size(584, 536)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
@@ -190,7 +190,12 @@ Partial Class MuestraCliente
         Me.Controls.Add(Me.LabelDNICliente)
         Me.Controls.Add(Me.LabelNombreCliente)
         Me.Controls.Add(Me.LabelIDCliente)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "MuestraCliente"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Resultado de la Busqueda"
         Me.ResumeLayout(False)
         Me.PerformLayout()

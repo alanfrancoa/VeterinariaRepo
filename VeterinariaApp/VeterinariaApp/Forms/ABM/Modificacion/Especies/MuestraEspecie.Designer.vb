@@ -38,7 +38,7 @@ Partial Class MuestraEspecie
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(142, 302)
+        Me.Label3.Location = New System.Drawing.Point(117, 333)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(116, 18)
         Me.Label3.TabIndex = 45
@@ -48,7 +48,7 @@ Partial Class MuestraEspecie
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(142, 245)
+        Me.Label4.Location = New System.Drawing.Point(117, 276)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(108, 18)
         Me.Label4.TabIndex = 44
@@ -58,7 +58,7 @@ Partial Class MuestraEspecie
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(142, 188)
+        Me.Label5.Location = New System.Drawing.Point(117, 219)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(66, 18)
         Me.Label5.TabIndex = 43
@@ -68,7 +68,7 @@ Partial Class MuestraEspecie
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(142, 131)
+        Me.Label6.Location = New System.Drawing.Point(117, 162)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(26, 18)
         Me.Label6.TabIndex = 42
@@ -76,7 +76,7 @@ Partial Class MuestraEspecie
         '
         'ButtonEditarCliente
         '
-        Me.ButtonEditarCliente.Location = New System.Drawing.Point(262, 444)
+        Me.ButtonEditarCliente.Location = New System.Drawing.Point(232, 480)
         Me.ButtonEditarCliente.Name = "ButtonEditarCliente"
         Me.ButtonEditarCliente.Size = New System.Drawing.Size(121, 44)
         Me.ButtonEditarCliente.TabIndex = 41
@@ -86,10 +86,10 @@ Partial Class MuestraEspecie
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(217, 35)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(191, 35)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(181, 20)
+        Me.Label7.Size = New System.Drawing.Size(202, 20)
         Me.Label7.TabIndex = 40
         Me.Label7.Text = "Resultado de Busqueda"
         '
@@ -97,7 +97,7 @@ Partial Class MuestraEspecie
         '
         Me.LabelTelefonoCliente.AutoSize = True
         Me.LabelTelefonoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTelefonoCliente.Location = New System.Drawing.Point(417, 304)
+        Me.LabelTelefonoCliente.Location = New System.Drawing.Point(392, 335)
         Me.LabelTelefonoCliente.Name = "LabelTelefonoCliente"
         Me.LabelTelefonoCliente.Size = New System.Drawing.Size(0, 16)
         Me.LabelTelefonoCliente.TabIndex = 37
@@ -106,7 +106,7 @@ Partial Class MuestraEspecie
         '
         Me.LabelE_Madurez.AutoSize = True
         Me.LabelE_Madurez.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelE_Madurez.Location = New System.Drawing.Point(417, 247)
+        Me.LabelE_Madurez.Location = New System.Drawing.Point(392, 278)
         Me.LabelE_Madurez.Name = "LabelE_Madurez"
         Me.LabelE_Madurez.Size = New System.Drawing.Size(0, 16)
         Me.LabelE_Madurez.TabIndex = 36
@@ -115,7 +115,7 @@ Partial Class MuestraEspecie
         '
         Me.LabelNombreEspecie.AutoSize = True
         Me.LabelNombreEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombreEspecie.Location = New System.Drawing.Point(417, 190)
+        Me.LabelNombreEspecie.Location = New System.Drawing.Point(392, 221)
         Me.LabelNombreEspecie.Name = "LabelNombreEspecie"
         Me.LabelNombreEspecie.Size = New System.Drawing.Size(0, 16)
         Me.LabelNombreEspecie.TabIndex = 35
@@ -124,7 +124,7 @@ Partial Class MuestraEspecie
         '
         Me.LabelIDEspecie.AutoSize = True
         Me.LabelIDEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelIDEspecie.Location = New System.Drawing.Point(417, 133)
+        Me.LabelIDEspecie.Location = New System.Drawing.Point(392, 164)
         Me.LabelIDEspecie.Name = "LabelIDEspecie"
         Me.LabelIDEspecie.Size = New System.Drawing.Size(0, 16)
         Me.LabelIDEspecie.TabIndex = 34
@@ -133,7 +133,7 @@ Partial Class MuestraEspecie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(559, 536)
+        Me.ClientSize = New System.Drawing.Size(584, 536)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
@@ -144,7 +144,11 @@ Partial Class MuestraEspecie
         Me.Controls.Add(Me.LabelE_Madurez)
         Me.Controls.Add(Me.LabelNombreEspecie)
         Me.Controls.Add(Me.LabelIDEspecie)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "MuestraEspecie"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Resultado de la Busqueda"
         Me.ResumeLayout(False)
         Me.PerformLayout()

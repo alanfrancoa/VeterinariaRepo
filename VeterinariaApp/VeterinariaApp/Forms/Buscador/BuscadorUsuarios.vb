@@ -20,12 +20,13 @@ Public Class BuscadorUsuarios
         Dim usernameABuscar = TextBoxBusquedaUsuario.Text
 
         If String.IsNullOrEmpty(usernameABuscar) Then
-            MessageBox.Show("Ingrese un valor a buscar")
+            MessageBox.Show("Ingrese un valor a buscar.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         Else
             _usuarioSeleccionado = _contenedorUsuarios.GetUsuarioByUsername(usernameABuscar)
             If _usuarioSeleccionado IsNot Nothing Then
                 Me.Close()
-                MessageBox.Show($"Usuario encontrado: {_usuarioSeleccionado.Nombre} ")
+                MessageBox.Show($"Usuario encontrado: {_usuarioSeleccionado.Nombre} ", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 'llamamos al form de muestra de informacion
                 Dim formMuestraUsuario As New BusquedaUsuario(_usuarioSeleccionado)
                 formMuestraUsuario.Show()

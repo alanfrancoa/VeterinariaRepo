@@ -19,25 +19,29 @@ Public Class AltaClientes
 
             ' Verificar que todos los campos estén completados
             If Nombre = "" Or TextBoxDni.Text = "" Or TextBoxTelefono.Text = "" Or Email = "" Then
-                MessageBox.Show("TODOS LOS CAMPOS DEBEN SER COMPLETADOS.")
+                MessageBox.Show("Todos los campos deben ser completados.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 Return
             End If
 
             ' Intentar convertir los valores de Dni y Telefono a números
             If Not Long.TryParse(TextBoxDni.Text, Dni) Or Not Long.TryParse(TextBoxTelefono.Text, Telefono) Then
-                MessageBox.Show("DNI y TELÉFONO DEBEN SER NÚMEROS VÁLIDOS.")
+                MessageBox.Show("El DNI y el teléfono deben ser números.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 Return
             End If
 
             ' Verificar que Dni y Telefono no sean negativos
             If Dni <= 0 Or Telefono <= 0 Then
-                MessageBox.Show("NO PUEDE HABER VALORES NEGATIVOS O CERO.")
+                MessageBox.Show("El DNI y el teléfono no pueden ser números negativos.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 Return
             End If
 
             ' Verificar si el DNI ya existe
             If ContainerCliente.ExisteDni(Dni) Then
-                MessageBox.Show("EL DNI TIENE QUE SER UNICO.")
+                MessageBox.Show("El DNI existe en la base.", "Dato existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 Return
             End If
 
@@ -48,11 +52,13 @@ Public Class AltaClientes
             'Llamar al progress bar
 
             If Insert Then
-                MessageBox.Show("CLIENTE AGREGADO")
-            Else
-                MessageBox.Show("NO SE HA PODIDO AGREGAR EL CLIENTE")
-            End If
+                MessageBox.Show("Cliente agregado.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
+            Else
+                MessageBox.Show("No se ha podido agregar el cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
+            End If
+            Me.Close()
         Catch ex As Exception
             MessageBox.Show($"ERROR {ex}")
         End Try

@@ -34,6 +34,7 @@ Public Class EditarUsuarios
     End Sub
 
     Private Sub ButtonEditar_Click(sender As Object, e As EventArgs) Handles ButtonEditar.Click
+
         Try
             Dim query As String = "UPDATE USUARIOS SET "
             Dim primerCampo As Boolean = True
@@ -50,12 +51,14 @@ Public Class EditarUsuarios
             query += $" WHERE ID = {_usuario.Id}"
             Dim exito As Boolean = _daoUsuarios.Edit(query)
             If exito Then
-                MessageBox.Show("Cliente editado correctamente.")
+
+                MessageBox.Show($"Cliente editado correctamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             Else
-                MessageBox.Show("Hubo un error al editar el cliente.")
+                MessageBox.Show("No se ha podido editar el cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
             End If
         Catch ex As Exception
             MessageBox.Show("ERROR.")
         End Try
+
     End Sub
 End Class

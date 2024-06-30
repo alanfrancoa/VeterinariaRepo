@@ -46,7 +46,7 @@ Partial Class EditarMascotas
         'ButtonBuscarEspecie
         '
         Me.ButtonBuscarEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonBuscarEspecie.Location = New System.Drawing.Point(359, 247)
+        Me.ButtonBuscarEspecie.Location = New System.Drawing.Point(359, 241)
         Me.ButtonBuscarEspecie.Name = "ButtonBuscarEspecie"
         Me.ButtonBuscarEspecie.Size = New System.Drawing.Size(35, 40)
         Me.ButtonBuscarEspecie.TabIndex = 41
@@ -56,7 +56,7 @@ Partial Class EditarMascotas
         'ButtonEditFecha
         '
         Me.ButtonEditFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditFecha.Location = New System.Drawing.Point(400, 192)
+        Me.ButtonEditFecha.Location = New System.Drawing.Point(400, 186)
         Me.ButtonEditFecha.Name = "ButtonEditFecha"
         Me.ButtonEditFecha.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditFecha.TabIndex = 40
@@ -66,7 +66,7 @@ Partial Class EditarMascotas
         'ButtonEditPeso
         '
         Me.ButtonEditPeso.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditPeso.Location = New System.Drawing.Point(400, 137)
+        Me.ButtonEditPeso.Location = New System.Drawing.Point(400, 131)
         Me.ButtonEditPeso.Name = "ButtonEditPeso"
         Me.ButtonEditPeso.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditPeso.TabIndex = 39
@@ -76,7 +76,7 @@ Partial Class EditarMascotas
         'ButtonEditNombre
         '
         Me.ButtonEditNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditNombre.Location = New System.Drawing.Point(400, 82)
+        Me.ButtonEditNombre.Location = New System.Drawing.Point(400, 76)
         Me.ButtonEditNombre.Name = "ButtonEditNombre"
         Me.ButtonEditNombre.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditNombre.TabIndex = 38
@@ -86,7 +86,7 @@ Partial Class EditarMascotas
         'ButtonEditar
         '
         Me.ButtonEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.ButtonEditar.Location = New System.Drawing.Point(231, 392)
+        Me.ButtonEditar.Location = New System.Drawing.Point(231, 377)
         Me.ButtonEditar.Name = "ButtonEditar"
         Me.ButtonEditar.Size = New System.Drawing.Size(111, 47)
         Me.ButtonEditar.TabIndex = 37
@@ -105,28 +105,28 @@ Partial Class EditarMascotas
         '
         'TextBoxEspecieID
         '
-        Me.TextBoxEspecieID.Location = New System.Drawing.Point(152, 262)
+        Me.TextBoxEspecieID.Location = New System.Drawing.Point(152, 256)
         Me.TextBoxEspecieID.Name = "TextBoxEspecieID"
         Me.TextBoxEspecieID.Size = New System.Drawing.Size(190, 20)
         Me.TextBoxEspecieID.TabIndex = 35
         '
         'TextBoxFechaNacimiento
         '
-        Me.TextBoxFechaNacimiento.Location = New System.Drawing.Point(152, 207)
+        Me.TextBoxFechaNacimiento.Location = New System.Drawing.Point(152, 201)
         Me.TextBoxFechaNacimiento.Name = "TextBoxFechaNacimiento"
         Me.TextBoxFechaNacimiento.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxFechaNacimiento.TabIndex = 34
         '
         'TextBoxPeso
         '
-        Me.TextBoxPeso.Location = New System.Drawing.Point(152, 152)
+        Me.TextBoxPeso.Location = New System.Drawing.Point(152, 146)
         Me.TextBoxPeso.Name = "TextBoxPeso"
         Me.TextBoxPeso.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxPeso.TabIndex = 33
         '
         'TextBoxNombre
         '
-        Me.TextBoxNombre.Location = New System.Drawing.Point(152, 97)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(152, 91)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxNombre.TabIndex = 32
@@ -134,7 +134,7 @@ Partial Class EditarMascotas
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(149, 246)
+        Me.Label4.Location = New System.Drawing.Point(149, 240)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(48, 13)
         Me.Label4.TabIndex = 31
@@ -143,7 +143,7 @@ Partial Class EditarMascotas
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(149, 191)
+        Me.Label3.Location = New System.Drawing.Point(149, 185)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(111, 13)
         Me.Label3.TabIndex = 30
@@ -152,7 +152,7 @@ Partial Class EditarMascotas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(149, 136)
+        Me.Label2.Location = New System.Drawing.Point(149, 130)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(34, 13)
         Me.Label2.TabIndex = 29
@@ -161,7 +161,7 @@ Partial Class EditarMascotas
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(149, 81)
+        Me.Label1.Location = New System.Drawing.Point(149, 75)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 13)
         Me.Label1.TabIndex = 28
@@ -170,7 +170,7 @@ Partial Class EditarMascotas
         'ButtonBuscarCliente
         '
         Me.ButtonBuscarCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonBuscarCliente.Location = New System.Drawing.Point(359, 306)
+        Me.ButtonBuscarCliente.Location = New System.Drawing.Point(359, 300)
         Me.ButtonBuscarCliente.Name = "ButtonBuscarCliente"
         Me.ButtonBuscarCliente.Size = New System.Drawing.Size(35, 40)
         Me.ButtonBuscarCliente.TabIndex = 44
@@ -179,7 +179,7 @@ Partial Class EditarMascotas
         '
         'TextBoxClienteID
         '
-        Me.TextBoxClienteID.Location = New System.Drawing.Point(152, 321)
+        Me.TextBoxClienteID.Location = New System.Drawing.Point(152, 315)
         Me.TextBoxClienteID.Name = "TextBoxClienteID"
         Me.TextBoxClienteID.Size = New System.Drawing.Size(190, 20)
         Me.TextBoxClienteID.TabIndex = 43
@@ -187,7 +187,7 @@ Partial Class EditarMascotas
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(149, 305)
+        Me.Label5.Location = New System.Drawing.Point(149, 299)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(42, 13)
         Me.Label5.TabIndex = 42
@@ -196,7 +196,7 @@ Partial Class EditarMascotas
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(400, 306)
+        Me.Button2.Location = New System.Drawing.Point(400, 300)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(35, 40)
         Me.Button2.TabIndex = 46
@@ -206,7 +206,7 @@ Partial Class EditarMascotas
         'ButtonEditarEspecie
         '
         Me.ButtonEditarEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditarEspecie.Location = New System.Drawing.Point(400, 247)
+        Me.ButtonEditarEspecie.Location = New System.Drawing.Point(400, 241)
         Me.ButtonEditarEspecie.Name = "ButtonEditarEspecie"
         Me.ButtonEditarEspecie.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditarEspecie.TabIndex = 45
@@ -217,7 +217,7 @@ Partial Class EditarMascotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 461)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ButtonEditarEspecie)
         Me.Controls.Add(Me.ButtonBuscarCliente)
@@ -237,8 +237,13 @@ Partial Class EditarMascotas
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "EditarMascotas"
-        Me.Text = "Editar Mascota"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Edición de Mascotas"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

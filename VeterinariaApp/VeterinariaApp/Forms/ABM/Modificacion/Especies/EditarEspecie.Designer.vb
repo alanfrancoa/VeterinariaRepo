@@ -38,7 +38,7 @@ Partial Class EditarEspecie
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(149, 95)
+        Me.Label1.Location = New System.Drawing.Point(149, 128)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 13)
         Me.Label1.TabIndex = 28
@@ -47,7 +47,7 @@ Partial Class EditarEspecie
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(149, 150)
+        Me.Label2.Location = New System.Drawing.Point(149, 183)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(79, 13)
         Me.Label2.TabIndex = 29
@@ -56,7 +56,7 @@ Partial Class EditarEspecie
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(149, 205)
+        Me.Label3.Location = New System.Drawing.Point(149, 238)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(81, 13)
         Me.Label3.TabIndex = 30
@@ -64,21 +64,21 @@ Partial Class EditarEspecie
         '
         'TextBoxNombre
         '
-        Me.TextBoxNombre.Location = New System.Drawing.Point(152, 111)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(152, 144)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxNombre.TabIndex = 32
         '
         'TextBoxE_Madurez
         '
-        Me.TextBoxE_Madurez.Location = New System.Drawing.Point(152, 166)
+        Me.TextBoxE_Madurez.Location = New System.Drawing.Point(152, 199)
         Me.TextBoxE_Madurez.Name = "TextBoxE_Madurez"
         Me.TextBoxE_Madurez.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxE_Madurez.TabIndex = 33
         '
         'TextBoxP_Prom
         '
-        Me.TextBoxP_Prom.Location = New System.Drawing.Point(152, 221)
+        Me.TextBoxP_Prom.Location = New System.Drawing.Point(152, 254)
         Me.TextBoxP_Prom.Name = "TextBoxP_Prom"
         Me.TextBoxP_Prom.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxP_Prom.TabIndex = 34
@@ -87,16 +87,16 @@ Partial Class EditarEspecie
         '
         Me.LabelAltaClientes.AutoSize = True
         Me.LabelAltaClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAltaClientes.Location = New System.Drawing.Point(212, 25)
+        Me.LabelAltaClientes.Location = New System.Drawing.Point(233, 25)
         Me.LabelAltaClientes.Name = "LabelAltaClientes"
-        Me.LabelAltaClientes.Size = New System.Drawing.Size(118, 20)
+        Me.LabelAltaClientes.Size = New System.Drawing.Size(126, 20)
         Me.LabelAltaClientes.TabIndex = 36
-        Me.LabelAltaClientes.Text = "Editar Cliente"
+        Me.LabelAltaClientes.Text = "Editar Especie"
         '
         'ButtonEditar
         '
         Me.ButtonEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.ButtonEditar.Location = New System.Drawing.Point(237, 290)
+        Me.ButtonEditar.Location = New System.Drawing.Point(237, 377)
         Me.ButtonEditar.Name = "ButtonEditar"
         Me.ButtonEditar.Size = New System.Drawing.Size(111, 47)
         Me.ButtonEditar.TabIndex = 37
@@ -106,7 +106,7 @@ Partial Class EditarEspecie
         'ButtonEditNombre
         '
         Me.ButtonEditNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditNombre.Location = New System.Drawing.Point(400, 96)
+        Me.ButtonEditNombre.Location = New System.Drawing.Point(400, 129)
         Me.ButtonEditNombre.Name = "ButtonEditNombre"
         Me.ButtonEditNombre.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditNombre.TabIndex = 38
@@ -116,7 +116,7 @@ Partial Class EditarEspecie
         'ButtonEditE_Madurez
         '
         Me.ButtonEditE_Madurez.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditE_Madurez.Location = New System.Drawing.Point(400, 151)
+        Me.ButtonEditE_Madurez.Location = New System.Drawing.Point(400, 184)
         Me.ButtonEditE_Madurez.Name = "ButtonEditE_Madurez"
         Me.ButtonEditE_Madurez.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditE_Madurez.TabIndex = 39
@@ -126,7 +126,7 @@ Partial Class EditarEspecie
         'ButtonEditP_Prom
         '
         Me.ButtonEditP_Prom.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditP_Prom.Location = New System.Drawing.Point(400, 206)
+        Me.ButtonEditP_Prom.Location = New System.Drawing.Point(400, 239)
         Me.ButtonEditP_Prom.Name = "ButtonEditP_Prom"
         Me.ButtonEditP_Prom.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditP_Prom.TabIndex = 40
@@ -137,7 +137,7 @@ Partial Class EditarEspecie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 386)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.ButtonEditP_Prom)
         Me.Controls.Add(Me.ButtonEditE_Madurez)
         Me.Controls.Add(Me.ButtonEditNombre)
@@ -149,8 +149,13 @@ Partial Class EditarEspecie
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "EditarEspecie"
-        Me.Text = "EditarEspecie"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Edición de Especies"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

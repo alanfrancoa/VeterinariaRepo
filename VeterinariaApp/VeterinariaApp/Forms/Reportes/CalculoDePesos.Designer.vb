@@ -25,11 +25,11 @@ Partial Class CalculoDePesos
         Me.DataGridViewCalculoPesos = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ButtonBusqueda = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.NumericUpDownHasta = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDownDesde = New System.Windows.Forms.NumericUpDown()
-        Me.ButtonBusqueda = New System.Windows.Forms.Button()
         CType(Me.DataGridViewCalculoPesos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.NumericUpDownHasta, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -40,20 +40,24 @@ Partial Class CalculoDePesos
         '
         Me.DataGridViewCalculoPesos.AllowUserToAddRows = False
         Me.DataGridViewCalculoPesos.AllowUserToDeleteRows = False
+        Me.DataGridViewCalculoPesos.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridViewCalculoPesos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridViewCalculoPesos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewCalculoPesos.Location = New System.Drawing.Point(12, 122)
+        Me.DataGridViewCalculoPesos.Location = New System.Drawing.Point(16, 117)
         Me.DataGridViewCalculoPesos.Name = "DataGridViewCalculoPesos"
         Me.DataGridViewCalculoPesos.ReadOnly = True
-        Me.DataGridViewCalculoPesos.Size = New System.Drawing.Size(776, 408)
+        Me.DataGridViewCalculoPesos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridViewCalculoPesos.Size = New System.Drawing.Size(950, 450)
         Me.DataGridViewCalculoPesos.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 41)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 46)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(226, 20)
+        Me.Label1.Size = New System.Drawing.Size(254, 20)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Cálculo de Pesos en Mascotas"
         '
@@ -64,12 +68,22 @@ Partial Class CalculoDePesos
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.NumericUpDownHasta)
         Me.GroupBox1.Controls.Add(Me.NumericUpDownDesde)
-        Me.GroupBox1.Location = New System.Drawing.Point(505, 14)
+        Me.GroupBox1.Location = New System.Drawing.Point(684, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(282, 97)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filtrado de Edad"
+        '
+        'ButtonBusqueda
+        '
+        Me.ButtonBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBusqueda.Location = New System.Drawing.Point(227, 34)
+        Me.ButtonBusqueda.Name = "ButtonBusqueda"
+        Me.ButtonBusqueda.Size = New System.Drawing.Size(35, 40)
+        Me.ButtonBusqueda.TabIndex = 18
+        Me.ButtonBusqueda.Text = "🔍"
+        Me.ButtonBusqueda.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -103,25 +117,20 @@ Partial Class CalculoDePesos
         Me.NumericUpDownDesde.Size = New System.Drawing.Size(76, 20)
         Me.NumericUpDownDesde.TabIndex = 0
         '
-        'ButtonBusqueda
-        '
-        Me.ButtonBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonBusqueda.Location = New System.Drawing.Point(227, 34)
-        Me.ButtonBusqueda.Name = "ButtonBusqueda"
-        Me.ButtonBusqueda.Size = New System.Drawing.Size(35, 40)
-        Me.ButtonBusqueda.TabIndex = 18
-        Me.ButtonBusqueda.Text = "🔍"
-        Me.ButtonBusqueda.UseVisualStyleBackColor = True
-        '
         'CalculoDePesos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 542)
+        Me.ClientSize = New System.Drawing.Size(984, 586)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridViewCalculoPesos)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "CalculoDePesos"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cálculo de Pesos"
         CType(Me.DataGridViewCalculoPesos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

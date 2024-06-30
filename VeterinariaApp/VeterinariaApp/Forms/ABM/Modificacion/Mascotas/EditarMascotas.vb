@@ -100,12 +100,12 @@ Public Class EditarMascotas
         If Integer.TryParse(TextBoxEspecieID.Text, idEspecie) Then
             Dim nombreEspecie As String = _contenedorEspecies.NombrePorID(idEspecie)
             If Not String.IsNullOrEmpty(nombreEspecie) Then
-                MessageBox.Show($"Nombre de Especie: {nombreEspecie}", "Especie Encontrada", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show($"Nombre de Especie: {nombreEspecie}", "Especie Encontrada", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             Else
                 MessageBox.Show("Especie no encontrada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Else
-            MessageBox.Show("Por favor, ingrese un ID de especie válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Por favor, ingrese un ID de especie válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         End If
     End Sub
 
@@ -114,12 +114,12 @@ Public Class EditarMascotas
         If Integer.TryParse(TextBoxClienteID.Text, idCliente) Then
             Dim cliente As Cliente = _contenedorClientes.BuscarClientePorID(idCliente)
             If cliente IsNot Nothing Then
-                MessageBox.Show($"Nombre: {cliente.Nombre}, DNI: {cliente.Dni}", "Cliente Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show($"Nombre: {cliente.Nombre}, DNI: {cliente.Dni}", "Cliente Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             Else
-                MessageBox.Show("Cliente no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Cliente no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         Else
-            MessageBox.Show("Por favor, ingrese un ID de cliente válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Por favor, ingrese un ID de cliente válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         End If
     End Sub
 
@@ -162,14 +162,16 @@ Public Class EditarMascotas
                 query += $" WHERE ID = {_mascota.Id}"
                 Dim exito As Boolean = _daoMascotas.Edit(query)
 
-                If exito Then
-                    MessageBox.Show("Mascota editada correctamente.")
-                Else
-                    MessageBox.Show("Hubo un error al editar la mascota.")
-                End If
+            If exito Then
+
+                MessageBox.Show($"Mascota editada correctamente", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             Else
-                MessageBox.Show("No se realizaron cambios.")
+
+                MessageBox.Show("No se ha podido editar la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
+
+            MessageBox.Show("No se realizaron cambios.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+        End If
 
             Me.Close()
         Catch ex As Exception

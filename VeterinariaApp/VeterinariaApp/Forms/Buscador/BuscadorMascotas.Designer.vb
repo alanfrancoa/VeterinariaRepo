@@ -97,10 +97,10 @@ Partial Class BuscadorMascotas
         'LabelBuscadorClientes
         '
         Me.LabelBuscadorClientes.AutoSize = True
-        Me.LabelBuscadorClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(226, 51)
+        Me.LabelBuscadorClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(196, 51)
         Me.LabelBuscadorClientes.Name = "LabelBuscadorClientes"
-        Me.LabelBuscadorClientes.Size = New System.Drawing.Size(146, 16)
+        Me.LabelBuscadorClientes.Size = New System.Drawing.Size(192, 20)
         Me.LabelBuscadorClientes.TabIndex = 23
         Me.LabelBuscadorClientes.Text = "Buscador de Mascotas"
         '
@@ -140,7 +140,12 @@ Partial Class BuscadorMascotas
         Me.Controls.Add(Me.TextBoxBusquedaNombreMascota)
         Me.Controls.Add(Me.TextBoxBusquedaClienteDNIMascota)
         Me.Controls.Add(Me.TextBoxIDBusquedaMascota)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "BuscadorMascotas"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Buscador de Mascotas"
         Me.ResumeLayout(False)
         Me.PerformLayout()

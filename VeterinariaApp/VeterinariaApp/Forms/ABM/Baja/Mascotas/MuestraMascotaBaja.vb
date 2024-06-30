@@ -61,24 +61,27 @@ Public Class MuestraMascotaBaja
                 If _cliente.Estado = "ACTIVO" Then
                     Dim exitoBajaMascota = _daoMascotas.Delete(_mascota.Id)
                     If exitoBajaMascota Then
-                        MessageBox.Show("Mascota dada de baja exitosamente")
+                        MessageBox.Show("Mascota dada de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     Else
-                        MessageBox.Show("No se pudo realizar la baja de la mascota")
+                        MessageBox.Show("No se ha podido realizar la baja de la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
                     End If
                 Else
-                    MessageBox.Show("No se pudo realizar la baja de la mascota, porque el cliente es Inactivo")
+                    MessageBox.Show("No se puede realizar la baja, porque el cliente asignado es inactivo.", "Coherencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 End If
             Else
                 'Si la mascota tiene estado inactivo, deberemos activarla, unicamente se puede si el cliente es activo.
                 If _cliente.Estado = "ACTIVO" Then
                     Dim exitoAltaMascota = _daoMascotas.Activar(_mascota.Id)
                     If exitoAltaMascota Then
-                        MessageBox.Show("Mascota dada de alta exitosamente")
+                        MessageBox.Show("Mascota dada de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     Else
-                        MessageBox.Show("No se pudo realizar el alta de la mascota")
+                        MessageBox.Show("No se ha podido realizar el alta de la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
                     End If
                 Else
-                    MessageBox.Show("No se pudo realizar el alta de la mascota, porque el cliente es Inactivo")
+                    MessageBox.Show("No se puede realizar el alta, porque el cliente asignado es inactivo.", "Coherencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 End If
             End If
         End If

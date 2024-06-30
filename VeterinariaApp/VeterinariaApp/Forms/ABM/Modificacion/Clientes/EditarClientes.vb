@@ -78,40 +78,41 @@ Public Class EditarClientes
     ''' </summary>
     Private Sub ButtonEditar_Click(sender As Object, e As EventArgs) Handles ButtonEditar.Click
         Try
-            Dim query As String = "UPDATE CLIENTES SET "
-            Dim primerCampo As Boolean = True
+           Dim query As String = "UPDATE CLIENTES SET "
+        Dim primerCampo As Boolean = True
 
-            If _isNombreEditable Then
-                query += $"NOMBRE = '{TextBoxNombre.Text}'"
-                primerCampo = False
-            End If
+        If _isNombreEditable Then
+            query += $"NOMBRE = '{TextBoxNombre.Text}'"
+            primerCampo = False
+        End If
 
-            If _isDniEditable Then
-                If Not primerCampo Then query += ", "
-                query += $"DNI = {TextBoxDNI.Text}"
-                primerCampo = False
-            End If
+        If _isDniEditable Then
+            If Not primerCampo Then query += ", "
+            query += $"DNI = {TextBoxDNI.Text}"
+            primerCampo = False
+        End If
 
-            If _isTelefonoEditable Then
-                If Not primerCampo Then query += ", "
-                query += $"TELEFONO = {TextBoxTelefono.Text}"
-                primerCampo = False
-            End If
+        If _isTelefonoEditable Then
+            If Not primerCampo Then query += ", "
+            query += $"TELEFONO = {TextBoxTelefono.Text}"
+            primerCampo = False
+        End If
 
-            If _isEmailEditable Then
-                If Not primerCampo Then query += ", "
-                query += $"E_MAIL = '{TextBoxEmail.Text}'"
-            End If
+        If _isEmailEditable Then
+            If Not primerCampo Then query += ", "
+            query += $"E_MAIL = '{TextBoxEmail.Text}'"
+        End If
 
-            query += $" WHERE ID = {_cliente.Id}"
+        query += $" WHERE ID = {_cliente.Id}"
 
-            Dim exito As Boolean = _daoClientes.Edit(query)
+        Dim exito As Boolean = _daoClientes.Edit(query)
 
-            If exito Then
-                MessageBox.Show("Cliente editado correctamente.")
-            Else
-                MessageBox.Show("Hubo un error al editar el cliente.")
-            End If
+        If exito Then
+            MessageBox.Show("Cliente editado correctamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
+        Else
+            MessageBox.Show("No se ha podido editar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+        End If
         Catch ex As Exception
             MessageBox.Show("ERROR.")
         End Try

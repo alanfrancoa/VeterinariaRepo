@@ -34,7 +34,7 @@ Partial Class FormListadoUsuarios
         '
         Me.LabelListado.AutoSize = True
         Me.LabelListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelListado.Location = New System.Drawing.Point(316, 9)
+        Me.LabelListado.Location = New System.Drawing.Point(320, 9)
         Me.LabelListado.Name = "LabelListado"
         Me.LabelListado.Size = New System.Drawing.Size(169, 20)
         Me.LabelListado.TabIndex = 0
@@ -44,16 +44,20 @@ Partial Class FormListadoUsuarios
         '
         Me.DataGridListado.AllowUserToAddRows = False
         Me.DataGridListado.AllowUserToDeleteRows = False
+        Me.DataGridListado.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridListado.Location = New System.Drawing.Point(12, 70)
+        Me.DataGridListado.Location = New System.Drawing.Point(17, 49)
         Me.DataGridListado.Name = "DataGridListado"
         Me.DataGridListado.ReadOnly = True
-        Me.DataGridListado.Size = New System.Drawing.Size(776, 368)
+        Me.DataGridListado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridListado.Size = New System.Drawing.Size(775, 400)
         Me.DataGridListado.TabIndex = 1
         '
         'ButtonVerActivos
         '
-        Me.ButtonVerActivos.Location = New System.Drawing.Point(356, 444)
+        Me.ButtonVerActivos.Location = New System.Drawing.Point(357, 455)
         Me.ButtonVerActivos.Name = "ButtonVerActivos"
         Me.ButtonVerActivos.Size = New System.Drawing.Size(99, 20)
         Me.ButtonVerActivos.TabIndex = 8
@@ -62,7 +66,7 @@ Partial Class FormListadoUsuarios
         '
         'ButtonVerInactivos
         '
-        Me.ButtonVerInactivos.Location = New System.Drawing.Point(461, 444)
+        Me.ButtonVerInactivos.Location = New System.Drawing.Point(462, 455)
         Me.ButtonVerInactivos.Name = "ButtonVerInactivos"
         Me.ButtonVerInactivos.Size = New System.Drawing.Size(99, 20)
         Me.ButtonVerInactivos.TabIndex = 7
@@ -71,7 +75,7 @@ Partial Class FormListadoUsuarios
         '
         'ButtonVerAll
         '
-        Me.ButtonVerAll.Location = New System.Drawing.Point(251, 444)
+        Me.ButtonVerAll.Location = New System.Drawing.Point(252, 455)
         Me.ButtonVerAll.Name = "ButtonVerAll"
         Me.ButtonVerAll.Size = New System.Drawing.Size(99, 20)
         Me.ButtonVerAll.TabIndex = 6
@@ -82,13 +86,15 @@ Partial Class FormListadoUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 475)
+        Me.ClientSize = New System.Drawing.Size(809, 486)
         Me.Controls.Add(Me.ButtonVerActivos)
         Me.Controls.Add(Me.ButtonVerInactivos)
         Me.Controls.Add(Me.ButtonVerAll)
         Me.Controls.Add(Me.DataGridListado)
         Me.Controls.Add(Me.LabelListado)
         Me.Name = "FormListadoUsuarios"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Listado de Usuarios"
         CType(Me.DataGridListado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -55,7 +55,7 @@ Partial Class EditarUsuarios
         'ButtonEditar
         '
         Me.ButtonEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.ButtonEditar.Location = New System.Drawing.Point(216, 281)
+        Me.ButtonEditar.Location = New System.Drawing.Point(237, 377)
         Me.ButtonEditar.Name = "ButtonEditar"
         Me.ButtonEditar.Size = New System.Drawing.Size(111, 47)
         Me.ButtonEditar.TabIndex = 37
@@ -108,7 +108,7 @@ Partial Class EditarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 386)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.ButtonEditUser)
         Me.Controls.Add(Me.ButtonEditNombre)
         Me.Controls.Add(Me.ButtonEditar)
@@ -117,8 +117,13 @@ Partial Class EditarUsuarios
         Me.Controls.Add(Me.TextBoxNombre)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "EditarUsuarios"
-        Me.Text = "EditarUsuarios"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Edición de Usuarios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
