@@ -16,14 +16,14 @@ Public Class SelectorEspecie
         If nombre <> "" Then
             _especieSeleccionada = _contenedorEspecies.BuscarPorNombre(nombre)
             If _especieSeleccionada IsNot Nothing Then
-                MessageBox.Show($"Especie encontrada: {_especieSeleccionada.Nombre}")
+                MessageBox.Show($"Especie encontrada: {_especieSeleccionada.Nombre}", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Dim formMuestra As New MuestraEspecie(_especieSeleccionada)
                 formMuestra.Show()
             Else
-                MessageBox.Show("Especie no encontrada")
+                MessageBox.Show("Especie no encontrada.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         Else
-            MessageBox.Show("Por favor, ingrese un Nombre valido")
+            MessageBox.Show("Ingrese un nombre válido.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         End If
     End Sub
 End Class

@@ -19,22 +19,22 @@ Public Class AltaMascotas
             Dim especieBuscada As Especie = Nothing
 
             If Nombre = "" Or TextBoxPeso.Text = "" Or TextBoxDni.Text = "" Or NombreEspecie = "" Then
-                MessageBox.Show("TODOS LOS CAMPOS DEBEN SER COMPLETADOS.")
+                MessageBox.Show("Todos los campos deben ser completados.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
             If Not DateTime.TryParse(DateTimePicker1.Value, FechaNacimiento) Then
-                MessageBox.Show("LA FECHA INGRESADA NO ES VALIDA")
+                MessageBox.Show("La fecha ingresada no es válida.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
             If Not Decimal.TryParse(TextBoxPeso.Text, Peso) Or Not Integer.TryParse(TextBoxDni.Text, DniCliente) Then
-                MessageBox.Show("LOS VALORES NUMERICOS NO SON VALIDOS.")
+                MessageBox.Show("Los valores numericos no son válidos.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
             If Peso <= 0 Or DniCliente <= 0 Then
-                MessageBox.Show("NO PUEDE HABER VALORES NEGATIVOS O CERO.")
+                MessageBox.Show("No se pueden ingresar valores negativos o cero.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
@@ -42,11 +42,11 @@ Public Class AltaMascotas
 
 
             If fechaActual.Year < FechaNacimiento.Year Then
-                MessageBox.Show("LA FECHA INGRESADA NO ES VALIDA")
+                MessageBox.Show("La fecha ingresada no es válida.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             ElseIf fechaActual.Year = FechaNacimiento.Year Then
                 If fechaActual.DayOfYear < FechaNacimiento.DayOfYear Then
-                    MessageBox.Show("LA FECHA INGRESADA NO ES VALIDA")
+                    MessageBox.Show("La fecha ingresada no es válida.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     Return
                 End If
             End If
@@ -57,7 +57,7 @@ Public Class AltaMascotas
             Dim IdCliente = clienteBuscado.Id
 
             If clienteBuscado Is Nothing Then
-                MessageBox.Show("EL CLIENTE BUSCADO NO EXISTE.")
+                MessageBox.Show("El cliente buscado no existe.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
@@ -65,7 +65,7 @@ Public Class AltaMascotas
             Dim IdEspecie = especieBuscada.Id
 
             If especieBuscada Is Nothing Then
-                MessageBox.Show("LA ESPECIE NO EXISTE.")
+                MessageBox.Show("La especie buscada no existe.", "Dato no existente.", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
@@ -73,11 +73,12 @@ Public Class AltaMascotas
             Dim Insert = _daoMascotas.Insert(nuevaMascota)
 
             If Insert Then
-                MessageBox.Show("MASCOTA AGREGADA.")
+                MessageBox.Show("Mascota agregada.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             Else
-                MessageBox.Show("NO SE HA PODIDO AGREGAR LA MASCOTA.")
-            End If
+                MessageBox.Show("No se ha podido agregar la mascota.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
 
+            End If
+            Me.Close()
         Catch ex As Exception
             MessageBox.Show($"ERROR {ex}")
         End Try

@@ -23,12 +23,15 @@ Public Class BuscadorEspecies
         Dim nombreABuscar = TextBoxEspecieDetalle.Text
 
         If String.IsNullOrEmpty(nombreABuscar) Then
-            MessageBox.Show("Ingrese un valor a buscar")
+            MessageBox.Show("Ingrese un valor a buscar.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
         Else
             _especieSeleccionada = _contenedorEspecies.BuscarPorNombre(nombreABuscar)
             If _especieSeleccionada IsNot Nothing Then
                 Me.Close()
-                MessageBox.Show($"Especie encontrada: {_especieSeleccionada.Nombre} ")
+                MessageBox.Show($"Especie encontrada: {_especieSeleccionada.Nombre} ", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
+
                 'llamamos al form de muestra de informacion
                 Dim formMuestraEspecie As New BusquedaEspecie(_especieSeleccionada)
                 formMuestraEspecie.Show()
@@ -40,7 +43,8 @@ Public Class BuscadorEspecies
         Dim nombreDeEspecieABuscar = TextBoxEspecieMascotas.Text
 
         If String.IsNullOrEmpty(nombreDeEspecieABuscar) Then
-            MessageBox.Show("Ingrese un valor a buscar")
+            MessageBox.Show("Ingrese un valor a buscar.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
         Else
             Dim especie = _contenedorEspecies.BuscarPorNombre(nombreDeEspecieABuscar)
 
@@ -51,8 +55,11 @@ Public Class BuscadorEspecies
                     Dim formListadoMascotasEspecie As New BusquedaMascotaListado(listadoMascotasEspecie)
                     formListadoMascotasEspecie.Show()
                 Else
-                    MessageBox.Show("No hay mascotas con el texto ingresado.")
+                    MessageBox.Show("No hay mascotas con el texto ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 End If
+
+                Me.Close()
             End If
         End If
     End Sub

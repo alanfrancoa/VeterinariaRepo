@@ -22,15 +22,15 @@ Public Class BuscadorMascotas
             _mascotaSeleccionada = _contenedorMascotas.buscarPorID(id)
             If _mascotaSeleccionada IsNot Nothing Then
                 Me.Close()
-                MessageBox.Show($"Cliente encontrado: {_mascotaSeleccionada.Nombre}")
+                MessageBox.Show($"Cliente encontrado: {_mascotaSeleccionada.Nombre}", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 'llamamos al form de muestra de informacion
                 Dim formMuestraMascota As New BusquedaMascota(_mascotaSeleccionada)
                 formMuestraMascota.Show()
             Else
-                MessageBox.Show("Cliente no encontrado.")
+                MessageBox.Show("Cliente no encontrado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         Else
-            MessageBox.Show("Por favor, ingrese un ID válido.")
+            MessageBox.Show("Por favor, ingrese un ID válido.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         End If
     End Sub
 
@@ -43,19 +43,21 @@ Public Class BuscadorMascotas
                 Dim formListadoDeMascotasDNI As New BusquedaMascotaListado(listadoMascotasPorDNI)
                 formListadoDeMascotasDNI.Show()
             Else
-                MessageBox.Show("No hay clientes con el nombre ingresado.")
+                MessageBox.Show("No hay clientes con el nombre ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
 
         Else
-            MessageBox.Show("Por favor, ingrese un DNI válido.")
+            MessageBox.Show("Por favor, ingrese un DNI válido.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         End If
+        Me.Close()
     End Sub
 
     Private Sub ButtonBusquedaMascotaNombre_Click(sender As Object, e As EventArgs) Handles ButtonBusquedaMascotaNombre.Click
         Dim nombreABuscar = TextBoxBusquedaNombreMascota.Text.Trim()
 
+
         If String.IsNullOrEmpty(nombreABuscar) Then
-            MessageBox.Show("Ingrese un valor a buscar")
+            MessageBox.Show("Ingrese un valor a buscar.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         Else
             Dim listadoMascotasNombre As List(Of Mascota) = _contenedorMascotas.BuscarMascotasPorNombre(nombreABuscar)
 
@@ -63,8 +65,10 @@ Public Class BuscadorMascotas
                 Dim formListadoMascotasNombre As New BusquedaMascotaListado(listadoMascotasNombre)
                 formListadoMascotasNombre.Show()
             Else
-                MessageBox.Show("No hay clientes con el nombre ingresado.")
+                MessageBox.Show("No hay clientes con el nombre ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
             End If
         End If
+        Me.Close()
     End Sub
 End Class

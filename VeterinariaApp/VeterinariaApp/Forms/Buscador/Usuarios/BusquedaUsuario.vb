@@ -46,18 +46,18 @@ Public Class BusquedaUsuario
                 Dim esAdmin As Boolean = dialogoAdmin.ShowAndVerifyCredentials()
 
                 If esAdmin Then
-                    MessageBox.Show("Acceso concedido. El usuario es Administrador.")
+                    MessageBox.Show("Acceso concedido, el usuario es administrador.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     Dim exitoCambioPass = _daoUsuarios.ResetPassword(_usuario.Id)
                     If exitoCambioPass Then
-                        MessageBox.Show("Contraseña reseteada exitosamente, ahora es igual a su nombre de usuario.")
+                        MessageBox.Show("Contraseña reseteada exitosamente, ahora es igual a su nombre de usuario.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     Else
-                        MessageBox.Show("No pudo resetearse la contraseña.")
+                        MessageBox.Show("No se ha podido reestablecer la clave.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
                     End If
                 Else
-                    MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.")
+                    MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
                 End If
             Else
-                MessageBox.Show("Funcion disponible unicamente en usuarios activos.")
+                MessageBox.Show("Funcion disponible unicamente en usuarios activos.", "Coherencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         End If
     End Sub
@@ -86,26 +86,23 @@ Public Class BusquedaUsuario
                     Dim exitoBaja = _daoUsuarios.Delete(_usuario.Id)
 
                     If exitoBaja Then
-                        MessageBox.Show("Cliente dado de baja exitosamente.")
+                        MessageBox.Show("Cliente dado de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     Else
-                        MessageBox.Show("No se pudo realizar la baja del Cliente.")
+                        MessageBox.Show("No se ha podido realizar la baja del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
                     End If
                 Else
                     Dim exitoActivar = _daoUsuarios.Activar(_usuario.Id)
 
                     If exitoActivar Then
-                        MessageBox.Show("Cliente dado de alta exitosamente.")
+                        MessageBox.Show("Cliente dado de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                     Else
-                        MessageBox.Show("No se pudo realizar el alta.")
+                        MessageBox.Show("No se ha podido realizar el alta del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
                     End If
                 End If
             Else
-                MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.")
+                MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
             End If
-
-
-
-
         End If
     End Sub
 End Class

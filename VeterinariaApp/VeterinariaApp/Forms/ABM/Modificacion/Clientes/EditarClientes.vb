@@ -107,9 +107,10 @@ Public Class EditarClientes
         Dim exito As Boolean = _daoClientes.Edit(query)
 
         If exito Then
-            MessageBox.Show("Cliente editado correctamente.")
+            MessageBox.Show("Cliente editado correctamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
         Else
-            MessageBox.Show("Hubo un error al editar el cliente.")
+            MessageBox.Show("No se ha podido editar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
         End If
     End Sub
 

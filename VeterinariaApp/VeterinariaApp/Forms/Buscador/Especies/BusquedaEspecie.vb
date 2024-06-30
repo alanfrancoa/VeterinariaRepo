@@ -32,13 +32,13 @@ Public Class BusquedaEspecie
     End Sub
 
     Private Sub ButtonEditarEspecie_Click(sender As Object, e As EventArgs) Handles ButtonEditarEspecie.Click
-        MessageBox.Show("Aqui va logica de edicion.")
+
         If _especie IsNot Nothing Then
             ' Instanciar el formulario EditarEspecie con la especie seleccionada
-            ''Dim formEditarUsuario As New EditarUsuarios(_usuario)
+            Dim formEditarEspecie As New EditarEspecie(_especie)
             ' Mostrar el formulario
             Me.Close()
-            ''formEditarUsuario.Show()
+            formEditarEspecie.Show()
         End If
     End Sub
 End Class

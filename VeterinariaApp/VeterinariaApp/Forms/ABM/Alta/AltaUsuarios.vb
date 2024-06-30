@@ -18,17 +18,17 @@ Public Class AltaUsuarios
             Dim ConfimClave = TextBoxConfirmClave.Text
 
             If Nombre = "" Or Username = "" Or Clave = "" Or ConfimClave = "" Then
-                MessageBox.Show("TODOS LOS CAMPOS DEBEN SER COMPLETADOS.")
+                MessageBox.Show("Todos los campos deben ser completados.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
             If _contenedorUsuarios.ExisteUsername(Username) Then
-                MessageBox.Show("EL USERNAME YA EXISTE.")
+                MessageBox.Show("El nombre de usuario ingresado ya existe.", "Dato existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
             If Clave <> ConfimClave Then
-                MessageBox.Show("LA CONTRASEÑAS NO COINCIDEN.")
+                MessageBox.Show("Las claves no coinciden.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 
@@ -45,15 +45,16 @@ Public Class AltaUsuarios
                 BarraDeProgreso.Show()
 
                 If Insert Then
-                    MessageBox.Show("USUARIO AGREGADO.")
+                    MessageBox.Show("Cliente agregado.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 Else
-                    MessageBox.Show("NO SE HA PODIDO AGREGAR EL USUARIO.")
+                    MessageBox.Show("No se ha podido agregar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
                 End If
             Else
                 Dim BarraDeProgreso As New BarraDeProgreso
                 BarraDeProgreso.Show()
                 ' Lógica para cuando las credenciales son inválidas o el usuario no es administrador
-                Console.WriteLine("Acceso denegado: Credenciales inválidas o el usuario no es Administrador.")
+                MessageBox.Show("Acceso denegado. Las credenciales no son correctas o el usuario no es administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
             End If
 
         Catch ex As Exception

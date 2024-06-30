@@ -23,15 +23,15 @@ Public Class SelectorBajaMascotas
             _mascotaSeleccionada = _contenedorMascotas.buscarPorID(id)
             If _mascotaSeleccionada IsNot Nothing Then
                 Me.Close()
-                MessageBox.Show($"Mascota encontrada: {_mascotaSeleccionada.Nombre}")
+                MessageBox.Show($"Mascota encontrada: {_mascotaSeleccionada.Nombre}", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 ' Llamar al formulario de eliminacion de clientes
                 Dim formMuestraBajaMascota As New MuestraMascotaBaja(_mascotaSeleccionada)
                 formMuestraBajaMascota.Show()
             Else
-                MessageBox.Show("Cliente no encontrado.")
+                MessageBox.Show("Mascota no encontrada.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         Else
-            MessageBox.Show("Por favor, ingrese un DNI válido.")
+            MessageBox.Show("Ingrese un ID válido.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         End If
 
     End Sub

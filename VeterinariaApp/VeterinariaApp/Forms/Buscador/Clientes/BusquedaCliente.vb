@@ -5,19 +5,21 @@ Imports VeterinariaServices.Models
 Public Class BusquedaCliente
     Private clienteSeleccionado As Cliente
     Private _daoCliente As DAOClientes
+    Private _daoMascotas As DAOMascotas
     Private contenedorMascotas As ContenedorMascotas
     Public Sub New(clienteSeleccionado As Cliente)
         InitializeComponent()
         Me.clienteSeleccionado = clienteSeleccionado
         _daoCliente = New DAOClientes
         contenedorMascotas = New ContenedorMascotas()
+        _daoMascotas = New DAOMascotas
     End Sub
 
     Private Sub BusquedaCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CargarDatosMascota()
+        CargarDatosCliente()
     End Sub
 
-    Private Sub CargarDatosMascota()
+    Private Sub CargarDatosCliente()
         LabelIDCliente.Text = clienteSeleccionado.Id
         LabelNombreCliente.Text = clienteSeleccionado.Nombre
         LabelDNICliente.Text = clienteSeleccionado.Dni
@@ -44,28 +46,37 @@ Public Class BusquedaCliente
         Me.Close()
         If clienteSeleccionado IsNot Nothing Then
             If clienteSeleccionado.Estado = "ACTIVO" Then
-                'Si la mascota tiene estado activo, tendremos que pasarlo a inactivo, esto se podra hacer unicamente si el estado del Cliente de la mascota es ACTIVO.
-                If clienteSeleccionado.Estado = "ACTIVO" Then
-                    Dim exitoBajaMascota = _daoCliente.Delete(clienteSeleccionado.Id)
-                    If exitoBajaMascota Then
-                        MessageBox.Show("Mascota dada de baja exitosamente")
-                    Else
-                        MessageBox.Show("No se pudo realizar la baja de la mascota")
-                    End If
+                'Si el cliente es activo y lo queremos dar de baja tambien deberiamos dar de baja sus mascotas.'
+                Dim exitoBaja = _daoCliente.Delete(clienteSeleccionado.Id)
+                Dim exitoBajaMascotas = _daoMascotas.BajaPorIDCliente(clienteSeleccionado.Id)
+
+                If exitoBaja Then
+                    MessageBox.Show("Cliente dado de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Else
-                    MessageBox.Show("No se pudo realizar la baja de la mascota, porque el cliente es Inactivo")
+                    MessageBox.Show("No se ha podido realizar la baja del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
+                End If
+                If exitoBajaMascotas Then
+                    MessageBox.Show("Mascotas dadas de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                Else
+                    MessageBox.Show("No se ha podido realizar la baja de las masotas asoiadas al cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
                 End If
             Else
-                'Si la mascota tiene estado inactivo, deberemos activarla, unicamente se puede si el cliente es activo.
-                If clienteSeleccionado.Estado = "ACTIVO" Then
-                    Dim exitoAltaMascota = _daoCliente.Activar(clienteSeleccionado.Id)
-                    If exitoAltaMascota Then
-                        MessageBox.Show("Mascota dada de alta exitosamente")
-                    Else
-                        MessageBox.Show("No se pudo realizar el alta de la mascota")
-                    End If
+                Dim exitoActivar = _daoCliente.Activar(clienteSeleccionado.Id)
+                Dim exitoActivarMascotas = _daoMascotas.ActivarPorIDCliente(clienteSeleccionado.Id)
+
+                If exitoActivar Then
+                    MessageBox.Show("Cliente dado de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Else
-                    MessageBox.Show("No se pudo realizar el alta de la mascota, porque el cliente es Inactivo")
+                    MessageBox.Show("No se ha podido realizar el alta del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
+                End If
+                If exitoActivarMascotas Then
+                    MessageBox.Show("Mascotas del cliente dadas de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                Else
+                    MessageBox.Show("No se ha podido realizar el alta de las mascotas asociadas al cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
                 End If
             End If
         End If

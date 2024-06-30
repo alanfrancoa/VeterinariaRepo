@@ -23,9 +23,11 @@ Public Class DialogoAdministrador
         Me.Close()
         If isAdmin Then
 
-            MessageBox.Show("Credenciales válidas. El usuario es Administrador.")
+            MessageBox.Show("Credenciales válidas, el usuario es administrador.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         Else
-            MessageBox.Show("Credenciales inválidas o el usuario no es Administrador.")
+
+            MessageBox.Show("Credenciales inválidas o el usuario no es Administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
         End If
     End Sub
 

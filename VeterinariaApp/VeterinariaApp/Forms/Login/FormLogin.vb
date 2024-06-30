@@ -61,12 +61,14 @@ Public Class FormLogin
 
             ' Mostrar el resultado del login
             If _loginSuccessfulUser IsNot Nothing Then
-                MessageBox.Show("Login exitoso!")
+                MessageBox.Show("Login existoso.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
                 RaiseEvent LoginSuccessful(_loginSuccessfulUser) ' Disparar el evento de login exitoso con el usuario logueado
                 Me.DialogResult = DialogResult.OK
                 Me.Close()
             Else
-                MessageBox.Show("Nombre de usuario o contraseña incorrectos.")
+                MessageBox.Show("Nombre de usuario o contraseña, incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+
             End If
 
             ' Restaurar botones y ocultar progress bar

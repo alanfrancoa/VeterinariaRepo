@@ -23,15 +23,16 @@ Public Class SelectorClientes
             _clienteSeleccionado = _contenedorClientes.buscarPorDni(dni)
             If _clienteSeleccionado IsNot Nothing Then
                 Me.Close()
-                MessageBox.Show($"Cliente encontrado: {_clienteSeleccionado.Nombre}")
+                MessageBox.Show($"Cliente encontrado: {_clienteSeleccionado.Nombre}", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 ' Llamar al formulario de edición de clientes
                 Dim formMuestra As New MuestraCliente(_clienteSeleccionado)
                 formMuestra.Show()
             Else
-                MessageBox.Show("Cliente no encontrado.")
+                MessageBox.Show("Cliente no encontrado", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         Else
-            MessageBox.Show("Por favor, ingrese un DNI válido.")
+            MessageBox.Show("Ingrese un DNI válido.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+
         End If
     End Sub
 End Class
