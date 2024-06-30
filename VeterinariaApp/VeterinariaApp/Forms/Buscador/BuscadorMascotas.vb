@@ -38,7 +38,8 @@ Public Class BuscadorMascotas
         Dim dni As Integer
 
         If Integer.TryParse(TextBoxBusquedaClienteDNIMascota.Text, dni) Then
-            Dim listadoMascotasPorDNI As List(Of Mascota) = _contenedorMascotas.BuscarMascotasPorDNICliente(_mascotaSeleccionada.IdCliente)
+            Dim listadoMascotasPorDNI As List(Of Mascota)
+            listadoMascotasPorDNI = _contenedorMascotas.BuscarMascotasPorDNICliente(_mascotaSeleccionada.IdCliente)
             If listadoMascotasPorDNI IsNot Nothing AndAlso listadoMascotasPorDNI.Count > 0 Then
                 Dim formListadoDeMascotasDNI As New BusquedaMascotaListado(listadoMascotasPorDNI)
                 formListadoDeMascotasDNI.Show()

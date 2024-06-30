@@ -20,7 +20,7 @@ namespace VeterinariaServices.DAOs
         ///<returns>Retorna la conexion a DB</returns>
         private IDbConnection PrepararConexion()
         {
-            string ConnectionString = "Server=DESKTOP-9ADK1UP\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
+            string ConnectionString = "Server=LAPTOP-EI9SSRR5\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
 
             SqlConnection conexion = new SqlConnection(ConnectionString);
 
@@ -65,7 +65,7 @@ namespace VeterinariaServices.DAOs
         public DataTable GetPorRango(int Edad1, int Edad2)
         {
             IDbConnection conexion = this.PrepararConexion();
-            var query  = @"
+            var query  = $@"
             SELECT 
                 ESPECIES.NOMBRE AS NOMBRE_ESPECIE,
                 MAX(MASCOTAS.PESO) AS PESO_MAXIMO,
@@ -76,10 +76,10 @@ namespace VeterinariaServices.DAOs
             JOIN 
                 ESPECIES ON MASCOTAS.ID_ESPECIE = ESPECIES.ID
             WHERE 
-                DATEDIFF(YEAR, MASCOTAS.FECHA_NACIMIENTO, GETDATE()) BETWEEN " + Edad1 + @" AND " + Edad2 + @"
+                DATEDIFF(YEAR, MASCOTAS.FECHA_NACIMIENTO, GETDATE()) BETWEEN {Edad1}  AND {Edad2}
             GROUP BY 
-                ESPECIES.NOMBRE;";
-
+                ESPECIES.ID;";
+            // Agregar grupo siempre por Id
             IDbCommand Comando = conexion.CreateCommand();
 
             Comando.CommandText = query;
@@ -95,7 +95,10 @@ namespace VeterinariaServices.DAOs
 
         public bool Insert(Mascota mascota)
         {
-            string Query = $"INSERT INTO MASCOTAS(NOMBRE,PESO,FECHA_NACIMIENTO,ID_CLIENTE,ID_ESPECIE) VALUES ('{mascota.Nombre}',{mascota.Peso},'{mascota.FechaNacimiento}',{mascota.IdCliente},{mascota.IdEspecie} )";
+
+            string sFecha = mascota.FechaNacimiento.ToString("DD/MM/YYYY");
+            string Query = "set dateformat dmy;";
+            Query += $"INSERT INTO MASCOTAS(NOMBRE,PESO,FECHA_NACIMIENTO,ID_CLIENTE,ID_ESPECIE) VALUES ('{mascota.Nombre}',{mascota.Peso},'{mascota.FechaNacimiento}',{mascota.IdCliente},{mascota.IdEspecie} )";
 
             var conexion = this.PrepararConexion();
             var comando = conexion.CreateCommand();

@@ -15,7 +15,7 @@ Public Class CambiarClave
         If TextBoxActual.Text = "" Or TextBoxNueva.Text = "" Or TextBoxRepetir.Text = "" Then
             MessageBox.Show("No pueden quedar valores en blanco")
         Else
-            If _usuario.Password = TextBoxNueva.Text And TextBoxNueva.Text = TextBoxRepetir.Text Then
+            If _usuario.Password = TextBoxActual.Text And TextBoxNueva.Text = TextBoxRepetir.Text Then
                 Dim query = $"UPDATE USUARIOS SET CLAVE = '{TextBoxNueva.Text}' WHERE ID = {_usuario.Id}"
                 Dim exito As Boolean = _daoUsuarios.Edit(query)
                 If exito Then
