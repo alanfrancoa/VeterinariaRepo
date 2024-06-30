@@ -20,7 +20,7 @@ namespace VeterinariaServices.DAOs
         ///<returns>Retorna la conexion a DB</returns>
         private IDbConnection PrepararConexion()
         {
-            string ConnectionString = "Server=LAPTOP-EI9SSRR5\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
+            string ConnectionString = "Server=DESKTOP-9ADK1UP\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
 
             SqlConnection conexion = new SqlConnection(ConnectionString);
 
@@ -78,7 +78,7 @@ namespace VeterinariaServices.DAOs
             WHERE 
                 DATEDIFF(YEAR, MASCOTAS.FECHA_NACIMIENTO, GETDATE()) BETWEEN {Edad1}  AND {Edad2}
             GROUP BY 
-                ESPECIES.ID;";
+                ESPECIES.NOMBRE;";
             // Agregar grupo siempre por Id
             IDbCommand Comando = conexion.CreateCommand();
 

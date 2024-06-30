@@ -38,6 +38,7 @@ Public Class AltaMascotas
                 Return
             End If
 
+
             Dim fechaActual As DateTime = DateTime.Today
 
 
@@ -51,23 +52,23 @@ Public Class AltaMascotas
                 End If
             End If
 
-            'Arregla esto
 
             clienteBuscado = ContainerClientes.buscarPorDni(DniCliente)
-            Dim IdCliente = clienteBuscado.Id
+
 
             If clienteBuscado Is Nothing Then
                 MessageBox.Show("EL CLIENTE BUSCADO NO EXISTE.")
                 Return
             End If
+            Dim IdCliente = clienteBuscado.Id
 
             especieBuscada = ContainerEspecies.BuscarPorNombre(NombreEspecie)
-            Dim IdEspecie = especieBuscada.Id
 
             If especieBuscada Is Nothing Then
                 MessageBox.Show("LA ESPECIE NO EXISTE.")
                 Return
             End If
+            Dim IdEspecie = especieBuscada.Id
 
             Dim nuevaMascota As New Mascota(Nombre, Peso, FechaNacimiento, IdCliente, IdEspecie)
             Dim Insert = _daoMascotas.Insert(nuevaMascota)

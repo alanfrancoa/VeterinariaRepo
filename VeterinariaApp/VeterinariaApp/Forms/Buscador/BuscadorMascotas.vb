@@ -4,6 +4,7 @@ Imports VeterinariaServices.Models
 Public Class BuscadorMascotas
     Private _contenedorMascotas As ContenedorMascotas
     Private _mascotaSeleccionada As Mascota
+    Private _contenedorCliente As ContenedorClientes
     ''' <summary>
     ''' Constructor del formulario
     ''' </summary>
@@ -34,17 +35,22 @@ Public Class BuscadorMascotas
         End If
     End Sub
 
+
+    'Re hacer esta Funcion
     Private Sub ButtonBusquedaDNIClienteMasota_Click(sender As Object, e As EventArgs) Handles ButtonBusquedaDNIClienteMasota.Click
         Dim dni As Integer
-
         If Integer.TryParse(TextBoxBusquedaClienteDNIMascota.Text, dni) Then
-            Dim listadoMascotasPorDNI As List(Of Mascota)
-            listadoMascotasPorDNI = _contenedorMascotas.BuscarMascotasPorDNICliente(_mascotaSeleccionada.IdCliente)
-            If listadoMascotasPorDNI IsNot Nothing AndAlso listadoMascotasPorDNI.Count > 0 Then
-                Dim formListadoDeMascotasDNI As New BusquedaMascotaListado(listadoMascotasPorDNI)
-                formListadoDeMascotasDNI.Show()
-            Else
-                MessageBox.Show("No hay clientes con el nombre ingresado.")
+            Dim _clienteBuscado As Cliente = _contenedorCliente.buscarPorDni(dni)
+
+            If _clienteBuscado IsNot Nothing Then
+                Dim listadoMascotasPorDNI As List(Of Mascota)
+                listadoMascotasPorDNI = _contenedorMascotas.BuscarMascotasPorDNICliente(_mascotaSeleccionada.IdCliente)
+                If listadoMascotasPorDNI IsNot Nothing AndAlso listadoMascotasPorDNI.Count > 0 Then
+                    Dim formListadoDeMascotasDNI As New BusquedaMascotaListado(listadoMascotasPorDNI)
+                    formListadoDeMascotasDNI.Show()
+                Else
+                    MessageBox.Show("No hay clientes con el nombre ingresado.")
+                End If
             End If
 
         Else
