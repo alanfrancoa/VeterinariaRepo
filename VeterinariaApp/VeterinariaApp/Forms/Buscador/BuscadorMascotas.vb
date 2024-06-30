@@ -54,11 +54,11 @@ Public Class BuscadorMascotas
                     formListadoDeMascotasDNI.Show()
                 Else
                     MessageBox.Show("El usuario no tiene mascotas asignadas.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
-        
+
                     Return
                 End If
             Else
-                MessageBox.Show("No hay clientes con el DNI ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign))
+                MessageBox.Show("No hay clientes con el DNI ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 Return
             End If
 

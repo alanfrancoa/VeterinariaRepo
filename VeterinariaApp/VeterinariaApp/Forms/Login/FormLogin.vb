@@ -67,7 +67,7 @@ Public Class FormLogin
                 Me.DialogResult = DialogResult.OK
                 Me.Close()
             Else
-                MessageBox.Show("Nombre de usuario o contraseña, incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                MessageBox.Show("Nombre de usuario o contraseña, incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
             End If
 

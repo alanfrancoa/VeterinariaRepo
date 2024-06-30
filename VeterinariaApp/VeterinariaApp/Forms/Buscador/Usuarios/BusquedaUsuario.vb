@@ -51,10 +51,10 @@ Public Class BusquedaUsuario
                     If exitoCambioPass Then
                         MessageBox.Show("Contraseña reseteada exitosamente, ahora es igual a su nombre de usuario.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     Else
-                        MessageBox.Show("No se ha podido reestablecer la clave.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                        MessageBox.Show("No se ha podido reestablecer la clave.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     End If
                 Else
-                    MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                    MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                 End If
             Else
                 MessageBox.Show("Funcion disponible unicamente en usuarios activos.", "Coherencia de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
@@ -88,7 +88,7 @@ Public Class BusquedaUsuario
                     If exitoBaja Then
                         MessageBox.Show("Cliente dado de baja exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     Else
-                        MessageBox.Show("No se ha podido realizar la baja del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                        MessageBox.Show("No se ha podido realizar la baja del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     End If
                 Else
                     Dim exitoActivar = _daoUsuarios.Activar(_usuario.Id)
@@ -97,11 +97,11 @@ Public Class BusquedaUsuario
                         MessageBox.Show("Cliente dado de alta exitosamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
 
                     Else
-                        MessageBox.Show("No se ha podido realizar el alta del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                        MessageBox.Show("No se ha podido realizar el alta del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
                     End If
                 End If
             Else
-                MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+                MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
         End If
     End Sub
