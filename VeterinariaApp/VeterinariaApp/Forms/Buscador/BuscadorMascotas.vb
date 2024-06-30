@@ -11,6 +11,7 @@ Public Class BuscadorMascotas
     Public Sub New()
         InitializeComponent()
         _contenedorMascotas = New ContenedorMascotas()
+        _contenedorCliente = New ContenedorClientes()
     End Sub
 
     ''' <summary>
@@ -36,26 +37,35 @@ Public Class BuscadorMascotas
     End Sub
 
 
-    'Re hacer esta Funcion
     Private Sub ButtonBusquedaDNIClienteMasota_Click(sender As Object, e As EventArgs) Handles ButtonBusquedaDNIClienteMasota.Click
-        Dim dni As Integer
-        If Integer.TryParse(TextBoxBusquedaClienteDNIMascota.Text, dni) Then
-            Dim _clienteBuscado As Cliente = _contenedorCliente.buscarPorDni(dni)
-
+        Try
+            Dim dni As Integer
+            Dim _clienteBuscado As Cliente = Nothing
+            If Not Integer.TryParse(TextBoxBusquedaClienteDNIMascota.Text, dni) Then
+                MessageBox.Show("Por favor, ingrese un DNI válido.")
+                Return
+            End If
+            _clienteBuscado = _contenedorCliente.buscarPorDni(dni)
             If _clienteBuscado IsNot Nothing Then
                 Dim listadoMascotasPorDNI As List(Of Mascota)
-                listadoMascotasPorDNI = _contenedorMascotas.BuscarMascotasPorDNICliente(_mascotaSeleccionada.IdCliente)
+                listadoMascotasPorDNI = _contenedorMascotas.BuscarMascotasPorDNICliente(_clienteBuscado.Dni)
                 If listadoMascotasPorDNI IsNot Nothing AndAlso listadoMascotasPorDNI.Count > 0 Then
                     Dim formListadoDeMascotasDNI As New BusquedaMascotaListado(listadoMascotasPorDNI)
                     formListadoDeMascotasDNI.Show()
                 Else
-                    MessageBox.Show("No hay clientes con el nombre ingresado.")
+                    MessageBox.Show("El usuario no tiene mascotas asignadas.")
+                    Return
                 End If
+            Else
+                MessageBox.Show("No hay clientes con el DNI ingresado.")
+                Return
             End If
 
-        Else
-            MessageBox.Show("Por favor, ingrese un DNI válido.")
-        End If
+
+        Catch ex As Exception
+            MessageBox.Show("ERROR.")
+        End Try
+
     End Sub
 
     Private Sub ButtonBusquedaMascotaNombre_Click(sender As Object, e As EventArgs) Handles ButtonBusquedaMascotaNombre.Click
