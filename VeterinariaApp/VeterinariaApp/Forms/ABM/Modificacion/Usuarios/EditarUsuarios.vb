@@ -34,25 +34,31 @@ Public Class EditarUsuarios
     End Sub
 
     Private Sub ButtonEditar_Click(sender As Object, e As EventArgs) Handles ButtonEditar.Click
-        Dim query As String = "UPDATE USUARIOS SET "
-        Dim primerCampo As Boolean = True
 
-        If _isNombre Then
-            query += $"NOMBRE = '{TextBoxNombre.Text}'"
-            primerCampo = False
-        End If
-        If _isUsername Then
-            If Not primerCampo Then query += ", "
-            query += $"USERNAME = '{TextBoxUser.Text}'"
-        End If
+        Try
+            Dim query As String = "UPDATE USUARIOS SET "
+            Dim primerCampo As Boolean = True
 
-        query += $" WHERE ID = {_usuario.Id}"
-        Dim exito As Boolean = _daoUsuarios.Edit(query)
-        If exito Then
+            If _isNombre Then
+                query += $"NOMBRE = '{TextBoxNombre.Text}'"
+                primerCampo = False
+            End If
+            If _isUsername Then
+                If Not primerCampo Then query += ", "
+                query += $"USERNAME = '{TextBoxUser.Text}'"
+            End If
 
-            MessageBox.Show($"Cliente editado correctamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
-        Else
-            MessageBox.Show("No se ha podido editar el cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
-        End If
+            query += $" WHERE ID = {_usuario.Id}"
+            Dim exito As Boolean = _daoUsuarios.Edit(query)
+            If exito Then
+
+                MessageBox.Show($"Cliente editado correctamente.", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+            Else
+                MessageBox.Show("No se ha podido editar el cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
+            End If
+        Catch ex As Exception
+            MessageBox.Show("ERROR.")
+        End Try
+
     End Sub
 End Class

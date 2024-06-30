@@ -77,7 +77,8 @@ Public Class EditarClientes
     ''' Método que se ejecuta al hacer clic en el botón de Editar.
     ''' </summary>
     Private Sub ButtonEditar_Click(sender As Object, e As EventArgs) Handles ButtonEditar.Click
-        Dim query As String = "UPDATE CLIENTES SET "
+        Try
+           Dim query As String = "UPDATE CLIENTES SET "
         Dim primerCampo As Boolean = True
 
         If _isNombreEditable Then
@@ -112,6 +113,9 @@ Public Class EditarClientes
         Else
             MessageBox.Show("No se ha podido editar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, CType(MessageBoxOptions.RightAlign, MessageBoxDefaultButton))
         End If
+        Catch ex As Exception
+            MessageBox.Show("ERROR.")
+        End Try
     End Sub
 
 End Class

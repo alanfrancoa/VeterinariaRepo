@@ -26,7 +26,9 @@ Public Class CambiarClave
             Else
                 MessageBox.Show("Datos incorrectos.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
             End If
-        End If
+        Catch ex As Exception
+            MessageBox.Show("ERROR.")
+        End Try
 
     End Sub
 End Class

@@ -12,7 +12,8 @@ namespace VeterinariaServices.DAOs
     {
         private SqlConnection PrepararConexion()
         {
-            string connectionString = "Server=PCGAMINGALAN\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
+            // Reemplaza con tu cadena de conexión
+            string connectionString = "Server=DESKTOP-9ADK1UP\\SQLEXPRESS; Database=VeterinariaDB; Integrated Security =true";
             return new SqlConnection(connectionString);
         }
 

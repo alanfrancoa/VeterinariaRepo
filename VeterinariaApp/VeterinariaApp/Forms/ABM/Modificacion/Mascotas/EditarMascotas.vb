@@ -124,42 +124,43 @@ Public Class EditarMascotas
     End Sub
 
     Private Sub ButtonEditar_Click(sender As Object, e As EventArgs) Handles ButtonEditar.Click
-        Dim query As String = "UPDATE MASCOTAS SET"
-        Dim primerCampo As Boolean = True
+        Try
+            Dim query As String = "UPDATE MASCOTAS SET"
+            Dim primerCampo As Boolean = True
 
-        If _isNombreEditable Then
-            If Not primerCampo Then query += ", "
-            query += $" NOMBRE = '{TextBoxNombre.Text}'"
-            primerCampo = False
-        End If
+            If _isNombreEditable Then
+                If Not primerCampo Then query += ", "
+                query += $" NOMBRE = '{TextBoxNombre.Text}'"
+                primerCampo = False
+            End If
 
-        If _isPesoEditable Then
-            If Not primerCampo Then query += ", "
-            query += $" PESO = '{TextBoxPeso.Text}'"
-            primerCampo = False
-        End If
+            If _isPesoEditable Then
+                If Not primerCampo Then query += ", "
+                query += $" PESO = '{TextBoxPeso.Text}'"
+                primerCampo = False
+            End If
 
-        If _isFechaEditable Then
-            If Not primerCampo Then query += ", "
-            query += $" FECHA_NACIMIENTO = '{TextBoxFechaNacimiento.Text}'"
-            primerCampo = False
-        End If
+            If _isFechaEditable Then
+                If Not primerCampo Then query += ", "
+                query += $" FECHA_NACIMIENTO = '{TextBoxFechaNacimiento.Text}'"
+                primerCampo = False
+            End If
 
-        If _isClienteEditable Then
-            If Not primerCampo Then query += ", "
-            query += $" ID_CLIENTE = '{TextBoxClienteID.Text}'"
-            primerCampo = False
-        End If
+            If _isClienteEditable Then
+                If Not primerCampo Then query += ", "
+                query += $" ID_CLIENTE = '{TextBoxClienteID.Text}'"
+                primerCampo = False
+            End If
 
-        If _isEspecieEditable Then
-            If Not primerCampo Then query += ", "
-            query += $" ID_ESPECIE = '{TextBoxEspecieID.Text}'"
-            primerCampo = False
-        End If
+            If _isEspecieEditable Then
+                If Not primerCampo Then query += ", "
+                query += $" ID_ESPECIE = '{TextBoxEspecieID.Text}'"
+                primerCampo = False
+            End If
 
-        If Not primerCampo Then
-            query += $" WHERE ID = {_mascota.Id}"
-            Dim exito As Boolean = _daoMascotas.Edit(query)
+            If Not primerCampo Then
+                query += $" WHERE ID = {_mascota.Id}"
+                Dim exito As Boolean = _daoMascotas.Edit(query)
 
             If exito Then
 
@@ -172,7 +173,10 @@ Public Class EditarMascotas
             MessageBox.Show("No se realizaron cambios.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
         End If
 
-        Me.Close()
+            Me.Close()
+        Catch ex As Exception
+            MessageBox.Show("ERROR.")
+        End Try
     End Sub
 
 End Class

@@ -55,33 +55,37 @@ Public Class EditarEspecie
     ''' Método que se ejecuta al hacer clic en el botón de Editar.
     ''' </summary>
     Private Sub ButtonEditar_Click(sender As Object, e As EventArgs) Handles ButtonEditar.Click
-        Dim query As String = "UPDATE ESPECIES SET "
-        Dim primerCampo As Boolean = True
-        If _isNombreEditable Then
-            query += $"NOMBRE '{TextBoxNombre.Text}'"
-            primerCampo = False
-        End If
+        Try
+            Dim query As String = "UPDATE ESPECIES SET "
+            Dim primerCampo As Boolean = True
+            If _isNombreEditable Then
+                query += $"NOMBRE '{TextBoxNombre.Text}'"
+                primerCampo = False
+            End If
 
-        If _isEMadurez Then
-            If Not primerCampo Then query += ", "
-            query += $"EDAD_MADUREZ = {TextBoxE_Madurez.Text}"
-            primerCampo = False
-        End If
+            If _isEMadurez Then
+                If Not primerCampo Then query += ", "
+                query += $"EDAD_MADUREZ = {TextBoxE_Madurez.Text}"
+                primerCampo = False
+            End If
 
-        If _isPProm Then
-            If Not primerCampo Then query += ", "
-            query += $"PESO_PROMEDIO = {TextBoxP_Prom.Text}"
-            primerCampo = False
-        End If
-        query += $" WHERE ID = {_especie.Id}"
+            If _isPProm Then
+                If Not primerCampo Then query += ", "
+                query += $"PESO_PROMEDIO = {TextBoxP_Prom.Text}"
+                primerCampo = False
+            End If
+            query += $" WHERE ID = {_especie.Id}"
 
-        Dim exito As Boolean = _daoEspecie.Edit(query)
+            Dim exito As Boolean = _daoEspecie.Edit(query)
 
-        If exito Then
-            MessageBox.Show("Especie editada correctamente.")
-        Else
-            MessageBox.Show("Hubo un error al editar la Especie.")
-        End If
+            If exito Then
+                MessageBox.Show("Especie editada correctamente.")
+            Else
+                MessageBox.Show("Hubo un error al editar la Especie.")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("ERROR.")
+        End Try
 
     End Sub
 

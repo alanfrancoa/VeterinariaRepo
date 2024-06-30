@@ -4,12 +4,14 @@ Imports VeterinariaServices.Models
 Public Class BuscadorMascotas
     Private _contenedorMascotas As ContenedorMascotas
     Private _mascotaSeleccionada As Mascota
+    Private _contenedorCliente As ContenedorClientes
     ''' <summary>
     ''' Constructor del formulario
     ''' </summary>
     Public Sub New()
         InitializeComponent()
         _contenedorMascotas = New ContenedorMascotas()
+        _contenedorCliente = New ContenedorClientes()
     End Sub
 
     ''' <summary>
@@ -34,22 +36,36 @@ Public Class BuscadorMascotas
         End If
     End Sub
 
-    Private Sub ButtonBusquedaDNIClienteMasota_Click(sender As Object, e As EventArgs) Handles ButtonBusquedaDNIClienteMasota.Click
-        Dim dni As Integer
 
-        If Integer.TryParse(TextBoxBusquedaClienteDNIMascota.Text, dni) Then
-            Dim listadoMascotasPorDNI As List(Of Mascota) = _contenedorMascotas.BuscarMascotasPorDNICliente(_mascotaSeleccionada.IdCliente)
-            If listadoMascotasPorDNI IsNot Nothing AndAlso listadoMascotasPorDNI.Count > 0 Then
-                Dim formListadoDeMascotasDNI As New BusquedaMascotaListado(listadoMascotasPorDNI)
-                formListadoDeMascotasDNI.Show()
+    Private Sub ButtonBusquedaDNIClienteMasota_Click(sender As Object, e As EventArgs) Handles ButtonBusquedaDNIClienteMasota.Click
+        Try
+            Dim dni As Integer
+            Dim _clienteBuscado As Cliente = Nothing
+            If Not Integer.TryParse(TextBoxBusquedaClienteDNIMascota.Text, dni) Then
+                MessageBox.Show("Por favor, ingrese un DNI válido.")
+                Return
+            End If
+            _clienteBuscado = _contenedorCliente.buscarPorDni(dni)
+            If _clienteBuscado IsNot Nothing Then
+                Dim listadoMascotasPorDNI As List(Of Mascota)
+                listadoMascotasPorDNI = _contenedorMascotas.BuscarMascotasPorDNICliente(_clienteBuscado.Dni)
+                If listadoMascotasPorDNI IsNot Nothing AndAlso listadoMascotasPorDNI.Count > 0 Then
+                    Dim formListadoDeMascotasDNI As New BusquedaMascotaListado(listadoMascotasPorDNI)
+                    formListadoDeMascotasDNI.Show()
+                Else
+                    MessageBox.Show("El usuario no tiene mascotas asignadas.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+        
+                    Return
+                End If
             Else
-                MessageBox.Show("No hay clientes con el nombre ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
+                MessageBox.Show("No hay clientes con el DNI ingresado.", "Dato no existente", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign))
+                Return
             End If
 
-        Else
-            MessageBox.Show("Por favor, ingrese un DNI válido.", "Error de Entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign)
-        End If
-        Me.Close()
+
+        Catch ex As Exception
+            MessageBox.Show("ERROR.")
+        End Try
     End Sub
 
     Private Sub ButtonBusquedaMascotaNombre_Click(sender As Object, e As EventArgs) Handles ButtonBusquedaMascotaNombre.Click
