@@ -97,10 +97,10 @@ Partial Class BuscadorClientes
         'LabelBuscadorClientes
         '
         Me.LabelBuscadorClientes.AutoSize = True
-        Me.LabelBuscadorClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(227, 69)
+        Me.LabelBuscadorClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(202, 69)
         Me.LabelBuscadorClientes.Name = "LabelBuscadorClientes"
-        Me.LabelBuscadorClientes.Size = New System.Drawing.Size(135, 16)
+        Me.LabelBuscadorClientes.Size = New System.Drawing.Size(180, 20)
         Me.LabelBuscadorClientes.TabIndex = 13
         Me.LabelBuscadorClientes.Text = "Buscador de Clientes"
         '
@@ -140,7 +140,12 @@ Partial Class BuscadorClientes
         Me.Controls.Add(Me.TextBoxBusquedaDNICliente)
         Me.Controls.Add(Me.TextBoxBusquedaNombreCliente)
         Me.Controls.Add(Me.TextBoxIDBusquedaCliente)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "BuscadorClientes"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Buscador de Clientes"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -29,4 +29,5 @@ Public Class FormListadoClientes
         Dim listaInactivos As List(Of Cliente) = ContainerCliente.GetAllClientesInactivos()
         DataGridClientes.DataSource = listaInactivos
     End Sub
+
 End Class

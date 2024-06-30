@@ -158,6 +158,7 @@ Public Class FormPrincipal
     Private Sub RegistroDePesosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroDePesosToolStripMenuItem.Click
         Dim FormCalculoPesos As New CalculoDePesos()
         FormCalculoPesos.Show()
+    End Sub
 
     Private Sub EspeciesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EspeciesToolStripMenuItem1.Click
         Dim FormBuscadorEspecies As New BuscadorEspecies()

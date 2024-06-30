@@ -39,7 +39,7 @@ Partial Class BarraDeProgreso
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(336, 180)
+        Me.Label1.Location = New System.Drawing.Point(366, 180)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(76, 16)
         Me.Label1.TabIndex = 1
@@ -52,9 +52,10 @@ Partial Class BarraDeProgreso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 314)
+        Me.ClientSize = New System.Drawing.Size(809, 311)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ProgressBar1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "BarraDeProgreso"
         Me.Text = "BarraDeProgreso"
         Me.ResumeLayout(False)

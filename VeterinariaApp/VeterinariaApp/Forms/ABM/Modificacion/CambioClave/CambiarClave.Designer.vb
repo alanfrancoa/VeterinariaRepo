@@ -35,10 +35,10 @@ Partial Class CambiarClave
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(329, 56)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(206, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(155, 20)
+        Me.Label1.Size = New System.Drawing.Size(173, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Cambiar Contraseña"
         '
@@ -46,7 +46,7 @@ Partial Class CambiarClave
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Label2.Location = New System.Drawing.Point(274, 120)
+        Me.Label2.Location = New System.Drawing.Point(166, 110)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(109, 15)
         Me.Label2.TabIndex = 1
@@ -54,15 +54,17 @@ Partial Class CambiarClave
         '
         'TextBoxActual
         '
-        Me.TextBoxActual.Location = New System.Drawing.Point(277, 137)
+        Me.TextBoxActual.Location = New System.Drawing.Point(169, 135)
         Me.TextBoxActual.Name = "TextBoxActual"
+        Me.TextBoxActual.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxActual.Size = New System.Drawing.Size(250, 20)
         Me.TextBoxActual.TabIndex = 2
         '
         'TextBoxNueva
         '
-        Me.TextBoxNueva.Location = New System.Drawing.Point(277, 188)
+        Me.TextBoxNueva.Location = New System.Drawing.Point(169, 202)
         Me.TextBoxNueva.Name = "TextBoxNueva"
+        Me.TextBoxNueva.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxNueva.Size = New System.Drawing.Size(250, 20)
         Me.TextBoxNueva.TabIndex = 4
         '
@@ -70,7 +72,7 @@ Partial Class CambiarClave
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Label3.Location = New System.Drawing.Point(274, 171)
+        Me.Label3.Location = New System.Drawing.Point(166, 177)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(111, 15)
         Me.Label3.TabIndex = 3
@@ -78,8 +80,9 @@ Partial Class CambiarClave
         '
         'TextBoxRepetir
         '
-        Me.TextBoxRepetir.Location = New System.Drawing.Point(277, 236)
+        Me.TextBoxRepetir.Location = New System.Drawing.Point(169, 266)
         Me.TextBoxRepetir.Name = "TextBoxRepetir"
+        Me.TextBoxRepetir.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxRepetir.Size = New System.Drawing.Size(250, 20)
         Me.TextBoxRepetir.TabIndex = 6
         '
@@ -87,7 +90,7 @@ Partial Class CambiarClave
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Label4.Location = New System.Drawing.Point(274, 219)
+        Me.Label4.Location = New System.Drawing.Point(166, 241)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(154, 15)
         Me.Label4.TabIndex = 5
@@ -95,7 +98,7 @@ Partial Class CambiarClave
         '
         'ButtonSubir
         '
-        Me.ButtonSubir.Location = New System.Drawing.Point(333, 315)
+        Me.ButtonSubir.Location = New System.Drawing.Point(236, 377)
         Me.ButtonSubir.Name = "ButtonSubir"
         Me.ButtonSubir.Size = New System.Drawing.Size(113, 47)
         Me.ButtonSubir.TabIndex = 7
@@ -106,7 +109,7 @@ Partial Class CambiarClave
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.ButtonSubir)
         Me.Controls.Add(Me.TextBoxRepetir)
         Me.Controls.Add(Me.Label4)
@@ -115,8 +118,13 @@ Partial Class CambiarClave
         Me.Controls.Add(Me.TextBoxActual)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "CambiarClave"
-        Me.Text = "CambiarClave"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Cambio de Clave"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -51,12 +51,12 @@ Partial Class SelectorEspecie
         'LabelBuscadorClientes
         '
         Me.LabelBuscadorClientes.AutoSize = True
-        Me.LabelBuscadorClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(175, 52)
+        Me.LabelBuscadorClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelBuscadorClientes.Location = New System.Drawing.Point(153, 52)
         Me.LabelBuscadorClientes.Name = "LabelBuscadorClientes"
-        Me.LabelBuscadorClientes.Size = New System.Drawing.Size(137, 16)
+        Me.LabelBuscadorClientes.Size = New System.Drawing.Size(188, 20)
         Me.LabelBuscadorClientes.TabIndex = 25
-        Me.LabelBuscadorClientes.Text = "Buscador de Especie"
+        Me.LabelBuscadorClientes.Text = "Buscador de Especies"
         '
         'TextBoxNombre
         '
@@ -74,8 +74,13 @@ Partial Class SelectorEspecie
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LabelBuscadorClientes)
         Me.Controls.Add(Me.TextBoxNombre)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "SelectorEspecie"
-        Me.Text = "Edicion de Especie"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Edicion de Especies"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

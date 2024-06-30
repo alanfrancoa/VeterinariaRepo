@@ -29,6 +29,7 @@ Public Class BusquedaUsuario
         LabelIDUsuario.Text = _usuario.Id
         LabelNombreUsuario.Text = _usuario.Nombre
         LabelUsername.Text = _usuario.Username
+        LabelEstadoUsuario.Text = _usuario.Estado
 
         If _usuario.Estado = "ACTIVO" Then
             ButtonDeshabilitar.Text = "Dar de Baja"
@@ -62,37 +63,49 @@ Public Class BusquedaUsuario
     End Sub
 
     Private Sub ButtonEditarUsuario_Click(sender As Object, e As EventArgs) Handles ButtonEditarUsuario.Click
-        MessageBox.Show("Aqui va logica de edicion.")
+
         If _usuario IsNot Nothing Then
             ' Instanciar el formulario EditarMascotas con la mascota seleccionada
-            ''Dim formEditarUsuario As New EditarUsuarios(_usuario)
+            Dim formEditarUsuario As New EditarUsuarios(_usuario)
             ' Mostrar el formulario
             Me.Close()
-            ''formEditarUsuario.Show()
+            formEditarUsuario.Show()
         End If
     End Sub
 
     Private Sub ButtonDeshabilitar_Click(sender As Object, e As EventArgs) Handles ButtonDeshabilitar.Click
         Me.Close()
         If _usuario IsNot Nothing Then
-            If _usuario.Estado = "ACTIVO" Then
-                'Si el cliente es activo y lo queremos dar de baja tambien deberiamos dar de baja sus mascotas.'
-                Dim exitoBaja = _daoUsuarios.Delete(_usuario.Id)
 
-                If exitoBaja Then
-                    MessageBox.Show("Cliente dado de baja exitosamente.")
+            Dim dialogoAdmin As New DialogoAdministrador()
+            Dim esAdmin As Boolean = dialogoAdmin.ShowAndVerifyCredentials()
+
+            If esAdmin Then
+                If _usuario.Estado = "ACTIVO" Then
+                    'Si el cliente es activo y lo queremos dar de baja tambien deberiamos dar de baja sus mascotas.'
+                    Dim exitoBaja = _daoUsuarios.Delete(_usuario.Id)
+
+                    If exitoBaja Then
+                        MessageBox.Show("Cliente dado de baja exitosamente.")
+                    Else
+                        MessageBox.Show("No se pudo realizar la baja del Cliente.")
+                    End If
                 Else
-                    MessageBox.Show("No se pudo realizar la baja del Cliente.")
+                    Dim exitoActivar = _daoUsuarios.Activar(_usuario.Id)
+
+                    If exitoActivar Then
+                        MessageBox.Show("Cliente dado de alta exitosamente.")
+                    Else
+                        MessageBox.Show("No se pudo realizar el alta.")
+                    End If
                 End If
             Else
-                Dim exitoActivar = _daoUsuarios.Activar(_usuario.Id)
-
-                If exitoActivar Then
-                    MessageBox.Show("Cliente dado de alta exitosamente.")
-                Else
-                    MessageBox.Show("No se pudo realizar el alta.")
-                End If
+                MessageBox.Show("Acceso denegado. El usuario no es Administrador o las credenciales son incorrectas.")
             End If
+
+
+
+
         End If
     End Sub
 End Class

@@ -41,14 +41,15 @@ Partial Class DialogoAdministrador
         '
         'TextBoxContrasenaAdmin
         '
-        Me.TextBoxContrasenaAdmin.Location = New System.Drawing.Point(153, 194)
+        Me.TextBoxContrasenaAdmin.Location = New System.Drawing.Point(148, 209)
         Me.TextBoxContrasenaAdmin.Name = "TextBoxContrasenaAdmin"
+        Me.TextBoxContrasenaAdmin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxContrasenaAdmin.Size = New System.Drawing.Size(238, 20)
         Me.TextBoxContrasenaAdmin.TabIndex = 7
         '
         'TextBoxUsuarioAdmin
         '
-        Me.TextBoxUsuarioAdmin.Location = New System.Drawing.Point(153, 132)
+        Me.TextBoxUsuarioAdmin.Location = New System.Drawing.Point(148, 147)
         Me.TextBoxUsuarioAdmin.Name = "TextBoxUsuarioAdmin"
         Me.TextBoxUsuarioAdmin.Size = New System.Drawing.Size(238, 20)
         Me.TextBoxUsuarioAdmin.TabIndex = 6
@@ -56,7 +57,7 @@ Partial Class DialogoAdministrador
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(150, 178)
+        Me.Label2.Location = New System.Drawing.Point(148, 193)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 13)
         Me.Label2.TabIndex = 5
@@ -65,7 +66,7 @@ Partial Class DialogoAdministrador
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(150, 116)
+        Me.Label3.Location = New System.Drawing.Point(148, 131)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(43, 13)
         Me.Label3.TabIndex = 4
@@ -84,14 +85,19 @@ Partial Class DialogoAdministrador
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(541, 355)
+        Me.ClientSize = New System.Drawing.Size(534, 361)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBoxContrasenaAdmin)
         Me.Controls.Add(Me.TextBoxUsuarioAdmin)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "DialogoAdministrador"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Autorizacion de Administrador"
         Me.ResumeLayout(False)
         Me.PerformLayout()

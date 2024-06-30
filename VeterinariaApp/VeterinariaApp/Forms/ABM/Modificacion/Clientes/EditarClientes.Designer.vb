@@ -41,7 +41,7 @@ Partial Class EditarClientes
         'ButtonEditar
         '
         Me.ButtonEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.ButtonEditar.Location = New System.Drawing.Point(233, 320)
+        Me.ButtonEditar.Location = New System.Drawing.Point(237, 377)
         Me.ButtonEditar.Name = "ButtonEditar"
         Me.ButtonEditar.Size = New System.Drawing.Size(111, 47)
         Me.ButtonEditar.TabIndex = 21
@@ -52,7 +52,7 @@ Partial Class EditarClientes
         '
         Me.LabelAltaClientes.AutoSize = True
         Me.LabelAltaClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAltaClientes.Location = New System.Drawing.Point(229, 30)
+        Me.LabelAltaClientes.Location = New System.Drawing.Point(233, 30)
         Me.LabelAltaClientes.Name = "LabelAltaClientes"
         Me.LabelAltaClientes.Size = New System.Drawing.Size(118, 20)
         Me.LabelAltaClientes.TabIndex = 20
@@ -60,28 +60,28 @@ Partial Class EditarClientes
         '
         'TextBoxEmail
         '
-        Me.TextBoxEmail.Location = New System.Drawing.Point(169, 267)
+        Me.TextBoxEmail.Location = New System.Drawing.Point(152, 280)
         Me.TextBoxEmail.Name = "TextBoxEmail"
         Me.TextBoxEmail.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxEmail.TabIndex = 19
         '
         'TextBoxTelefono
         '
-        Me.TextBoxTelefono.Location = New System.Drawing.Point(169, 212)
+        Me.TextBoxTelefono.Location = New System.Drawing.Point(152, 225)
         Me.TextBoxTelefono.Name = "TextBoxTelefono"
         Me.TextBoxTelefono.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxTelefono.TabIndex = 18
         '
         'TextBoxDNI
         '
-        Me.TextBoxDNI.Location = New System.Drawing.Point(169, 157)
+        Me.TextBoxDNI.Location = New System.Drawing.Point(152, 170)
         Me.TextBoxDNI.Name = "TextBoxDNI"
         Me.TextBoxDNI.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxDNI.TabIndex = 17
         '
         'TextBoxNombre
         '
-        Me.TextBoxNombre.Location = New System.Drawing.Point(169, 102)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(152, 115)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxNombre.TabIndex = 16
@@ -89,7 +89,7 @@ Partial Class EditarClientes
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(166, 251)
+        Me.Label4.Location = New System.Drawing.Point(149, 264)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 13)
         Me.Label4.TabIndex = 15
@@ -98,7 +98,7 @@ Partial Class EditarClientes
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(166, 196)
+        Me.Label3.Location = New System.Drawing.Point(149, 209)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 13)
         Me.Label3.TabIndex = 14
@@ -107,7 +107,7 @@ Partial Class EditarClientes
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(166, 141)
+        Me.Label2.Location = New System.Drawing.Point(149, 154)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(29, 13)
         Me.Label2.TabIndex = 13
@@ -116,7 +116,7 @@ Partial Class EditarClientes
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(166, 86)
+        Me.Label1.Location = New System.Drawing.Point(149, 99)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 13)
         Me.Label1.TabIndex = 12
@@ -125,7 +125,7 @@ Partial Class EditarClientes
         'ButtonEditNombre
         '
         Me.ButtonEditNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditNombre.Location = New System.Drawing.Point(417, 87)
+        Me.ButtonEditNombre.Location = New System.Drawing.Point(400, 100)
         Me.ButtonEditNombre.Name = "ButtonEditNombre"
         Me.ButtonEditNombre.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditNombre.TabIndex = 24
@@ -135,7 +135,7 @@ Partial Class EditarClientes
         'ButtonEditDNI
         '
         Me.ButtonEditDNI.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditDNI.Location = New System.Drawing.Point(417, 142)
+        Me.ButtonEditDNI.Location = New System.Drawing.Point(400, 155)
         Me.ButtonEditDNI.Name = "ButtonEditDNI"
         Me.ButtonEditDNI.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditDNI.TabIndex = 25
@@ -145,7 +145,7 @@ Partial Class EditarClientes
         'ButtonEditTelefono
         '
         Me.ButtonEditTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditTelefono.Location = New System.Drawing.Point(417, 197)
+        Me.ButtonEditTelefono.Location = New System.Drawing.Point(400, 210)
         Me.ButtonEditTelefono.Name = "ButtonEditTelefono"
         Me.ButtonEditTelefono.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditTelefono.TabIndex = 26
@@ -155,7 +155,7 @@ Partial Class EditarClientes
         'ButtonEditMail
         '
         Me.ButtonEditMail.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEditMail.Location = New System.Drawing.Point(417, 252)
+        Me.ButtonEditMail.Location = New System.Drawing.Point(400, 265)
         Me.ButtonEditMail.Name = "ButtonEditMail"
         Me.ButtonEditMail.Size = New System.Drawing.Size(35, 40)
         Me.ButtonEditMail.TabIndex = 27
@@ -166,7 +166,7 @@ Partial Class EditarClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 386)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.ButtonEditMail)
         Me.Controls.Add(Me.ButtonEditTelefono)
         Me.Controls.Add(Me.ButtonEditDNI)
@@ -181,8 +181,12 @@ Partial Class EditarClientes
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "EditarClientes"
-        Me.Text = " "
+        Me.ShowIcon = False
+        Me.Text = " Edición de Clientes"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

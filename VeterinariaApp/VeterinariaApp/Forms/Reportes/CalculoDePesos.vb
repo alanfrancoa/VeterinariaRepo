@@ -17,4 +17,6 @@ Public Class CalculoDePesos
 
         DataGridViewCalculoPesos.DataSource = dt
     End Sub
+
+
 End Class

@@ -38,7 +38,7 @@ Partial Class MuestraUsuarios
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(142, 276)
+        Me.Label1.Location = New System.Drawing.Point(184, 295)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(59, 18)
         Me.Label1.TabIndex = 47
@@ -48,7 +48,7 @@ Partial Class MuestraUsuarios
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(142, 225)
+        Me.Label4.Location = New System.Drawing.Point(184, 244)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(142, 18)
         Me.Label4.TabIndex = 44
@@ -58,7 +58,7 @@ Partial Class MuestraUsuarios
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(142, 168)
+        Me.Label5.Location = New System.Drawing.Point(184, 187)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(66, 18)
         Me.Label5.TabIndex = 43
@@ -68,7 +68,7 @@ Partial Class MuestraUsuarios
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(142, 111)
+        Me.Label6.Location = New System.Drawing.Point(184, 130)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(26, 18)
         Me.Label6.TabIndex = 42
@@ -76,7 +76,7 @@ Partial Class MuestraUsuarios
         '
         'ButtonEditarCliente
         '
-        Me.ButtonEditarCliente.Location = New System.Drawing.Point(255, 455)
+        Me.ButtonEditarCliente.Location = New System.Drawing.Point(232, 480)
         Me.ButtonEditarCliente.Name = "ButtonEditarCliente"
         Me.ButtonEditarCliente.Size = New System.Drawing.Size(121, 44)
         Me.ButtonEditarCliente.TabIndex = 41
@@ -86,10 +86,10 @@ Partial Class MuestraUsuarios
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(227, 38)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(191, 38)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(181, 20)
+        Me.Label7.Size = New System.Drawing.Size(202, 20)
         Me.Label7.TabIndex = 40
         Me.Label7.Text = "Resultado de Busqueda"
         '
@@ -97,7 +97,7 @@ Partial Class MuestraUsuarios
         '
         Me.LabelEstado.AutoSize = True
         Me.LabelEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEstado.Location = New System.Drawing.Point(417, 278)
+        Me.LabelEstado.Location = New System.Drawing.Point(401, 300)
         Me.LabelEstado.Name = "LabelEstado"
         Me.LabelEstado.Size = New System.Drawing.Size(0, 16)
         Me.LabelEstado.TabIndex = 39
@@ -106,7 +106,7 @@ Partial Class MuestraUsuarios
         '
         Me.LabelUser.AutoSize = True
         Me.LabelUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUser.Location = New System.Drawing.Point(417, 227)
+        Me.LabelUser.Location = New System.Drawing.Point(401, 249)
         Me.LabelUser.Name = "LabelUser"
         Me.LabelUser.Size = New System.Drawing.Size(0, 16)
         Me.LabelUser.TabIndex = 36
@@ -115,7 +115,7 @@ Partial Class MuestraUsuarios
         '
         Me.LabelNombre.AutoSize = True
         Me.LabelNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombre.Location = New System.Drawing.Point(417, 170)
+        Me.LabelNombre.Location = New System.Drawing.Point(401, 192)
         Me.LabelNombre.Name = "LabelNombre"
         Me.LabelNombre.Size = New System.Drawing.Size(0, 16)
         Me.LabelNombre.TabIndex = 35
@@ -124,7 +124,7 @@ Partial Class MuestraUsuarios
         '
         Me.LabelID.AutoSize = True
         Me.LabelID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelID.Location = New System.Drawing.Point(417, 113)
+        Me.LabelID.Location = New System.Drawing.Point(401, 135)
         Me.LabelID.Name = "LabelID"
         Me.LabelID.Size = New System.Drawing.Size(0, 16)
         Me.LabelID.TabIndex = 34
@@ -133,7 +133,7 @@ Partial Class MuestraUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(559, 536)
+        Me.ClientSize = New System.Drawing.Size(584, 536)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
@@ -144,8 +144,13 @@ Partial Class MuestraUsuarios
         Me.Controls.Add(Me.LabelUser)
         Me.Controls.Add(Me.LabelNombre)
         Me.Controls.Add(Me.LabelID)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "MuestraUsuarios"
-        Me.Text = "MuestraUsuarios"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Edición de Usuarios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

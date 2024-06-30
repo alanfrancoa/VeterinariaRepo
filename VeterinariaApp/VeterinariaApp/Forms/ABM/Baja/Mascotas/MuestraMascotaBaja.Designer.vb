@@ -44,7 +44,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(142, 398)
+        Me.Label8.Location = New System.Drawing.Point(155, 398)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(59, 18)
         Me.Label8.TabIndex = 65
@@ -54,7 +54,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.LabelEstadoMascota.AutoSize = True
         Me.LabelEstadoMascota.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEstadoMascota.Location = New System.Drawing.Point(417, 400)
+        Me.LabelEstadoMascota.Location = New System.Drawing.Point(346, 402)
         Me.LabelEstadoMascota.Name = "LabelEstadoMascota"
         Me.LabelEstadoMascota.Size = New System.Drawing.Size(0, 16)
         Me.LabelEstadoMascota.TabIndex = 64
@@ -63,7 +63,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(142, 352)
+        Me.Label1.Location = New System.Drawing.Point(155, 352)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 18)
         Me.Label1.TabIndex = 63
@@ -73,7 +73,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(142, 306)
+        Me.Label2.Location = New System.Drawing.Point(155, 306)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 18)
         Me.Label2.TabIndex = 62
@@ -83,7 +83,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(142, 260)
+        Me.Label3.Location = New System.Drawing.Point(155, 260)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(152, 18)
         Me.Label3.TabIndex = 61
@@ -93,7 +93,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(142, 214)
+        Me.Label4.Location = New System.Drawing.Point(155, 214)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(47, 18)
         Me.Label4.TabIndex = 60
@@ -103,7 +103,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(142, 168)
+        Me.Label5.Location = New System.Drawing.Point(155, 168)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(66, 18)
         Me.Label5.TabIndex = 59
@@ -113,7 +113,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(142, 122)
+        Me.Label6.Location = New System.Drawing.Point(155, 122)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(26, 18)
         Me.Label6.TabIndex = 58
@@ -121,7 +121,7 @@ Partial Class MuestraMascotaBaja
         '
         'ButtonBajarMascota
         '
-        Me.ButtonBajarMascota.Location = New System.Drawing.Point(219, 461)
+        Me.ButtonBajarMascota.Location = New System.Drawing.Point(232, 480)
         Me.ButtonBajarMascota.Name = "ButtonBajarMascota"
         Me.ButtonBajarMascota.Size = New System.Drawing.Size(121, 44)
         Me.ButtonBajarMascota.TabIndex = 57
@@ -131,10 +131,10 @@ Partial Class MuestraMascotaBaja
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(189, 31)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(181, 20)
+        Me.Label7.Size = New System.Drawing.Size(202, 20)
         Me.Label7.TabIndex = 56
         Me.Label7.Text = "Resultado de Busqueda"
         '
@@ -142,7 +142,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.LabelInfoCliente.AutoSize = True
         Me.LabelInfoCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelInfoCliente.Location = New System.Drawing.Point(417, 352)
+        Me.LabelInfoCliente.Location = New System.Drawing.Point(346, 354)
         Me.LabelInfoCliente.Name = "LabelInfoCliente"
         Me.LabelInfoCliente.Size = New System.Drawing.Size(0, 16)
         Me.LabelInfoCliente.TabIndex = 55
@@ -151,7 +151,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.LabelNombreEspecie.AutoSize = True
         Me.LabelNombreEspecie.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombreEspecie.Location = New System.Drawing.Point(417, 308)
+        Me.LabelNombreEspecie.Location = New System.Drawing.Point(346, 310)
         Me.LabelNombreEspecie.Name = "LabelNombreEspecie"
         Me.LabelNombreEspecie.Size = New System.Drawing.Size(0, 16)
         Me.LabelNombreEspecie.TabIndex = 54
@@ -160,7 +160,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.LabelFechaNacimiento.AutoSize = True
         Me.LabelFechaNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelFechaNacimiento.Location = New System.Drawing.Point(417, 262)
+        Me.LabelFechaNacimiento.Location = New System.Drawing.Point(346, 264)
         Me.LabelFechaNacimiento.Name = "LabelFechaNacimiento"
         Me.LabelFechaNacimiento.Size = New System.Drawing.Size(0, 16)
         Me.LabelFechaNacimiento.TabIndex = 53
@@ -169,7 +169,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.LabelPesoMascota.AutoSize = True
         Me.LabelPesoMascota.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPesoMascota.Location = New System.Drawing.Point(417, 216)
+        Me.LabelPesoMascota.Location = New System.Drawing.Point(346, 218)
         Me.LabelPesoMascota.Name = "LabelPesoMascota"
         Me.LabelPesoMascota.Size = New System.Drawing.Size(0, 16)
         Me.LabelPesoMascota.TabIndex = 52
@@ -178,7 +178,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.LabelNombreMascota.AutoSize = True
         Me.LabelNombreMascota.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombreMascota.Location = New System.Drawing.Point(417, 168)
+        Me.LabelNombreMascota.Location = New System.Drawing.Point(346, 170)
         Me.LabelNombreMascota.Name = "LabelNombreMascota"
         Me.LabelNombreMascota.Size = New System.Drawing.Size(0, 16)
         Me.LabelNombreMascota.TabIndex = 51
@@ -187,7 +187,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.LabelIDMascota.AutoSize = True
         Me.LabelIDMascota.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelIDMascota.Location = New System.Drawing.Point(417, 124)
+        Me.LabelIDMascota.Location = New System.Drawing.Point(346, 126)
         Me.LabelIDMascota.Name = "LabelIDMascota"
         Me.LabelIDMascota.Size = New System.Drawing.Size(0, 16)
         Me.LabelIDMascota.TabIndex = 50
@@ -196,7 +196,7 @@ Partial Class MuestraMascotaBaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(559, 536)
+        Me.ClientSize = New System.Drawing.Size(584, 536)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.LabelEstadoMascota)
         Me.Controls.Add(Me.Label1)
@@ -213,7 +213,12 @@ Partial Class MuestraMascotaBaja
         Me.Controls.Add(Me.LabelPesoMascota)
         Me.Controls.Add(Me.LabelNombreMascota)
         Me.Controls.Add(Me.LabelIDMascota)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "MuestraMascotaBaja"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Baja de Mascotas"
         Me.ResumeLayout(False)
         Me.PerformLayout()

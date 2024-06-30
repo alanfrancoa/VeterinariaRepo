@@ -31,18 +31,22 @@ Partial Class FormListadoEspecies
         '
         Me.DataGridListado.AllowUserToAddRows = False
         Me.DataGridListado.AllowUserToDeleteRows = False
+        Me.DataGridListado.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridListado.Location = New System.Drawing.Point(12, 59)
+        Me.DataGridListado.Location = New System.Drawing.Point(17, 59)
         Me.DataGridListado.Name = "DataGridListado"
         Me.DataGridListado.ReadOnly = True
-        Me.DataGridListado.Size = New System.Drawing.Size(776, 368)
+        Me.DataGridListado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridListado.Size = New System.Drawing.Size(775, 400)
         Me.DataGridListado.TabIndex = 10
         '
         'LabelListado
         '
         Me.LabelListado.AutoSize = True
         Me.LabelListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelListado.Location = New System.Drawing.Point(316, 9)
+        Me.LabelListado.Location = New System.Drawing.Point(319, 9)
         Me.LabelListado.Name = "LabelListado"
         Me.LabelListado.Size = New System.Drawing.Size(171, 20)
         Me.LabelListado.TabIndex = 9
@@ -52,11 +56,16 @@ Partial Class FormListadoEspecies
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(809, 486)
         Me.Controls.Add(Me.DataGridListado)
         Me.Controls.Add(Me.LabelListado)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FormListadoEspecies"
-        Me.Text = "FormListadoEspecies"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Listado de Especies"
         CType(Me.DataGridListado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

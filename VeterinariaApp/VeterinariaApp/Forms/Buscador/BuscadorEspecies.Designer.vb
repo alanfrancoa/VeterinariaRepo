@@ -107,7 +107,12 @@ Partial Class BuscadorEspecies
         Me.Controls.Add(Me.LabelBuscadorEspecies)
         Me.Controls.Add(Me.TextBoxEspecieMascotas)
         Me.Controls.Add(Me.TextBoxEspecieDetalle)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "BuscadorEspecies"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Buscador de Especies"
         Me.ResumeLayout(False)
         Me.PerformLayout()

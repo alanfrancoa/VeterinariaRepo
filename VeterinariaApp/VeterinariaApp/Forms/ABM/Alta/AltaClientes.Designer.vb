@@ -37,7 +37,7 @@ Partial Class AltaClientes
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(212, 67)
+        Me.Label1.Location = New System.Drawing.Point(170, 93)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 13)
         Me.Label1.TabIndex = 0
@@ -46,7 +46,7 @@ Partial Class AltaClientes
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(212, 108)
+        Me.Label2.Location = New System.Drawing.Point(170, 150)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(29, 13)
         Me.Label2.TabIndex = 1
@@ -55,7 +55,7 @@ Partial Class AltaClientes
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(212, 148)
+        Me.Label3.Location = New System.Drawing.Point(170, 206)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 13)
         Me.Label3.TabIndex = 2
@@ -64,7 +64,7 @@ Partial Class AltaClientes
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(212, 191)
+        Me.Label4.Location = New System.Drawing.Point(170, 265)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 13)
         Me.Label4.TabIndex = 3
@@ -72,28 +72,28 @@ Partial Class AltaClientes
         '
         'TextBoxNombre
         '
-        Me.TextBoxNombre.Location = New System.Drawing.Point(215, 83)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(173, 117)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxNombre.TabIndex = 5
         '
         'TextBoxDni
         '
-        Me.TextBoxDni.Location = New System.Drawing.Point(215, 124)
+        Me.TextBoxDni.Location = New System.Drawing.Point(173, 174)
         Me.TextBoxDni.Name = "TextBoxDni"
         Me.TextBoxDni.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxDni.TabIndex = 6
         '
         'TextBoxTelefono
         '
-        Me.TextBoxTelefono.Location = New System.Drawing.Point(215, 164)
+        Me.TextBoxTelefono.Location = New System.Drawing.Point(173, 230)
         Me.TextBoxTelefono.Name = "TextBoxTelefono"
         Me.TextBoxTelefono.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxTelefono.TabIndex = 7
         '
         'TextBoxEmail
         '
-        Me.TextBoxEmail.Location = New System.Drawing.Point(215, 207)
+        Me.TextBoxEmail.Location = New System.Drawing.Point(173, 289)
         Me.TextBoxEmail.Name = "TextBoxEmail"
         Me.TextBoxEmail.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxEmail.TabIndex = 8
@@ -102,7 +102,7 @@ Partial Class AltaClientes
         '
         Me.LabelAltaClientes.AutoSize = True
         Me.LabelAltaClientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAltaClientes.Location = New System.Drawing.Point(278, 25)
+        Me.LabelAltaClientes.Location = New System.Drawing.Point(237, 25)
         Me.LabelAltaClientes.Name = "LabelAltaClientes"
         Me.LabelAltaClientes.Size = New System.Drawing.Size(111, 20)
         Me.LabelAltaClientes.TabIndex = 9
@@ -111,7 +111,7 @@ Partial Class AltaClientes
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.Button1.Location = New System.Drawing.Point(282, 268)
+        Me.Button1.Location = New System.Drawing.Point(237, 377)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(111, 47)
         Me.Button1.TabIndex = 11
@@ -122,7 +122,7 @@ Partial Class AltaClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(669, 375)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LabelAltaClientes)
         Me.Controls.Add(Me.TextBoxEmail)
@@ -133,8 +133,13 @@ Partial Class AltaClientes
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "AltaClientes"
-        Me.Text = "AltaClientes"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Alta de Clientes"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

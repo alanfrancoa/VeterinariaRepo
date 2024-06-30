@@ -31,20 +31,24 @@ Partial Class BusquedaClientesListado
         '
         Me.DataGridViewClientesBusqueda.AllowUserToAddRows = False
         Me.DataGridViewClientesBusqueda.AllowUserToDeleteRows = False
+        Me.DataGridViewClientesBusqueda.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridViewClientesBusqueda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridViewClientesBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewClientesBusqueda.Location = New System.Drawing.Point(13, 54)
+        Me.DataGridViewClientesBusqueda.Location = New System.Drawing.Point(17, 65)
         Me.DataGridViewClientesBusqueda.Name = "DataGridViewClientesBusqueda"
         Me.DataGridViewClientesBusqueda.ReadOnly = True
-        Me.DataGridViewClientesBusqueda.Size = New System.Drawing.Size(774, 381)
+        Me.DataGridViewClientesBusqueda.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridViewClientesBusqueda.Size = New System.Drawing.Size(775, 400)
         Me.DataGridViewClientesBusqueda.TabIndex = 10
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(310, 16)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(303, 16)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(181, 20)
+        Me.Label7.Size = New System.Drawing.Size(202, 20)
         Me.Label7.TabIndex = 9
         Me.Label7.Text = "Resultado de Busqueda"
         '
@@ -52,10 +56,15 @@ Partial Class BusquedaClientesListado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(809, 486)
         Me.Controls.Add(Me.DataGridViewClientesBusqueda)
         Me.Controls.Add(Me.Label7)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "BusquedaClientesListado"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Listado de Clientes por Nombre"
         CType(Me.DataGridViewClientesBusqueda, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

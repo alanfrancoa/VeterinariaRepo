@@ -30,10 +30,10 @@ Partial Class CantidadDeAnimales
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(277, 42)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(247, 20)
+        Me.Label1.Size = New System.Drawing.Size(277, 20)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Cantidad de Mascotas por Dueño"
         '
@@ -41,22 +41,31 @@ Partial Class CantidadDeAnimales
         '
         Me.DataGridViewCantidadMascotas.AllowUserToAddRows = False
         Me.DataGridViewCantidadMascotas.AllowUserToDeleteRows = False
+        Me.DataGridViewCantidadMascotas.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridViewCantidadMascotas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridViewCantidadMascotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewCantidadMascotas.Location = New System.Drawing.Point(12, 91)
+        Me.DataGridViewCantidadMascotas.Location = New System.Drawing.Point(16, 99)
         Me.DataGridViewCantidadMascotas.Name = "DataGridViewCantidadMascotas"
         Me.DataGridViewCantidadMascotas.ReadOnly = True
-        Me.DataGridViewCantidadMascotas.Size = New System.Drawing.Size(776, 408)
+        Me.DataGridViewCantidadMascotas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridViewCantidadMascotas.Size = New System.Drawing.Size(950, 475)
         Me.DataGridViewCantidadMascotas.TabIndex = 3
         '
         'CantidadDeAnimales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 510)
+        Me.ClientSize = New System.Drawing.Size(984, 586)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridViewCantidadMascotas)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "CantidadDeAnimales"
-        Me.Text = "CantidadDeAnimales"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Cantidad de Animales"
         CType(Me.DataGridViewCantidadMascotas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

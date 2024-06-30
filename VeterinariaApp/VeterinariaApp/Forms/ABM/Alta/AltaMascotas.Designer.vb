@@ -39,7 +39,7 @@ Partial Class AltaMascotas
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.Button1.Location = New System.Drawing.Point(282, 298)
+        Me.Button1.Location = New System.Drawing.Point(237, 377)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(111, 47)
         Me.Button1.TabIndex = 39
@@ -50,7 +50,7 @@ Partial Class AltaMascotas
         '
         Me.LabelAltaEspecies.AutoSize = True
         Me.LabelAltaEspecies.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAltaEspecies.Location = New System.Drawing.Point(273, 23)
+        Me.LabelAltaEspecies.Location = New System.Drawing.Point(231, 23)
         Me.LabelAltaEspecies.Name = "LabelAltaEspecies"
         Me.LabelAltaEspecies.Size = New System.Drawing.Size(123, 20)
         Me.LabelAltaEspecies.TabIndex = 38
@@ -58,14 +58,14 @@ Partial Class AltaMascotas
         '
         'TextBoxPeso
         '
-        Me.TextBoxPeso.Location = New System.Drawing.Point(215, 131)
+        Me.TextBoxPeso.Location = New System.Drawing.Point(173, 146)
         Me.TextBoxPeso.Name = "TextBoxPeso"
         Me.TextBoxPeso.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxPeso.TabIndex = 36
         '
         'TextBoxNombre
         '
-        Me.TextBoxNombre.Location = New System.Drawing.Point(215, 91)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(173, 90)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxNombre.TabIndex = 35
@@ -73,7 +73,7 @@ Partial Class AltaMascotas
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(212, 158)
+        Me.Label4.Location = New System.Drawing.Point(170, 181)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(111, 13)
         Me.Label4.TabIndex = 34
@@ -82,7 +82,7 @@ Partial Class AltaMascotas
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(212, 115)
+        Me.Label3.Location = New System.Drawing.Point(170, 122)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(34, 13)
         Me.Label3.TabIndex = 33
@@ -91,7 +91,7 @@ Partial Class AltaMascotas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(212, 75)
+        Me.Label2.Location = New System.Drawing.Point(170, 66)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(47, 13)
         Me.Label2.TabIndex = 32
@@ -99,7 +99,7 @@ Partial Class AltaMascotas
         '
         'TextBoxDni
         '
-        Me.TextBoxDni.Location = New System.Drawing.Point(215, 214)
+        Me.TextBoxDni.Location = New System.Drawing.Point(173, 261)
         Me.TextBoxDni.Name = "TextBoxDni"
         Me.TextBoxDni.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxDni.TabIndex = 40
@@ -107,7 +107,7 @@ Partial Class AltaMascotas
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(212, 198)
+        Me.Label1.Location = New System.Drawing.Point(170, 237)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(81, 13)
         Me.Label1.TabIndex = 41
@@ -116,7 +116,7 @@ Partial Class AltaMascotas
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(212, 237)
+        Me.Label5.Location = New System.Drawing.Point(170, 292)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(114, 13)
         Me.Label5.TabIndex = 43
@@ -124,7 +124,7 @@ Partial Class AltaMascotas
         '
         'TextBoxEspecie
         '
-        Me.TextBoxEspecie.Location = New System.Drawing.Point(215, 253)
+        Me.TextBoxEspecie.Location = New System.Drawing.Point(173, 316)
         Me.TextBoxEspecie.Name = "TextBoxEspecie"
         Me.TextBoxEspecie.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxEspecie.TabIndex = 42
@@ -132,7 +132,7 @@ Partial Class AltaMascotas
         'DateTimePicker1
         '
         Me.DateTimePicker1.CustomFormat = "MM dd yyyy"
-        Me.DateTimePicker1.Location = New System.Drawing.Point(215, 175)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(173, 206)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(242, 20)
         Me.DateTimePicker1.TabIndex = 44
@@ -141,7 +141,7 @@ Partial Class AltaMascotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(669, 375)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBoxEspecie)
@@ -154,8 +154,13 @@ Partial Class AltaMascotas
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "AltaMascotas"
-        Me.Text = "AltaMascotas"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Alta de Mascotas"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

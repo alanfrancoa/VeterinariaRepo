@@ -37,7 +37,7 @@ Partial Class AltaUsuarios
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.Button1.Location = New System.Drawing.Point(282, 285)
+        Me.Button1.Location = New System.Drawing.Point(237, 377)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(111, 47)
         Me.Button1.TabIndex = 21
@@ -48,7 +48,7 @@ Partial Class AltaUsuarios
         '
         Me.LabelAltaUsuarios.AutoSize = True
         Me.LabelAltaUsuarios.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAltaUsuarios.Location = New System.Drawing.Point(278, 42)
+        Me.LabelAltaUsuarios.Location = New System.Drawing.Point(234, 30)
         Me.LabelAltaUsuarios.Name = "LabelAltaUsuarios"
         Me.LabelAltaUsuarios.Size = New System.Drawing.Size(117, 20)
         Me.LabelAltaUsuarios.TabIndex = 20
@@ -56,28 +56,30 @@ Partial Class AltaUsuarios
         '
         'TextBoxConfirmClave
         '
-        Me.TextBoxConfirmClave.Location = New System.Drawing.Point(215, 224)
+        Me.TextBoxConfirmClave.Location = New System.Drawing.Point(173, 290)
         Me.TextBoxConfirmClave.Name = "TextBoxConfirmClave"
+        Me.TextBoxConfirmClave.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxConfirmClave.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxConfirmClave.TabIndex = 19
         '
         'TextBoxClave
         '
-        Me.TextBoxClave.Location = New System.Drawing.Point(215, 181)
+        Me.TextBoxClave.Location = New System.Drawing.Point(173, 231)
         Me.TextBoxClave.Name = "TextBoxClave"
+        Me.TextBoxClave.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxClave.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxClave.TabIndex = 18
         '
         'TextBoxNombre
         '
-        Me.TextBoxNombre.Location = New System.Drawing.Point(215, 141)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(173, 175)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxNombre.TabIndex = 17
         '
         'TextBoxUser
         '
-        Me.TextBoxUser.Location = New System.Drawing.Point(215, 100)
+        Me.TextBoxUser.Location = New System.Drawing.Point(173, 118)
         Me.TextBoxUser.Name = "TextBoxUser"
         Me.TextBoxUser.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxUser.TabIndex = 16
@@ -85,7 +87,7 @@ Partial Class AltaUsuarios
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(212, 208)
+        Me.Label4.Location = New System.Drawing.Point(170, 266)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(111, 13)
         Me.Label4.TabIndex = 15
@@ -94,7 +96,7 @@ Partial Class AltaUsuarios
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(212, 165)
+        Me.Label3.Location = New System.Drawing.Point(170, 207)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(64, 13)
         Me.Label3.TabIndex = 14
@@ -103,7 +105,7 @@ Partial Class AltaUsuarios
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(212, 125)
+        Me.Label2.Location = New System.Drawing.Point(170, 151)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(47, 13)
         Me.Label2.TabIndex = 13
@@ -112,7 +114,7 @@ Partial Class AltaUsuarios
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(212, 84)
+        Me.Label1.Location = New System.Drawing.Point(170, 94)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(58, 13)
         Me.Label1.TabIndex = 12
@@ -122,7 +124,7 @@ Partial Class AltaUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(669, 375)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LabelAltaUsuarios)
         Me.Controls.Add(Me.TextBoxConfirmClave)
@@ -133,8 +135,13 @@ Partial Class AltaUsuarios
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "AltaUsuarios"
-        Me.Text = "AltaUsuarios"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Alta de Usuarios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

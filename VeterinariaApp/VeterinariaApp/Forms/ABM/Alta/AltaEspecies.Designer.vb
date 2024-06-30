@@ -35,7 +35,7 @@ Partial Class AltaEspecies
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.Button1.Location = New System.Drawing.Point(348, 269)
+        Me.Button1.Location = New System.Drawing.Point(236, 377)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(111, 47)
         Me.Button1.TabIndex = 31
@@ -46,7 +46,7 @@ Partial Class AltaEspecies
         '
         Me.LabelAltaEspecies.AutoSize = True
         Me.LabelAltaEspecies.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAltaEspecies.Location = New System.Drawing.Point(344, 57)
+        Me.LabelAltaEspecies.Location = New System.Drawing.Point(233, 36)
         Me.LabelAltaEspecies.Name = "LabelAltaEspecies"
         Me.LabelAltaEspecies.Size = New System.Drawing.Size(119, 20)
         Me.LabelAltaEspecies.TabIndex = 30
@@ -54,21 +54,21 @@ Partial Class AltaEspecies
         '
         'TextBoxPesoProm
         '
-        Me.TextBoxPesoProm.Location = New System.Drawing.Point(281, 208)
+        Me.TextBoxPesoProm.Location = New System.Drawing.Point(173, 258)
         Me.TextBoxPesoProm.Name = "TextBoxPesoProm"
         Me.TextBoxPesoProm.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxPesoProm.TabIndex = 29
         '
         'TextBoxE_Madurez
         '
-        Me.TextBoxE_Madurez.Location = New System.Drawing.Point(281, 165)
+        Me.TextBoxE_Madurez.Location = New System.Drawing.Point(173, 199)
         Me.TextBoxE_Madurez.Name = "TextBoxE_Madurez"
         Me.TextBoxE_Madurez.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxE_Madurez.TabIndex = 28
         '
         'TextBoxNombre
         '
-        Me.TextBoxNombre.Location = New System.Drawing.Point(281, 125)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(173, 143)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(242, 20)
         Me.TextBoxNombre.TabIndex = 27
@@ -76,7 +76,7 @@ Partial Class AltaEspecies
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(278, 192)
+        Me.Label4.Location = New System.Drawing.Point(170, 234)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(81, 13)
         Me.Label4.TabIndex = 25
@@ -85,7 +85,7 @@ Partial Class AltaEspecies
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(278, 149)
+        Me.Label3.Location = New System.Drawing.Point(170, 175)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(79, 13)
         Me.Label3.TabIndex = 24
@@ -94,7 +94,7 @@ Partial Class AltaEspecies
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(278, 109)
+        Me.Label2.Location = New System.Drawing.Point(170, 119)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(47, 13)
         Me.Label2.TabIndex = 23
@@ -104,7 +104,7 @@ Partial Class AltaEspecies
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(584, 436)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LabelAltaEspecies)
         Me.Controls.Add(Me.TextBoxPesoProm)
@@ -113,8 +113,13 @@ Partial Class AltaEspecies
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "AltaEspecies"
-        Me.Text = "AltaEspecies"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Alta de Especies"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

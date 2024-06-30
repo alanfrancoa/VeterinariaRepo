@@ -36,7 +36,7 @@ Partial Class FormLogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(84, 62)
+        Me.Label1.Location = New System.Drawing.Point(85, 62)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class FormLogin
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(84, 124)
+        Me.Label2.Location = New System.Drawing.Point(85, 124)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 13)
         Me.Label2.TabIndex = 1
@@ -53,21 +53,22 @@ Partial Class FormLogin
         '
         'TextBoxUsuario
         '
-        Me.TextBoxUsuario.Location = New System.Drawing.Point(87, 78)
+        Me.TextBoxUsuario.Location = New System.Drawing.Point(85, 78)
         Me.TextBoxUsuario.Name = "TextBoxUsuario"
         Me.TextBoxUsuario.Size = New System.Drawing.Size(238, 20)
         Me.TextBoxUsuario.TabIndex = 2
         '
         'TextBoxContrasena
         '
-        Me.TextBoxContrasena.Location = New System.Drawing.Point(87, 140)
+        Me.TextBoxContrasena.Location = New System.Drawing.Point(85, 140)
         Me.TextBoxContrasena.Name = "TextBoxContrasena"
+        Me.TextBoxContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxContrasena.Size = New System.Drawing.Size(238, 20)
         Me.TextBoxContrasena.TabIndex = 3
         '
         'ButtonIr
         '
-        Me.ButtonIr.Location = New System.Drawing.Point(105, 205)
+        Me.ButtonIr.Location = New System.Drawing.Point(103, 205)
         Me.ButtonIr.Name = "ButtonIr"
         Me.ButtonIr.Size = New System.Drawing.Size(176, 44)
         Me.ButtonIr.TabIndex = 4
@@ -76,7 +77,7 @@ Partial Class FormLogin
         '
         'ButtonRegistro
         '
-        Me.ButtonRegistro.Location = New System.Drawing.Point(105, 255)
+        Me.ButtonRegistro.Location = New System.Drawing.Point(103, 255)
         Me.ButtonRegistro.Name = "ButtonRegistro"
         Me.ButtonRegistro.Size = New System.Drawing.Size(176, 44)
         Me.ButtonRegistro.TabIndex = 5
@@ -85,7 +86,7 @@ Partial Class FormLogin
         '
         'ProgressBarLogin
         '
-        Me.ProgressBarLogin.Location = New System.Drawing.Point(87, 228)
+        Me.ProgressBarLogin.Location = New System.Drawing.Point(85, 228)
         Me.ProgressBarLogin.Name = "ProgressBarLogin"
         Me.ProgressBarLogin.Size = New System.Drawing.Size(238, 44)
         Me.ProgressBarLogin.TabIndex = 6
@@ -98,7 +99,7 @@ Partial Class FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(408, 361)
+        Me.ClientSize = New System.Drawing.Size(409, 361)
         Me.Controls.Add(Me.ProgressBarLogin)
         Me.Controls.Add(Me.ButtonRegistro)
         Me.Controls.Add(Me.ButtonIr)
@@ -106,9 +107,13 @@ Partial Class FormLogin
         Me.Controls.Add(Me.TextBoxUsuario)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FormLogin"
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormLogin"
+        Me.Text = "Iniciar Sesión"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
