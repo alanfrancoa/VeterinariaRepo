@@ -83,8 +83,8 @@ SELECT * FROM ESPECIES;
 SELECT * FROM MASCOTAS;
 SELECT * FROM ESPECIES;
 SELECT * FROM USUARIOS;
-
 INSERT INTO USUARIOS VALUES ('Usuario1','John Doe','123456');
+
 ---
 3.Configuración de la Cadena de Conexión: 
 - Abre el proyecto en Visual Studio.
