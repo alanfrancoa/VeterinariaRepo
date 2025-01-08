@@ -29,7 +29,7 @@ Para ejecutar este proyecto, necesitarás:
 - **Sistema Operativo**: Windows
 - **Visual Studio**: Versión 2019 o superior.
 - **.NET Framework**: 4.72 o superior.
-- - **BBDD**: SQL Server Management Studio 20 o superior.
+- **BBDD**: SQL Server Management Studio 20 o superior.
 
 ---
 
