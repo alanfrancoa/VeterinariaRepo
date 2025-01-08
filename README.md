@@ -44,6 +44,7 @@ Clonar el repositorio en la ubicación deseada. git clone https://github.com/ala
 
 Crea una base de datos en SQL Server llamada VeterinariaDB.
 Puedes crear las tablas con la siguiente query: 
+---
 CREATE TABLE ESPECIES (
     ID INT IDENTITY PRIMARY KEY,
     NOMBRE VARCHAR(50) NOT NULL UNIQUE,
@@ -84,7 +85,7 @@ SELECT * FROM ESPECIES;
 SELECT * FROM USUARIOS;
 
 INSERT INTO USUARIOS VALUES ('Usuario1','John Doe','123456');
-
+---
 3.Configuración de la Cadena de Conexión: 
 - Abre el proyecto en Visual Studio.
 - En el archivo de configuración (App.config), asegúrate de configurar correctamente la cadena de conexión a tu base de datos SQL Server:
